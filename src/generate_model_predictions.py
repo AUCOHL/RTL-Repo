@@ -2,11 +2,9 @@ import json
 import tqdm
 import os
 import argparse
-import torch
 
-from datasets import load_dataset, load_from_disk
+from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from torch.utils.data import DataLoader
 
 from utils import construct_prompt, post_process
 
