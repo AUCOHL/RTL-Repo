@@ -1,0 +1,200 @@
+{"generated": "for(i=0;i<10;i=i+1) begin", "label": "for(i=0;i<10;i=i+1) begin\r"}
+{"generated": "always @(state_rx)", "label": "always @(state_rx)"}
+{"generated": ".left_player_input(left_player_input),", "label": "        .left_player_input(left_player_input),"}
+{"generated": "reg_write_en = 0;", "label": "                            reg_write_en = 0;"}
+{"generated": "fir_coeff[16] = 16'hFFFE;", "label": "\t\tfir_coeff[16] = 16'hFFF8;\r"}
+{"generated": "{A,B} = 2'b00;", "label": " {A,B} = 2'b00;\r"}
+{"generated": "reg rst;", "label": "  reg       rst; "}
+{"generated": "            count <= 0;", "label": "            count <= 0;"}
+{"generated": "dirty <= dirty_array[index];", "label": "        dirty <= dirty_array[index];\r"}
+{"generated": "pulse_timer <= 0;", "label": "    end else case (fsm_state) "}
+{"generated": "else if(decrement & amount <= count)        set2<=1;", "label": "    else if(decrement & amount <= count)"}
+{"generated": "3'b011:begin s = 1'b0; c = 1'b1; end", "label": "\t\t3'b011:begin"}
+{"generated": "K: rotor_2_output = {8'h6B,8'h6B};", "label": "    K: rotor_2_output = {8'h6B,8'h6B};"}
+{"generated": "case(ID_EX_IR[14:12])", "label": "    if(ID_EX_IR[31:25]== 7'd1)begin"}
+{"generated": "always @(posedge clk or posedge rst) begin", "label": "reg signed [7:0] max_xi;"}
+{"generated": "data_memory[123] <= 8'b0;", "label": "\t\t\tdata_memory[123] <= 8'b0;"}
+{"generated": "bit_err = 0;", "label": "      bit_err = 0;\r"}
+{"generated": "Program_counter PC_module(PC,PCF,reset,clk,~StallF);", "label": "reg MemwriteE,ALUSrcE;"}
+{"generated": "multiplier[i] <= $signed(coeff[i]) * $signed(data_in);", "label": "\t\t\t\tmultiplier[i] <= $signed(coeff[`FILTER_SIZE/2-1-i]) * $signed(data_in);\r"}
+{"generated": "module plugboard(signal, rst, input_signal, output_signal);", "label": "module plugboard("}
+{"generated": "#0 ap_loop_init = 1'b0;", "label": "#0 ap_loop_init = 1'b1;"}
+{"generated": "assign c$wild_app_arg_0 = $unsigned({{(64-32) {1'b0}},c$i});", "label": "  assign c$wild_app_arg_0 = $unsigned({{(64-32) {1'b0}},c$i});"}
+{"generated": "adder myadder(.PCINPUT(PC),.RESULT(PCRESULT));", "label": "always@(RESET)"}
+{"generated": ".EX_MEM_mem_to_reg(EX_MEM_mem_to_reg),", "label": "        .MEM_WB_reg_write(MEM_WB_reg_write),"}
+{"generated": "always @(posedge clk)", "label": "     always @ (posedge clk) "}
+{"generated": "aoi22d1 g3830__9906(.A1 (\\mem[5] [24]), .A2 (n_588), .B1 (\\mem[7] [24]), .B2 (n_587), .", "label": "  aoi22d1 g3829__9906(.A1 (\\mem[1] [23]), .A2 (n_580), .B1 (\\mem[3]"}
+{"generated": "op = 6'b101011; A = -1; B = 1; ", "label": "    op = 6'b101011; A = -100; B = 1;\r"}
+{"generated": "                b_i = (i - 100) % 10;", "label": "                b_i = (i - 100) % 10;"}
+{"generated": "A = 1; B = 1; #5;", "label": "A = 1; B = 1; #5;"}
+{"generated": "always @(posedge clk)", "label": "always @(posedge clk)\r"}
+{"generated": "u_IDELAYCTRL( .REFCLK(ref_clk_400m), .RST(reset), .RDY(o_idelay_rdy) );", "label": "    IDELAYCTRL_inst ("}
+{"generated": "XMD opad_Z0 ( .I(i_Z[0]), .PU(n_Logic0_), .PD(n_Logic0_), .SMT(n_Logic0_), .O(Z[0]) );", "label": "\tYA2GSC opad_Z0 ( .I(i_Z[0]), .E(n_Logic1_), .E2(n_Logic1_), .E4(n_Logic1_), .E8(n_Logic1_), .SR(n_Logic1_), .O(Z[0]));"}
+{"generated": "game_status <= PLAY;", "label": "\t\t\t\t\tgame_status <= PLAY;\t\t\t"}
+{"generated": "case (state)", "label": "            case (state)\r"}
+{"generated": "output reg RegWEn_EXMEM_out,", "label": "    output reg RegWEn_EXMEM_out,    "}
+{"generated": "assign xored_y[2] = y[2] ^ cin;", "label": "    assign xored_y[2] = y[2] ^ cin;"}
+{"generated": "r_Bit_Index <= r_Bit_Index + 1;", "label": "                    r_Bit_Index <= r_Bit_Index + 1;"}
+{"generated": "$display(\"b = %h\",b);", "label": "\t\t$display(\"b = %h\",b);\r"}
+{"generated": "    out <= 4'd0; ", "label": "    out <= 16'd0;"}
+{"generated": "$dumpfile(\"adder_subtractor.vcd\");", "label": "    $dumpfile(\"add_sub.vcd\");"}
+{"generated": "assign enb = ~En;", "label": "module asyn_dff(\r"}
+{"generated": "assign clk = !clk;", "label": "\t\t\tassign clk = !clk;\r"}
+{"generated": "state_nxt = IDLE_ST;", "label": "                    state_nxt = IDLE_ST;"}
+{"generated": "      $period(posedge CLK, 3.000, NOT_CLK_PER);", "label": "      $period(posedge CLK, 3.000, NOT_CLK_PER);"}
+{"generated": "mult_uproad_R4 = C2_mult_uproad_R4;", "label": "            mult_uproad_R4 = C2_mult_uproad_R4;"}
+{"generated": "RegWriteD='b0;jump='b0;end endcase ", "label": "RegWriteD='b0;"}
+{"generated": ".reset(reset), ", "label": "\t.reset(reset), "}
+{"generated": "#100 Data_in=3'b011;", "label": "   #100 Data_in=3'b011;"}
+{"generated": "assign c$wild_app_arg = $unsigned({{(64-32) {1'b0}},FETCH_ADDRESS});", "label": "  wire [63:0] x1_projection;"}
+{"generated": "RegDst = 0;", "label": "        RegDst = 0;"}
+{"generated": "next_PC = (ReadData1 == ReadData2)? PC + 4 + {{20{i_IMEM_data[31]}}, i_IMEM_data[7], i_IMEM_data[30:25], i_IMEM_data[11:", "label": "                    if(ReadData1 == ReadData2) next_PC = PC + {i_IMEM_data[31], i_IMEM_data[7], i_IMEM_data[30:25], i_IMEM_data[11:8],1'b0};\r"}
+{"generated": "initial #50 $finish;", "label": " initial #50 $finish;\r"}
+{"generated": "if(pls) count <= count + 1'b1; ", "label": "            if(pls && !pulse) begin\r"}
+{"generated": "input wire [XLEN-1:0] i_id_op1;", "label": "input wire [XLEN-1:0] i_id_op1;"}
+{"generated": "endgenerate", "label": "endgenerate"}
+{"generated": "count_val <= 16'b0;", "label": "            count_val = 16'b0;            \r"}
+{"generated": "wire diff,bor;", "label": "wire diff,bor;"}
+{"generated": "check_parity_error = 3'b110;", "label": "check_parity_error = 3'b110,\r"}
+{"generated": "next_ball_v_x = 20;", "label": "                        next_ball_v_x = 20;"}
+{"generated": "@(negedge h_phi2);", "label": "        repeat (50)"}
+{"generated": ".op_rd_data (op_rd_data),  ", "label": "    .op_rd_data (op_rd_data),   "}
+{"generated": "attempt2: if (isCorrect == 0) Y = attempt2; else if (isCorrect == 1 && Enter == 1) Y = match; else if (isCorrect == 1 && Change == 1) Y =", "label": "\t\tattempt2: Y = attempt2;\r"}
+{"generated": "mod_dp data_path(", "label": "    mod_dp datapath(\r"}
+{"generated": "always @(posedge clk)", "label": "always @(posedge clk)"}
+{"generated": "input [31:0] writeData, output [31:0] readData1, output [31:0] readData2);", "label": "    input [31:0] writeData,"}
+{"generated": "else if(id_card1 == 1 && money_card1 < 1000 && flag == 0) begin", "label": "\t\t\t\t\telse if(id_card1 == 2 && money_card2 >= 1000 && flag == 0) begin\r"}
+{"generated": "`include \"e2prom_rw.v\"", "label": "module top_e2prom("}
+{"generated": "                free_note <= _i;", "label": "                free_note <= _i;"}
+{"generated": "#200 $finish;", "label": "    #200 $finish;"}
+{"generated": "8'b00000001:Data_out=3'b000;", "label": "          8'b00000001 :Data_out=3'b000;"}
+{"generated": "reg [31:0] ROM [0:255];", "label": "    reg [31:0] rom_mem [0:255];"}
+{"generated": "assign OUT1 = regFile[OUT1ADDRESS];", "label": " assign #2 OUT1 = regFile[OUT1ADDRESS];"}
+{"generated": "reg reset_elevator2;  //reg overweight_elevator2;  reg in_emergency_elevator2;", "label": "  reg reset_elevator2;"}
+{"generated": "patternB = patternB + 1;", "label": "            patternB = patternB + 1;"}
+{"generated": "counter ct2(.clk(clk), .clear(rst), .i_enable(i_over), .i_in(i_candidate_2), .o_out(o_count2));", "label": "counter ct2(.clk(clk), .clear(rst), .i_enable(i_over), .i_in(i_candidate_2), .o_out(o_count2));"}
+{"generated": "ram[wr_pos] <= data_in;", "label": "                ram[wr_pos] <= data_in;"}
+{"generated": "i_mac_valid <= 'd1;    @(posedge clk);", "label": "    i_mac_valid <= 'd1;"}
+{"generated": "`include \"FSM.v\"", "label": "module acc_pipe(X1, X2, X3, X4, Y, ready, valid, ready_out, valid_out, clk, arst);\r"}
+{"generated": "and Gate2(C1,X,Y);", "label": "    and Gate2(C1,X,Y);"}
+{"generated": "if(rst_i) begin", "label": "        if(rst_i) begin"}
+{"generated": "#10 $finish;", "label": "\tinitial begin"}
+{"generated": ".memWrite(),    .memRead(),    .address(),    .writeData(),    .readData());", "label": "    .memWrite(),"}
+{"generated": "3'b001: begin", "label": "\t\t\t\t\t\t\t3'b001: begin"}
+{"generated": "$finish;", "label": "         $display(\"THE SIMULATION HAS  SUCCESSEDED AT  TIME%0t \",$time);   "}
+{"generated": ".rd0_value_i(rd0_value_i),", "label": "\t\t.rd0_value_i(rd0_value_i),\r"}
+{"generated": "parameter din0_WIDTH = 32;", "label": "parameter din0_WIDTH = 14;"}
+{"generated": "search_count = search_count + 1;", "label": "\t\tsearch_count = search_count + 1;"}
+{"generated": "if (i_RX_Serial == 1'b0)", "label": "            if (i_RX_Serial == 1'b0)\r"}
+{"generated": "endmodule", "label": "module half_adder(input a, b, output s0, c0);"}
+{"generated": "module stimuli;", "label": "module stimuli("}
+{"generated": "o_val <= o_in;", "label": "\t\t\to_val <= o_in;"}
+{"generated": "assign ZeroFLag = (ALUresult==0) ? 1'b1 : 1'b0;", "label": "\talways @(*)begin "}
+{"generated": "    $dumpvars(0, processor_tb);", "label": "    $dumpvars(0, processor_tb);"}
+{"generated": "case(state)", "label": "case( state )  "}
+{"generated": ".READ(set_pixel && (!output_not_ready) && (!input_not_ready) && ((!logo_not_ready) && (!alpha_not_ready) || (!logo_valid))),", "label": "\t  .READ(M_AXIS_TREADY_VIDEO && M_AXIS_TVALID_VIDEO),"}
+{"generated": "port_out_nxt = SOF_BYTE;", "label": "                ovr_rd_en = 0;"}
+{"generated": "wire RO0_out, RO1_out;", "label": "    (* DONT_TOUCH = \"true\" *) wire RO0_out, RO1_out;\r"}
+{"generated": "CHECK_PARITY_ERROR: if(parity_done) NS = DECODE_ADDRESS; else NS = CHECK_PARITY_ERROR;", "label": "        CHECK_PARITY_ERROR:"}
+{"generated": "input   wire            CLK;", "label": "input   wire            CLK;"}
+{"generated": "input [address:0]write_ptr;", "label": "input [address:0]write_ptr;"}
+{"generated": "if (tempG0 < 0)", "label": "\t\tif (tempG0 < 0)\r"}
+{"generated": "reg [7:0] r_TX_Byte = 0;", "label": "  wire w_TX_Active, w_UART_Line;\r"}
+{"generated": "Exponent =  Temp_Exponent; ", "label": "     Exponent =  Temp_Exponent; "}
+{"generated": "`endmodule`", "label": "module flipflop(q, clk, rst, d);"}
+{"generated": "initial begin GSR_int = 0; GTS_int = 0; PRLD_int = 0; GRESTORE_int = 0; end", "label": "    assign (strong1, weak0) GSR = GSR_int;"}
+{"generated": ".feed(feed_w)    );endmodule : fsm_in_top", "label": "        .feed(feed_w)"}
+{"generated": "spi_addr[7:0] <= buffer;", "label": "\t\t\t\t\tspi_addr[7:0] <= buffer;"}
+{"generated": "sky130_fd_sc_hd__dfrtp_2 U310 (    .CLK(clk_48),    .D(n34),    .Q(tx_enable_crc16),    .RESET_B(rst_n)  );", "label": "  sky130_fd_sc_hd__nand2_2 U31 ("}
+{"generated": "module decoder_generic #(parameter N = 2)(input [N-1:0] w, input en, output [2**N-1:0] y);", "label": "module decoder_generic"}
+{"generated": "clk_divi <= num[23];", "label": "\t\tif(num == 24'h000000)"}
+{"generated": "end ", "label": "\t\t\t\tcount <= count + 1;"}
+{"generated": "(m_data_byteen==4'b1000)?{{24{Din[31]}},{Din[31:24]}}:0;", "label": "\t\t\t\t  (m_data_byteen==4'b1000)?{{24{Din[31]}},{Din[31:24]}}: "}
+{"generated": "else ram_ack <= 0; ", "label": "\telse ram_ack <= 0;\r"}
+{"generated": "in_reset   <= values[4];", "label": "   in_reset     <= values[4];"}
+{"generated": "always #5 clk = ~clk;", "label": "\talways #10 clk = ~clk;\r"}
+{"generated": "7'b0000100: note = `MI + _oct;", "label": "                7'b0000100: note = `MI + _oct;"}
+{"generated": "ALU_out = ~(input_1 | input_2);", "label": "\t\t\t\tALU_out = ~ (input_1 | input_2);\r"}
+{"generated": "AWADDR<=mwrite_address;", "label": "            AWADDR<=mwrite_address;"}
+{"generated": "output wire s_axi_ctrl_arready,", "label": "\toutput wire s_axi_ctrl_arready,"}
+{"generated": "output wire         ref_signal,", "label": "    output wire         ref_signal,"}
+{"generated": "default : Control <= 4'bxxxx;", "label": "default : Control <= 4'bxxxx;\r"}
+{"generated": "subtractor_4_bit s3 (.X(X[11:8]),.Y(Y[11:8]),.Bi(b[1]),.Bf(b[2]),.Z(Z[11:8]));", "label": "\tsubtractor_4_bit s3 (.X(X[11:8]),.Y(Y[11:8]),.Bi(b[1]),.Bf(b[2]),.Z(Z[11:8]));"}
+{"generated": "task latch_inputs;", "label": "   task latch_inputs;"}
+{"generated": "always @(posedge clk or posedge rst)", "label": "always @(posedge clk or negedge rst) begin"}
+{"generated": "else if (opcode == 1) rdval = rsval-rtval; //Subtraction", "label": "\t else if (opcode == 4)"}
+{"generated": "\t\t\tPS2_STATE_4_TRANSMISSION_DONE\t\t= 3'h4;", "label": "\t\t\tPS2_STATE_4_TRANSMIT_STOP_BIT\t\t= 3'h4,\r"}
+{"generated": "assign input4_image = (enable_max_pool && (rowCount_image < `IMAGEROW))?                imageArray[count_image + `IMAGEROW + 1][3:0]:4'b0000;", "label": "    assign input4_image = (enable_max_pool && (rowCount_image < `IMAGEROW))?"}
+{"generated": "miss_count <= miss_count + 1;", "label": "            miss_count <= miss_count + 1;"}
+{"generated": ".clk(dummy_clock),", "label": "    .clk(dummy_clock),"}
+{"generated": "a = master_key <<< 61;", "label": "        a = {master_key[66:0],master_key[79:67]};"}
+{"generated": "SPI_SLAVE #(.MEM_DEPTH(MEM_DEPTH), .ADDR_SIZE(ADDR_SIZE)) spi_slave_inst (.CLK(clk), .RST(rst_n), .MOSI(MOSI), .SS_n(SS_n), .tx_data(tx", "label": "    SPI_SLAVE #(.ADDR_SIZE(ADDR_SIZE)) SLAVE (.CLK(clk), .RST(rst_n), .SS_n(SS_n), .MOSI(MOSI),\r"}
+{"generated": "black_cell Arr2_black_cell2(in_Pk[4], in_Gk[4], in_Pk[6], in_Gk[6], out_Gk[6], out_Pk[6]);", "label": "black_cell Arr2_black_cell2(in_Pk[4], in_Gk[4], in_Pk[6], in_Gk[6], out_Gk[6], out_Pk[6]);\r"}
+{"generated": "half_adder H2(S[2], Carries[0], G[0], Carries[1]);", "label": "    half_adder H2(S[2], S[3], G[0], Carries[1]);"}
+{"generated": "valid=1'b1;", "label": "valid=1'b1;"}
+{"generated": "RegWrite <= 0;", "label": "\t\t\t\tRegWrite <= 0;\r"}
+{"generated": "#10 test_bench(32'b000000_00000_00001_00000_00010_000000,32'bx,2,8,3'b000);", "label": "#10 test_bench(32'b000000_00000_00001_00000_00011_000000,32'bx,32'h111,32'h888,3'b000);"}
+{"generated": "else if (op_code == 4'b0110 )begin\tRegfile[rt_offset] = alu_input; end", "label": "\telse if (op_code == 4'b0110 )begin\t"}
+{"generated": "wire [3:0] Student_SS_2_PSEL;", "label": "    wire [3:0] Student_SS_2_PSEL;"}
+{"generated": "case (selector)", "label": "\t\tflagC = 1'b0;\r"}
+{"generated": "r = eqa ^ b;", "label": "                    r = eqa ^ b;"}
+{"generated": "initial begin", "label": "initial begin"}
+{"generated": "if (areset)", "label": "\t\tif (areset)"}
+{"generated": "parameter ALMOST_FULL_GAP = 3\t;", "label": "parameter ALMOST_FULL_GAP = 3;"}
+{"generated": "always @(posedge clk or posedge reset) begin", "label": "  always @(posedge clk ) begin\r"}
+{"generated": "clk=0;", "label": "       clk = 1'b0;"}
+{"generated": "--  O->vertical frame total length   :vert_frame", "label": "--  O->vertical line total length :vert_line"}
+{"generated": "hecatia_y = 120;    #100;", "label": "    hecatia_y = 120;"}
+{"generated": "                        new_ball_v_y <= tmp_new_ball_v_y;", "label": "                        new_ball_v_y <= tmp_new_ball_v_y;"}
+{"generated": "case({fb, EQU, Zero})", "label": "        if (reset) begin"}
+{"generated": "#(parameter", "label": "#(parameter"}
+{"generated": "assign slv_reg_rden = axi_arready && S_AXI_ARVALID && ~axi_rvalid;", "label": "\talways @(posedge S_AXI_ACLK)"}
+{"generated": "clkgen_200kHz clkgen(.clk_100MHz(CLK100MHZ), .clk_200kHz(w_200kHz));", "label": "    clkgen_200kHz cgen("}
+{"generated": "d_ff d3(.clk(clk),.din(o3),.dout(dout),.rst());", "label": "d_ff d3(.clk(clk),.din(o3),.dout(dout),.rst());"}
+{"generated": "approaching <= 0;", "label": "        approaching <= 0;"}
+{"generated": "mips.Mem[5]=32'h0ce77800;", "label": "\tmips.Mem[5]=32'h20022200;"}
+{"generated": "soft_reset_1<=0;", "label": "\tsoft_reset_1<=0;\r"}
+{"generated": ".Y(n2903) ));", "label": "        \\U3/U161/Z_6 ) );"}
+{"generated": "parameter WIDTH=4;", "label": "parameter WIDTH=4;\r"}
+{"generated": "    output                              PREADY,", "label": "    output                              PREADY,"}
+{"generated": "wire signed[OUT_WIDTH-1:0] conv0, conv1, conv2, conv3;", "label": "wire signed[OUT_WIDTH-1:0] conv0, conv1, conv2, conv3;"}
+{"generated": "and(P[1], A[0], B[1]);", "label": "and(c1, A[0], B[1]);\r"}
+{"generated": "AO22_X1M_A9TR U33 ( .A0(N41), .A1(n410), .B0(N16), .B1(s), .Y(d[4]) );", "label": "  AO22_X1M_A9TR U33 ( .A0(N41), .A1(n410), .B0(N16), .B1(s), .Y(d[4]) );"}
+{"generated": "Comparator_Grt_3  =0;", "label": "\t\t\tComparator_Grt_3  =0;\r"}
+{"generated": "power1 <= 1'b0;", "label": "\t\tpower1 <= 1'b0;"}
+{"generated": "rdata_way1[8],", "label": "        rdata_way1[8],"}
+{"generated": "case(OpCode)", "label": "        case(OpCode)\r"}
+{"generated": "`define SIM_FNAME \"C:/path/to/your/simulation/data.txt\"", "label": "reg main_start, main_end;"}
+{"generated": "output match; output [ENTRY_WIDTH-1:0] match_addr;", "label": "output reg [ENTRY_WIDTH-1:0] match_addr;"}
+{"generated": "sfp_row #(.bw(bw), .bw_psum(bw_psum), .col(col)) sfp_row_instance (        .clk(clk),        .acc(inst[7]),        .div(inst[6]),        .fifo", "label": "  always @(posedge clk) begin"}
+{"generated": "if (!rst_n) {a <= 1; b <= 0; c <= 1; f1 <= 1;} else {f1 <= a | b; f2 <= f1 & c;}", "label": "    if (~rst_n) begin"}
+{"generated": "#500 $finish;", "label": "\t#600 $finish;"}
+{"generated": "parameter result = 2'b10,", "label": "parameter hold =  2'b10,"}
+{"generated": "#10 a = 1; b = 1; c = 1;", "label": "    #10 a = 1; b = 1; c = 1;"}
+{"generated": "reg external_start;", "label": "wire [23:0]data;\r"}
+{"generated": "4'b0101: alu_out <=a|b;", "label": "\t\t\t\t4'b0101: alu_out <=a|b;\r"}
+{"generated": "a = 1'b1; b = 1'b0;", "label": "        a = 1'b1; b = 1'b0;\r"}
+{"generated": "`OPCODE_LUI_C, `OPCODE_AUIPC_C: begin", "label": "            `OPCODE_LUI_C, `OPCODE_AUIPC_C: begin"}
+{"generated": "(op1_signed >>> op2[4:0]) :", "label": "                    (alu_op == ALUOP_SLL) ? (op1 << op2[4:0]) :"}
+{"generated": "initial #50 $finish;", "label": " initial #50 $finish;\r"}
+{"generated": ".LIT_OUT (`LIT_OUT)", "label": "    .LIT_OUT (`LIT_OUT)\r"}
+{"generated": "ALUCtl <= 4'b0001; // or", "label": "                                ALUCtl <= 4'b0000;"}
+{"generated": "else if (r_arp_cnt >= 6 && r_arp_cnt <= 7 && ri_mac_valid)        r_arp_op <= {r_arp_op[7:0], ri_mac_data};", "label": "    else if (r_arp_cnt >= 6 && r_arp_cnt <= 7 && ri_mac_valid)"}
+{"generated": "alu_slice _i6 (op, i0[6], i1[6], c[5], o[6], c[6]);", "label": "   alu_slice _i6 (op, i0[6], i1[6], c[5], o[6], c[6]);"}
+{"generated": "4'b1101: group1 = 4'b1101;", "label": "        4'b1101: group1 = 4'b1101;"}
+{"generated": "            4: l1 = `four;", "label": "            4: l1 = `four;"}
+{"generated": "output reg                                 Zero_flag );", "label": "output reg                                   Zero_flag "}
+{"generated": "wire  [RULE_NUM-1:0]                                w_keyRule_wren;", "label": "  genvar idx;\r"}
+{"generated": "initial begin clk = 0; forever #5 clk = ~clk; end", "label": "    initial begin"}
+{"generated": "$display(\"Simulation completed successfully.\");", "label": "                 if(flag1 == 1'b1)"}
+{"generated": "( (USE_RESET_REQUEST_IN2 == 1) ? reset_req_in2 : 1'b0)  |", "label": "                              ( (USE_RESET_REQUEST_IN2 == 1) ? reset_req_in2 : 1'b0)  |"}
+{"generated": "comparator COMP(alu_result, 32'd0, z);", "label": "    forwarding_unit        fu(id_dh_out, id_out[9:5], ex_out[4:0], wb_out[4:0], ex_out[106], wb_out[70], fa, fb);\r"}
+{"generated": "`define SKY130_FD_SC_HD__UDP_MUX_2TO1_V", "label": "`define SKY130_FD_SC_HD__UDP_MUX_2TO1_V"}
+{"generated": "output reg RVALID,", "label": "    output reg [31:0] RDATA,"}
+{"generated": "assign zero = (Y == 0) ? 1'b1 : 1'b0;", "label": "assign zero = (Y == 0) ? 1 : 0;\r"}
+{"generated": "10'd92: rg_ram_rd_a_res$D_IN = rd_data_vec_rga[185:184];", "label": "      10'd92: rg_ram_rd_a_res$D_IN = rd_data_vec_rga[185:184];"}
+{"generated": "clk = ~clk; ", "label": "        clk = ~clk;"}
+{"generated": "if (s2 == 3'b000 || s2 == 3'b001 || s2 == 3'b010 || s2 == 3'b100) begin        PCMcode[7:4] <= {ham_code[13:", "label": "    if (s2 == 3'b000|| s2 == 3'b001|| s2 == 3'b010 || s2 == 3'b100) begin"}
+{"generated": ".mem_dw (mem_dw)   ", "label": ") u_ahb_lite_ms_model ("}
+{"generated": "PC_Adder pca(pc, nextpc);", "label": "    InstructionMem IMEM(pc, instOut);"}
+{"generated": "      else if(write_enb && !full) mem[wr_pointer[3:0]] <= {lfd_state_t,data_in};", "label": "      else if(write_enb&&(~full))   "}

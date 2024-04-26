@@ -1,0 +1,1174 @@
+{"generated": " for(i=0;i<10;i=i+1) begin\r    case(i)\r        0 : rx<=1'b0;\r        1 : rx <= data[0];\r        2 : rx", "label": "for(i=0;i<10;i=i+1) begin\r"}
+{"generated": "always @(state_rx)beginif(state_rx == IDLE_RX)begin    check_stop_rx = 0;    rx_shift = 0;    parity_load_rx = 0;endelse if", "label": "always @(state_rx)"}
+{"generated": "/src/fighting_game.v", "label": "        .left_player_input(left_player_input),"}
+{"generated": "reg_write_en = 0;                            alu_imm = 0;                            display = 0;                        end                        5'b00011:begin //store immediate                            mem_read_en = 0;", "label": "                            reg_write_en = 0;"}
+{"generated": "\tend\rendmodule", "label": "\t\tfir_coeff[16] = 16'hFFF8;\r"}
+{"generated": " {A,B} = 2'b00;\r end\r \r////stimulus Generation\rinitial\r begin\r  for(i=0; i<4; i=i+1)\r   begin\r    {", "label": " {A,B} = 2'b00;\r"}
+{"generated": "reg       rst;", "label": "  reg       rst; "}
+{"generated": "count <= 0;", "label": "            count <= 0;"}
+{"generated": "\tdirty <= dirty_array[index];\r\r        if(en_write) begin\r            if(write_data_sel) begin\r                cache_data[index][127:96] <= dataIn;\r               ", "label": "        dirty <= dirty_array[index];\r"}
+{"generated": "//", "label": "    end else case (fsm_state) "}
+{"generated": "else if(decrement & amount <= count)        set2<=1;    else        set2 <= set2;end    assign LED2 = set2;     reg set3 =0;  always@(posedge clk) begin    if", "label": "    else if(decrement & amount <= count)"}
+{"generated": "3'b011:begin\t\t\t\ts = 1'b0;\t\t\t\tc = 1'b1;\t\t\t  end\t\t3'b100:begin\t\t\t\ts = 1'b1;", "label": "\t\t3'b011:begin"}
+{"generated": "K: rotor_2_output = {8'h6B,8'h6B};", "label": "    K: rotor_2_output = {8'h6B,8'h6B};"}
+{"generated": "case(ID_EX_IR[14:12])ADD:EX_MEM_ALUOUT <= ID_EX_A + ID_EX_B;SUB:EX_MEM_ALUOUT <= ID_EX_", "label": "    if(ID_EX_IR[31:25]== 7'd1)begin"}
+{"generated": "integer i;integer j;integer k;integer m;integer n;integer p;integer q;integer r;integer s;integer t;integer u;integer v;integer w;integer x;integer y;integer z;integer a", "label": "reg signed [7:0] max_xi;"}
+{"generated": "data_memory[123] <= 8'b0;\t\t\tdata_memory[124] <= 8'b0;\t\t\tdata_memory[125] <= 8'b0;\t\t", "label": "\t\t\tdata_memory[123] <= 8'b0;"}
+{"generated": "      bit_err = 0;", "label": "      bit_err = 0;\r"}
+{"generated": "wire [4:0] WriteRegM;wire [31:0] ALUOutM;wire [31:0] WriteDataM;wire RegWriteM;wire MemtoRegM;wire MemWriteM;wire", "label": "reg MemwriteE,ALUSrcE;"}
+{"generated": "\t\t\t\tmultiplier[i] <= $signed(coeff[i]) * $signed(data_in);\r\t\t\t\t// adders\r\t\t\t\tif(i == 0)\r\t\t\t\t\tadder[i] <= $signed(multiplier", "label": "\t\t\t\tmultiplier[i] <= $signed(coeff[`FILTER_SIZE/2-1-i]) * $signed(data_in);\r"}
+{"generated": "module plugboard(", "label": "module plugboard("}
+{"generated": "#0 ap_loop_init = 1'b1;", "label": "#0 ap_loop_init = 1'b1;"}
+{"generated": "assign c$wild_app_arg_0 = $unsigned({{(64-32) {1'b0}},FETCH_ADDRESS});  assign a1 = {64 {1'bx}};  assign ds = {6", "label": "  assign c$wild_app_arg_0 = $unsigned({{(64-32) {1'b0}},c$i});"}
+{"generated": " initial", "label": "always@(RESET)"}
+{"generated": ".MEM_WB_reg_write(MEM_WB_reg_write),       .EX_MEM_mem_to_reg(EX_MEM_mem_to_reg),       .MEM_WB_mem_to_reg", "label": "        .MEM_WB_reg_write(MEM_WB_reg_write),"}
+{"generated": "always @ (posedge clk) ", "label": "     always @ (posedge clk) "}
+{"generated": "51),.Q (\\mem[11] [31]));  dfnrq1 \\mem_reg[2][6] (.CP (clk),.D (n_479),.Q (\\mem[2]", "label": "  aoi22d1 g3829__9906(.A1 (\\mem[1] [23]), .A2 (n_580), .B1 (\\mem[3]"}
+{"generated": "\top = 6'b101011; A = -1; B = 1;\r    #10\r    $display(\"----------------\\nOperation: sll\\n----------------\");\r    op = ", "label": "    op = 6'b101011; A = -100; B = 1;\r"}
+{"generated": "/README.md", "label": "                b_i = (i - 100) % 10;"}
+{"generated": "A = 1; B = 1; #5;", "label": "A = 1; B = 1; #5;"}
+{"generated": "// Revision 0.01 - File Created\r// Additional Comments: \r//\r//////////////////////////////////////////////////////////////////////////////////\rmodule RAM(input clk,rst,wre,input [31:0]data_in,input [15:0", "label": "always @(posedge clk)\r"}
+{"generated": "IDELAYCTRL_inst (      .RDY(o_idelay_rdy),       // 1-bit output: Ready output      .REFCLK(ref_clk_400m),       // 1-", "label": "    IDELAYCTRL_inst ("}
+{"generated": "\tXMC opad_Z0 (.I(i_Z[0]),.PU(n_Logic0_),.PD(n_Logic0_),.SMT(n_Logic0_),.O(Z[0])", "label": "\tYA2GSC opad_Z0 ( .I(i_Z[0]), .E(n_Logic1_), .E2(n_Logic1_), .E4(n_Logic1_), .E8(n_Logic1_), .SR(n_Logic1_), .O(Z[0]));"}
+{"generated": "game_status <= PLAY;\t\t\t\tend\t\t\tend\t\t\tPLAY:begin\t\t\t\tif( hit_wall | hit_body ) \t\t\t\tbegin\t\t\t\t\tgame_status <= DIE;\t\t\t\tend\t\t\tend\t\t\t", "label": "\t\t\t\t\tgame_status <= PLAY;\t\t\t"}
+{"generated": "            case (state)\r                EMPTY_REGISTERS: begin\r                    if (valid && ready) begin\r                        next_state = FIRST_PIPE_STAGE_FULL;\r                        enable_reg1 = 1'b1;", "label": "            case (state)\r"}
+{"generated": " output reg RegWEn_EXMEM_out,    output reg MemRW_EXMEM_out,    output reg [1:0] WBsel_EXMEM_out);    // Register for EX/MEM stage    always @(", "label": "    output reg RegWEn_EXMEM_out,    "}
+{"generated": "assign xored_y[2] = y[2] ^ cin;", "label": "    assign xored_y[2] = y[2] ^ cin;"}
+{"generated": "// If", "label": "                    r_Bit_Index <= r_Bit_Index + 1;"}
+{"generated": "\t$display(\"b = %h\",b);\r\t\t$display(\"control = %h\",control);\r\t\t$display(\"result = %h\", result);\r\t\t\r\t\t/* Test 5 */\r\t\t", "label": "\t\t$display(\"b = %h\",b);\r"}
+{"generated": "\tout <= 4'd0;", "label": "    out <= 16'd0;"}
+{"generated": "$dumpfile(\"add_sub.vcd\");", "label": "    $dumpfile(\"add_sub.vcd\");"}
+{"generated": "module asyn_dff(d, clk, q, pr, clr);\r\tinput d, clk, pr, clr;\r\toutput q;\r\twire n", "label": "module asyn_dff(\r"}
+{"generated": "\tend\rendmodule", "label": "\t\t\tassign clk = !clk;\r"}
+{"generated": "                    feed_wd_nxt = 0;", "label": "                    state_nxt = IDLE_ST;"}
+{"generated": "$period(posedge CLK, 3.000, NOT_CLK_PER);      $width(posedge CLK, 1.000, 0, NOT_CLK_MINH);      $width(ne", "label": "      $period(posedge CLK, 3.000, NOT_CLK_PER);"}
+{"generated": " signed [NN_KERNEL_BIT - 1 :0 ] C4_Big_Kernel_downroad_B2 = 'b11111111110000010010;parameter", "label": "            mult_uproad_R4 = C2_mult_uproad_R4;"}
+{"generated": "RegWriteD='b0;ALUOp='b0;jump = 0;end endcasecase(ALUOp)2'b00:  beginALUControlID=3'b010;end ", "label": "RegWriteD='b0;"}
+{"generated": "\t.reset(reset), ", "label": "\t.reset(reset), "}
+{"generated": "#100 Data_in=3'b011;   #100 Data_in=3'b100;   #100 Data_in=3'b101;   #1", "label": "   #100 Data_in=3'b011;"}
+{"generated": "/* AUTOMATICALLY GENERATED VERILOG-2001 SOURCE CODE.", "label": "  wire [63:0] x1_projection;"}
+{"generated": "//        ALUOp = 2'b00;", "label": "        RegDst = 0;"}
+{"generated": "2'd0;\r            MULresult <= 64'd0;\r            o_finish_reg <= 0;\r        end\r        else begin\r            PC <= next_PC;\r            I_cen <= I_", "label": "                    if(ReadData1 == ReadData2) next_PC = PC + {i_IMEM_data[31], i_IMEM_data[7], i_IMEM_data[30:25], i_IMEM_data[11:8],1'b0};\r"}
+{"generated": " initial #50 $finish;\rendmodule \r", "label": " initial #50 $finish;\r"}
+{"generated": "\tnext_count_second1 <= 0;\r", "label": "            if(pls && !pulse) begin\r"}
+{"generated": "input wire [XLEN-1:0] i_id_op1;", "label": "input wire [XLEN-1:0] i_id_op1;"}
+{"generated": "endgenerategeneratefor(i=0; i<32; i=i+1) beginif(i==0) full_adderdelay fa0(a[0],w[0],cin,sum[0],c[", "label": "endgenerate"}
+{"generated": " //           count_val = 4'b0;\r            clk_tick_count = 32'b0;\r            \r        end\r        else begin\r            if (clk_tick_count < 100", "label": "            count_val = 16'b0;            \r"}
+{"generated": "wire diff,bor;", "label": "wire diff,bor;"}
+{"generated": "\rdecode_address_2 = 3'b110;\r\r\r\r//state register\r\r\r\ralways@(posedge clk) begin\r\rif(!rst)\r\rp_state <= decode_address;\r\relse", "label": "check_parity_error = 3'b110,\r"}
+{"generated": "next_ball_v_x = 20;                    else                        next_ball_v_x = ball_v_x;                    next_ball_v_y = ball_v_y;                end                else if(", "label": "                        next_ball_v_x = 20;"}
+{"generated": "'b000;        p_cs_b = 1;        p_datain = 8'bZZZZZZZZ;        p_rd_b = 1;        p_wr_b = 1", "label": "        repeat (50)"}
+{"generated": "//****************************************Copyright (c)***********************************//\u539f\u5b50\u54e5\u5728\u7ebf\u6559\u5b66\u5e73\u53f0\uff1awww.yuanzige.com//\u6280\u672f\u652f\u6301", "label": "    .op_rd_data (op_rd_data),   "}
+{"generated": "\tattempt2: \t\tif (isCorrect == 1 && Enter == 1) Y = match;\r\t\t\t\t\t\t\telse if (isCorrect == 1 && Change == 1) Y = change_combo;\r\t\t\t\t\t\t\telse", "label": "\t\tattempt2: Y = attempt2;\r"}
+{"generated": "\rmod_dp data_path(\r       .clk(clk),\r       .reset(reset),\r       .A(A),\r       .B(B),\r       .load(load),\r       .subtract(subtract),", "label": "    mod_dp datapath(\r"}
+{"generated": "always @(posedge clk)", "label": "always @(posedge clk)"}
+{"generated": "module Register (", "label": "    input [31:0] writeData,"}
+{"generated": "end\r\t\tdecide_howmuch:begin\r\t\t\tnext_count_second1 <= count_second1;\r\t\t\tnext_count_second2 <= count_second2;\r\t\t\tnext_money_card", "label": "\t\t\t\t\telse if(id_card1 == 2 && money_card2 >= 1000 && flag == 0) begin\r"}
+{"generated": "module e2prom_top", "label": "module top_e2prom("}
+{"generated": "free_note <= _i;            end        end    end    //\u8fde\u63a5\u5b66\u4e60\u6a21\u5f0f    Learn learn(.enable(en_mode1),.clk(clk),.rst_n(rst),.note(free_note),.switch", "label": "                free_note <= _i;"}
+{"generated": "//    #200 $finish;  end  // Dump signals to VCD file  initial begin    $dumpfile(\"johnson_counter_tb.vcd\");    $dumpvars(0, tb_johnson_counter", "label": "    #200 $finish;"}
+{"generated": "8'b00000001:Data_out=3'b000;", "label": "          8'b00000001 :Data_out=3'b000;"}
+{"generated": "\treg [31:0] memory [0:255];    // Inicializa\u00e7\u00e3o da mem\u00f3ria com os valores do arquivo.data    initial begin        $readmemh(\"i_mem.data\", memory);    end", "label": "    reg [31:0] rom_mem [0:255];"}
+{"generated": " always@(*) begin  #2 OUT1 = regFile [OUT1ADDRESS]; OUT2 = regFile [OUT2ADDRESS]; end endmodule", "label": " assign #2 OUT1 = regFile[OUT1ADDRESS];"}
+{"generated": "1609, n1610, n1611, n1612, n1613, n1614, n1615, n1616, n16", "label": "  reg reset_elevator2;"}
+{"generated": "/Lab2_E24046622/LabinClass/RCA16.v", "label": "            patternB = patternB + 1;"}
+{"generated": "counter ct2(.clk(clk),.clear(rst),.i_enable(i_over),.i_in(i_candidate_2),.o_out(o_count2));", "label": "counter ct2(.clk(clk), .clear(rst), .i_enable(i_over), .i_in(i_candidate_2), .o_out(o_count2));"}
+{"generated": "//write data to memory                ram[wr_pos] <= data_in;                wr_pos <= wr_pos + 1;                if(wr_pos == (FIFO_SIZE-1)) begin                    wr_pos <= ", "label": "                ram[wr_pos] <= data_in;"}
+{"generated": "d1;    @(posedge clk);    i_mac_data  <= 'd0;    i_mac_last  <= 'd0;    i_mac_valid <= 'd1;    @(posedge clk);", "label": "    i_mac_valid <= 'd1;"}
+{"generated": "\rmodule topModule(X1, X2, X3, X4, Y, ready, valid, ready_out, valid_out, clk, arst);\r\tinput signed [7:0] X1, X2", "label": "module acc_pipe(X1, X2, X3, X4, Y, ready, valid, ready_out, valid_out, clk, arst);\r"}
+{"generated": "and Gate2(C1,X,Y);", "label": "    and Gate2(C1,X,Y);"}
+{"generated": "if(rst_i) begin", "label": "        if(rst_i) begin"}
+{"generated": "endmodule", "label": "\tinitial begin"}
+{"generated": "\t.memWrite(),", "label": "    .memWrite(),"}
+{"generated": "3'b001: begin\t\t\t\t\t\t\t\toRin  <= rx_address_decoded;\t\t\t\t\t\t\t\toDone <= 1'b1;\t\t\t\t\t\t\tend", "label": "\t\t\t\t\t\t\t3'b001: begin"}
+{"generated": "$display(\"Simulation succeeded\");        $stop;        end        if((dut.block_2.mem[84]===8))        begin", "label": "         $display(\"THE SIMULATION HAS  SUCCESSEDED AT  TIME%0t \",$time);   "}
+{"generated": "\t.wr(wr),\r\t\t.rd0_value_i(rd0_value_i),\r\t\t.ra0_value_o(ra0_value_o),\r\t\t.rb0_value", "label": "\t\t.rd0_value_i(rd0_value_i),\r"}
+{"generated": "parameter din0_WIDTH = 32;", "label": "parameter din0_WIDTH = 14;"}
+{"generated": "\tsearch_count = search_count + 1;", "label": "\t\tsearch_count = search_count + 1;"}
+{"generated": "//            if (i_RX_Serial == 1'b0)\r            begin\r              r_Clock_Count <= 0;  // found the middle, reset counter, and wait\r              r_SM_Main    ", "label": "            if (i_RX_Serial == 1'b0)\r"}
+{"generated": "module ArrayMultiplier(  input [7:0] A,  input [7:0] B,  output [15:0] P);  // Declare partial products and final product  reg [7:0] pp [7", "label": "module half_adder(input a, b, output s0, c0);"}
+{"generated": "module stimuli;", "label": "module stimuli("}
+{"generated": "\to_val <= o_in;\t\tend\t\tassign o_out = o_val;endmodule", "label": "\t\t\to_val <= o_in;"}
+{"generated": "\talways @ (*) begin", "label": "\talways @(*)begin "}
+{"generated": "$dumpvars(0, processor_tb);", "label": "    $dumpvars(0, processor_tb);"}
+{"generated": "case( state ) 2'b00: if( inp ) state <= 2'b01; else state <= 2'b00; 2'b01: if( inp ) state <= 2", "label": "case( state )  "}
+{"generated": "/README.md", "label": "\t  .READ(M_AXIS_TREADY_VIDEO && M_AXIS_TVALID_VIDEO),"}
+{"generated": "                    port_out_nxt = SOF_BYTE;", "label": "                ovr_rd_en = 0;"}
+{"generated": "\t(* DONT_TOUCH = \"true\" *) wire RO0_out, RO1_out;\r\t(* DONT_TOUCH = \"true\" *) wire RO0_out_feedback, RO1_out_feedback", "label": "    (* DONT_TOUCH = \"true\" *) wire RO0_out, RO1_out;\r"}
+{"generated": " CHECK_PARITY_ERROR :                         begin                          if(parity_done && low_packet_valid)\t\t\t\t \t\t\tNS=LOAD_AFTER_FULL;\t\t\t      \t\t  else if(parity_done && (~low_packet_valid))", "label": "        CHECK_PARITY_ERROR:"}
+{"generated": "input   wire            CLK;", "label": "input   wire            CLK;"}
+{"generated": "input [address:0]write_ptr;", "label": "input [address:0]write_ptr;"}
+{"generated": "\tif (tempG0 < 0)\r", "label": "\t\tif (tempG0 < 0)\r"}
+{"generated": " reg [7:0] r_TX_Byte = 0;\r  wire w_TX_Done;\r  \r  reg [7:0] r_RX_Byte = 0;\r  reg r_RX_DV", "label": "  wire w_TX_Active, w_UART_Line;\r"}
+{"generated": " Exponent =  Temp_Exponent;  end    else if (!Temp_Mantissa[46])begin     i = 1 ;    while(Temp_Mantissa[46-i] == 0 )begin      ", "label": "     Exponent =  Temp_Exponent; "}
+{"generated": "module flipflop(q, clk, rst, d);output q;reg q;input clk, rst, d;always @(posedge clk or posedge rst)if", "label": "module flipflop(q, clk, rst, d);"}
+{"generated": "//--------   STARTUP Globals --------------    wire GSR;    wire GTS;    wire GWE;    wire PRLD;    (* GSR_BUS = \"0000\" *)    (* RTL_KEEP = \"yes\"", "label": "    assign (strong1, weak0) GSR = GSR_int;"}
+{"generated": "/README.md", "label": "        .feed(feed_w)"}
+{"generated": "\t\t\t\t\toutbuf <= memory;", "label": "\t\t\t\t\tspi_addr[7:0] <= buffer;"}
+{"generated": "rst_n)  );  sky130_fd_sc_hd__buf_1 U27 (   .A(n77),   .X(n79)  );  sky130_fd", "label": "  sky130_fd_sc_hd__nand2_2 U31 ("}
+{"generated": "module decoder_generic", "label": "module decoder_generic"}
+{"generated": "\tif(num == 24'd16000000)", "label": "\t\tif(num == 24'h000000)"}
+{"generated": "end\t\tend\t\telse begin\t\t\tmul_r <= 0;\t\t\tadd_r <= 0;\t\t\ty_r <= 0;\t\t\tcount <= 0;\t\tendendendmodule", "label": "\t\t\t\tcount <= count + 1;"}
+{"generated": "`timescale 1ns / 1ps", "label": "\t\t\t\t  (m_data_byteen==4'b1000)?{{24{Din[31]}},{Din[31:24]}}: "}
+{"generated": "\telse begin\r", "label": "\telse ram_ack <= 0;\r"}
+{"generated": "//   in_data_in <= values[3:0];   in_reset   <= values[4];   addr       <= addr + 1;endalways @ ( posedge in_clk )begin   if ( done )", "label": "   in_reset     <= values[4];"}
+{"generated": "\talways #10 clk = ~clk;\r\t\r\tinitial begin\r\t\treset_n = 0;\r\t\tFword = 32'd100000000;\r\t\tP", "label": "\talways #10 clk = ~clk;\r"}
+{"generated": "`timescale 1ns / 1ps", "label": "                7'b0000100: note = `MI + _oct;"}
+{"generated": "\t\t\t\tALU_out = ~(input_1 | input_2);\r\t\t\tend\r\t\t\t_SLT :\r\t\t\tbegin\r\t\t\t\tALU_out = (input_1 < input_2)? ", "label": "\t\t\t\tALU_out = ~ (input_1 | input_2);\r"}
+{"generated": "AWADDR<=mwrite_address;            AWPROT<=3'b000;            if (wraddr_enb==1'b1)begin                AWVALID<=1'b1;                if(AWREADY)", "label": "            AWADDR<=mwrite_address;"}
+{"generated": "\toutput wire s_axi_ctrl_arready,", "label": "\toutput wire s_axi_ctrl_arready,"}
+{"generated": "output wire         ref_signal,    output wire         done);    ", "label": "    output wire         ref_signal,"}
+{"generated": "4'b1000 : Control <= 4'b0110; // subi\rdefault : Control <= 4'bxxxx;\rendcase\rdefault : Control <= 4'bxxxx;\rendcase", "label": "default : Control <= 4'bxxxx;\r"}
+{"generated": "\tsubtractor_4_bit s3 (.X(X[11:8]),.Y(Y[11:8]),.Bi(b[1]),.Bf(b[2]),.Z(Z[11", "label": "\tsubtractor_4_bit s3 (.X(X[11:8]),.Y(Y[11:8]),.Bi(b[1]),.Bf(b[2]),.Z(Z[11:8]));"}
+{"generated": "// Path: final/B_ICC2016_priliminary_grad_cell_final/icc2016cb/icc2016cb/rom_128x8_b.", "label": "   task latch_inputs;"}
+{"generated": "always @(posedge clk or negedge rst) begin", "label": "always @(posedge clk or negedge rst) begin"}
+{"generated": "\telse if (opcode == 1)\t\trdval = rsval<<shamt; //Left Shift", "label": "\t else if (opcode == 4)"}
+{"generated": "01;\r\r/*****************************************************************************\r *                             Port Declarations                             *\r *****************************************************************************/\r// Inputs\rinput\t\t\t\tclk;\rinput\t\t\t\treset;\r\rinput\t[7:0]\tthe_command;\rinput\t\t", "label": "\t\t\tPS2_STATE_4_TRANSMIT_STOP_BIT\t\t= 3'h4,\r"}
+{"generated": "assign input4_image = (enable_max_pool && (rowCount_image < `IMAGEROW))?", "label": "    assign input4_image = (enable_max_pool && (rowCount_image < `IMAGEROW))?"}
+{"generated": "miss_count <= miss_count + 1;", "label": "            miss_count <= miss_count + 1;"}
+{"generated": ".clk(dummy_clock),", "label": "    .clk(dummy_clock),"}
+{"generated": "master_key <<< 13;", "label": "        a = {master_key[66:0],master_key[79:67]};"}
+{"generated": "\tSPI_SLAVE #(MEM_DEPTH, ADDR_SIZE) SPI_SLAVE_inst (\r       .CLK(clk),\r       .RST(rst_n),\r       .MOSI(MOSI),\r       .SS_", "label": "    SPI_SLAVE #(.ADDR_SIZE(ADDR_SIZE)) SLAVE (.CLK(clk), .RST(rst_n), .SS_n(SS_n), .MOSI(MOSI),\r"}
+{"generated": "\rblack_cell Arr2_black_cell2(in_Pk[4], in_Gk[4], in_Pk[6], in_Gk[6], out_Gk[6], out_Pk[6]);\rblack", "label": "black_cell Arr2_black_cell2(in_Pk[4], in_Gk[4], in_Pk[6], in_Gk[6], out_Gk[6], out_Pk[6]);\r"}
+{"generated": "\tfull_adder F1(S[2], S[3], Carries[0], P[2], Carries[1]);", "label": "    half_adder H2(S[2], S[3], G[0], Carries[1]);"}
+{"generated": "begin        valid=1'b1;        temp_selx=3'b001;      end      else if((haddr>=8'h8C00_0000) && haddr< (", "label": "valid=1'b1;"}
+{"generated": "\tRegWrite <= 0;\r\t\t\t\tMemRead <=0;\r\t\t\t\tMemWrite <=0;\r\t\t\t\tbranch <= 0;\t\t\t\t\t\t\t\t\t\t\t\r\t\t\t\tALUOp_out <= 2'b10;\r", "label": "\t\t\t\tRegWrite <= 0;\r"}
+{"generated": "end", "label": "#10 test_bench(32'b000000_00000_00001_00000_00011_000000,32'bx,32'h111,32'h888,3'b000);"}
+{"generated": "else if (op_code == 4'b0110 )begin\t\t\tRegfile[rt_offset] = alu_input;\tend", "label": "\telse if (op_code == 4'b0110 )begin\t"}
+{"generated": "wire       Student_SS_2_PSEL;", "label": "    wire [3:0] Student_SS_2_PSEL;"}
+{"generated": "\tcase (selector)\r\t\t3'b000: begin // SUM\r\t\t\t{flagC, R} = A + B;\r\t\tend\r\t\t3'b001: begin // SUB\r\t\t\t", "label": "\t\tflagC = 1'b0;\r"}
+{"generated": "r = eqa ^ b;                end            default:                begin                    r = 32'bx;                end        endcase    endendmodule", "label": "                    r = eqa ^ b;"}
+{"generated": "initial begin    clk = 0;    forever #5 clk = ~clk;end", "label": "initial begin"}
+{"generated": "\tif (areset) begin", "label": "\t\tif (areset)"}
+{"generated": "parameter ALMOST_FULL_GAP \t= 3\t\t;parameter ALMOST_EMPTY_GAP \t= 3\t\t;parameter FIFO_DEEP \t= 8\t\t;", "label": "parameter ALMOST_FULL_GAP = 3;"}
+{"generated": "\r// 6 bit register \r\r  always @ (posedge clk) begin\r\r    if (reset) begin\r      num_gen <= 5'b01101;\r    end\r\r    else begin\r      num", "label": "  always @(posedge clk ) begin\r"}
+{"generated": "clk=0;", "label": "       clk = 1'b0;"}
+{"generated": "//  H_sync_cycle = H_sync_pulse + H_back_porch + H_visable_area + H_front_porch", "label": "--  O->vertical line total length :vert_line"}
+{"generated": "module judge_collision(", "label": "    hecatia_y = 120;"}
+{"generated": ";                    if(tmp_new_ball_v_y <= 200)                        new_ball_v_y <= tmp_new_ball_v_y;                    else                        new_ball_v_y <= ", "label": "                        new_ball_v_y <= tmp_new_ball_v_y;"}
+{"generated": "if (reset) begin {MotorOut} <= 0; end    case({EQU, Zero})        0: begin end        1: begin            if (fb) begin {MotorOut} <= 2'b10; end", "label": "        if (reset) begin"}
+{"generated": "_rden_a\t\t\t\t\t\t\t<= 1'b0;\t\t\t\t\t\t\t\t\t//clean all signal\r", "label": "#(parameter"}
+{"generated": "always @(posedge S_AXI_ACLK)\tbegin\t  if (S_AXI_ARESETN == 1'b0)    begin      axi_rvalid <= 0;      axi_rdata  <= ", "label": "\talways @(posedge S_AXI_ACLK)"}
+{"generated": "\tclkgen_200kHz clkgen(       .clk_100MHz(CLK100MHZ),       .clk_200kHz(w_200kHz)    );        //", "label": "    clkgen_200kHz cgen("}
+{"generated": "d_ff d3(.clk(clk),.din(o3),.dout(w2),.rst());", "label": "d_ff d3(.clk(clk),.din(o3),.dout(dout),.rst());"}
+{"generated": "`timescale 1us / 1ps", "label": "        approaching <= 0;"}
+{"generated": "\tmips.Mem[5]=32'h0ce77800;\tmips.Mem[6]=32'h0ce77800;\tmips.Mem[7]=32", "label": "\tmips.Mem[5]=32'h20022200;"}
+{"generated": "\tsoft_reset_1<=0;\rend\r\ralways @(*)begin\r\tif(~read_enb_2 && count2>=30)\r\tsoft_reset_2<=1;\r\telse\r\t", "label": "\tsoft_reset_1<=0;\r"}
+{"generated": "  DFFQX1 \\Mi__reg[4][5]  (.D(n1657),.CK(clk),.Q(M4[5]) );  DFFQX1 \\Mi__reg[4", "label": "        \\U3/U161/Z_6 ) );"}
+{"generated": " parameter WIDTH=4;\r  //inputs\rinput clk,reset;\r  //outputs\routput reg [WIDTH-1:0] count;\r\ralways@(posedge clk)\rbegin\rif(reset)\rcount={~", "label": "parameter WIDTH=4;\r"}
+{"generated": "output                               PREADY,", "label": "    output                              PREADY,"}
+{"generated": "wire signed[OUT_WIDTH-1:0] conv0, conv1, conv2, conv3;", "label": "wire signed[OUT_WIDTH-1:0] conv0, conv1, conv2, conv3;"}
+{"generated": "\rand(P[1], A[1], B[0]);\r", "label": "and(c1, A[0], B[1]);\r"}
+{"generated": "Y(n251) );  INV_X1M_A9TR U169 (.A(b[3]),.Y(n250) );  INV_X1M_A9", "label": "  AO22_X1M_A9TR U33 ( .A0(N41), .A1(n410), .B0(N16), .B1(s), .Y(d[4]) );"}
+{"generated": "\tComparator_Grt_3  =0;\r\t\tend\r\telse if(Comparator_In == Price)\r\t\tbegin\r\t\t\tComparator_Less_3 =0;\r\t\t\tComparator_Eql_3", "label": "\t\t\tComparator_Grt_3  =0;\r"}
+{"generated": "//\t\tpower1 <= 1'b0;\t\tpower2 <= 1'b0;\t\tpower3 <= 1'b0;\t\tpower4 <= 1'b0;\t\t#20", "label": "\t\tpower1 <= 1'b0;"}
+{"generated": "3],        rdata_way0[2],        rdata_way0[1],        rdata_way0[0]    };    assign cacheline_old_way1 = {        rdata_way1[1", "label": "        rdata_way1[8],"}
+{"generated": "            4'd6:Out=In2<<In1;//sll\r            4'd7:Out=In2>>In1;//sra\r            4'd8:Out=In2>>>In1;//srl\r            4'd", "label": "        case(OpCode)\r"}
+{"generated": "always @(posedge clk_i) begin    if (rst_i) begin        core_list_find_comp <= 0;        core_list_reverse_comp <= 0;        core_state_transition_comp", "label": "reg main_start, main_end;"}
+{"generated": "output match;", "label": "output reg [ENTRY_WIDTH-1:0] match_addr;"}
+{"generated": "assign sum_out = out[bw_psum-1:0];", "label": "  always @(posedge clk) begin"}
+{"generated": "if(~rst_n) begin      a = 1;      b = 0;      c = 1;      f1 = 1;    end    else begin      f1 = a | b;      f2 =", "label": "    if (~rst_n) begin"}
+{"generated": "#600 $finish;", "label": "\t#600 $finish;"}
+{"generated": "parameter over =  2'b10)", "label": "parameter hold =  2'b10,"}
+{"generated": "#10 a = 1; b = 1; c = 1;    #10 $finish;endendmodule", "label": "    #10 a = 1; b = 1; c = 1;"}
+{"generated": "\rreg external_start;\r\r//for the connections between OnePixel and DrawBox\rreg [9:0]startx;\rreg [9:0]starty;\rreg [23:0]color;\rreg", "label": "wire [23:0]data;\r"}
+{"generated": ";\r\t\t\t end\r\t\t\t \r    else\r\t\r\tbegin\r\t\r\t\r\t\r\t\r\t\r\t\r\t\r\t\r\t\r\t\r\t\r\t\r\t\r\t\r\t\r\t\r\t\r\t", "label": "\t\t\t\t4'b0101: alu_out <=a|b;\r"}
+{"generated": "\ta = 1'b1; b = 1'b0;\r        #100\r        // Test case 4\r        a = 1'b1; b = 1'b1;\r   ", "label": "        a = 1'b1; b = 1'b0;\r"}
+{"generated": "`OPCODE_LUI_C, `OPCODE_AUIPC_C: begin                o_control_vector[`CTRL_REG_FILE_WR_BIT]  = 1'b1; // WE REG_FILE                o_", "label": "            `OPCODE_LUI_C, `OPCODE_AUIPC_C: begin"}
+{"generated": "(alu_op == ALUOP_SLL)? (op1 << op2[4:0]) :                    (alu_op == ALUOP_SRA)? (op1_signed >>> op2[4:", "label": "                    (alu_op == ALUOP_SLL) ? (op1 << op2[4:0]) :"}
+{"generated": " initial #50 $finish;\rendmodule \r\t\r\r", "label": " initial #50 $finish;\r"}
+{"generated": "\t.LIT_OUT (`LIT_OUT)\r) u_R4 (\r   .clk(clk),\r   .rst_n(rst_n),\r   .LIT_in(R4_DATA_i),\r", "label": "    .LIT_OUT (`LIT_OUT)\r"}
+{"generated": "module ALU (", "label": "                                ALUCtl <= 4'b0000;"}
+{"generated": "valid <= 'd0;end// get opreg [7 :0]          r_arp_op                    ;always@(posedge i_clk or posedge i_rst)begin    if (i_rst)        r_", "label": "    else if (r_arp_cnt >= 6 && r_arp_cnt <= 7 && ri_mac_valid)"}
+{"generated": "alu_slice _i6 (op, i0[6], i1[6], c[5], o[6], c[6]);   alu_slice _i7 (op, i0[7], i1[", "label": "   alu_slice _i6 (op, i0[6], i1[6], c[5], o[6], c[6]);"}
+{"generated": "4'b1101: group1 = 4'b1101;        4'b1110: group1 = 4'b1110;        4'b1111:", "label": "        4'b1101: group1 = 4'b1101;"}
+{"generated": "/**", "label": "            4: l1 = `four;"}
+{"generated": "output reg                                 Zero_flag );", "label": "output reg                                   Zero_flag "}
+{"generated": ":0][KEY_OFFSET_WIDTH-1:0]     w_key_offset;\r  wire  [RULE_NUM-1:0][TYPE_NUM-1:0]                  w_type_rules;\r ", "label": "  genvar idx;\r"}
+{"generated": "initial begin", "label": "    initial begin"}
+{"generated": "// Path: B_ICC2018_priliminary_grad_cell_based-20231216T060347Z-001/B_ICC2", "label": "                 if(flag1 == 1'b1)"}
+{"generated": "( (USE_RESET_REQUEST_IN2 == 1)? reset_req_in2 : 1'b0)  |", "label": "                              ( (USE_RESET_REQUEST_IN2 == 1) ? reset_req_in2 : 1'b0)  |"}
+{"generated": "\tmux_32_3bit            mux_dh1(read_data1, ch1_out, ch2_out, {fa_d, fb_d}, mux_dh1_out);\r", "label": "    forwarding_unit        fu(id_dh_out, id_out[9:5], ex_out[4:0], wb_out[4:0], ex_out[106], wb_out[70], fa, fb);\r"}
+{"generated": "`define SKY130_FD_SC_HD__UDP_MUX_2TO1_V", "label": "`define SKY130_FD_SC_HD__UDP_MUX_2TO1_V"}
+{"generated": "//    output reg RVALID,    // write address channel    input wire AWVALID,    input wire [3", "label": "    output reg [31:0] RDATA,"}
+{"generated": " assign zero = (Y == 0)? 1'b1 : 1'b0;\rendmodule\r", "label": "assign zero = (Y == 0) ? 1 : 0;\r"}
+{"generated": "[177:176];      10'd89: rg_ram_rd_a_res$D_IN = rd_data_vec_rga[179:178];      10", "label": "      10'd92: rg_ram_rd_a_res$D_IN = rd_data_vec_rga[185:184];"}
+{"generated": "clk_IBUF_BUFG),", "label": "        clk = ~clk;"}
+{"generated": "joshua-moore/joshua-moore.github.io/README.md", "label": "    if (s2 == 3'b000|| s2 == 3'b001|| s2 == 3'b010 || s2 == 3'b100) begin"}
+{"generated": ") u_ahb_lite_ms_model (   .clk (clk),   .rstn (rstn),   .hreadyout (hreadyout),   .hrdata (hrdata),   .hresp (h", "label": ") u_ahb_lite_ms_model ("}
+{"generated": " PC_Adder pcadd(pc, nextpc);    InstructionMem im(pc, instOut);    IFIDreg ifid(instOut, clk, dinstOut);    //ID    ControlUnit cu(dinstOut[", "label": "    InstructionMem IMEM(pc, instOut);"}
+{"generated": "else if((write_enb) && (!full))          mem[wr_pointer[3:0]] <= data_in;     end    // ------Read Pointer------    always@(posedge clock)     begin      if(!resetn", "label": "      else if(write_enb&&(~full))   "}
+{"generated": "MemWrite_MEM <= 0;            MemtoReg_MEM <= 0;            RegWrAddr_MEM <= 0;            ALUout_MEM <= 0;            PC_MEM <= 0;            Data2_", "label": "            MemWrite_MEM <= 0;"}
+{"generated": "bm b1(q,a,b,clk);", "label": "  parameter st=400;"}
+{"generated": "assign rempty_val = (rbinnext==rq2_wptr);", "label": " assign rempty_val = (rgraynext == rq2_wptr);"}
+{"generated": " reg[7:0] A,B;", "label": " reg[7:0] A,B;"}
+{"generated": "`timescale 1ns/10psmodule CLE ( clk, reset, rom_q, rom_a, sram_q, sram_a, sram_d, sram_wen, finish);input        ", "label": "\t\t\t\t\tsymbol <= symbol + 1;"}
+{"generated": ".read_enb_0(read_enb_0), \r\t\t\t\t.read_enb_1(read_enb_1), \r\t\t\t\t.read_enb_2(read_enb_2), \r", "label": "\t\t\t\t .read_enb_0(read_enb_0), \r"}
+{"generated": "ALU1 ALU9(A[9], B[9], COUT[8], AInvert, BNegate, 0, Op, Result[9], COUT[9]);    ALU1 ALU10(", "label": "    ALU1 ALU9(A[9], B[9], COUT[8], AInvert, BNegate, 0, Op, Result[9], COUT[9]);"}
+{"generated": "task test_serin;", "label": "  task test_serin;"}
+{"generated": "`timescale 1ns / 10ps", "label": "\t\t  .user_clk(user_clk),"}
+{"generated": " input                     rd_aclr;  input                     wr_aclr;  input                     rdclk;  input                     wrclk;  input       [width-1:0]   data;  input                     rdreq;  input                     wr", "label": "      for(integer idx=0; idx<words; idx=idx+1)"}
+{"generated": "initial begin    $readmemh(\"test//test.hex\", ram);end", "label": "    genvar idx;"}
+{"generated": "parameter T = 10;", "label": "        initial wb_clk = 0;"}
+{"generated": "2'b10: current_digit <= dig2;\r      2'b11: current_digit <= negative_sign? 4'b1010 : 4'b1011;\r      default", "label": "      2'b10: current_digit <= dig2;\r"}
+{"generated": "sig_start_laser[23:16]  <= uart_rx_data_o;", "label": "        if(cnt==8'd24)begin"}
+{"generated": "\tLAST_CLK = _CLK;", "label": "\t LAST_CLK = _CLK;"}
+{"generated": "end", "label": "          mem_copy[i] = 9;"}
+{"generated": "//    reg [31:0] Gap;    reg [31:0] Gap_cnt;    reg [31:0] Gap_cnt2;    reg [31:0] Gap_", "label": "    reg [31:0] Gap;"}
+{"generated": " //                  output               r_empty,\r                   input [D_BITS-1 :0] w_data,\r                   input                w_inc,r_inc,\r                   input                w_clk,r_clk,\r                  ", "label": "                   output               r_empty,\r"}
+{"generated": "module bram_dp_128x2048 (clka,clkb,ena,enb,wea,web,addra,addrb,dia,dib,doa,dob);", "label": "        ram[addrb] <= dib;"}
+{"generated": "`timescale 1ns / 1ps/******************************************************************** Module: mux.v* Project: femtoRV32* Authors: Fekry Mohamed & Mario", "label": "        end else begin"}
+{"generated": "/lab0/part1/fullAdder.v", "label": "        insts[28] = 8'b0; insts[29] = 8'b0; insts[30] = 8'b0; insts[31] = 8'b0;"}
+{"generated": "always @ (posedge inputObj) begin        if(Index == 0) begin            Index <= 19;        end        else begin            Index <= Index - 1;        end        dataBit <= data[Index];   ", "label": "    always @ (X) begin"}
+{"generated": "\tinitial begin", "label": "  \tinitial begin    "}
+{"generated": "module half_sub(", "label": "module half_sub("}
+{"generated": "always @(*) begin\r", "label": "    always @(posedge clk) begin"}
+{"generated": "\tif ( S_AXI_ARESETN == 1'b0 )\r\t    begin\r\t      axi_bvalid  <= 0;\r\t      axi_bresp   <= 2'b0;\r", "label": "\t  if ( S_AXI_ARESETN == 1'b0 )\r"}
+{"generated": "r_SM_Main <= s_IDLE;          end // case: s_IDLE          s_RX_START_BIT :          begin            // Check middle of start bit to make sure it's still low            if (r_Clock_", "label": "              r_SM_Main <= s_IDLE;"}
+{"generated": "`timescale 1ns / 1ps", "label": "    xor x3(B2,B[2],m);"}
+{"generated": "\tif(memwrite)\r", "label": "    if(memwrite)\r"}
+{"generated": "\treg [31:0] newHipAdd;", "label": "\treg [31:0] newHipAdd;"}
+{"generated": "h24;\r    parameter OR=6'h25;\r    parameter XOR=6'h26;\r    parameter NOR=6'h27;\r    parameter SLT=6'h2a;\r", "label": "    assign Jump=(((OpCode==R)&&((Funct==JR)||(Funct==JALR)))||((OpCode==J)||(OpCode==JAL)))?1:0;\r"}
+{"generated": "\t.RegWrite(RegWrite),\r\t\t.ImmSrc(ImmSrc),\r\t\t.ALUSrc(ALUSrc),\r\t\t.ALUControl(ALUControl),\r\t\t.MemWrite(Mem", "label": "\t\t.RegWrite(RegWrite),\r"}
+{"generated": "#10 A=1; B=0; K2 = 1; K1 = 0; K0 = 1; Cin = (K1); #10 A=1; B=0; K2 =", "label": "#10 A=1; B=0; K2 = 1; K1 = 0; K0 = 1; Cin = (K1);"}
+{"generated": "exp_adjust =  exp_adjust-1'b1;        end    endSign = A_sign;Mantissa = Temp_Mantissa[22:0];Exponent = exp_adjust;result = {Sign,", "label": "           exp_adjust =  exp_adjust-1'b1;"}
+{"generated": "module DCT_1D_Data_Path(\r", "label": ".Data_In(In_Data),\r"}
+{"generated": "val info: CONNECT: @data_b 0 0 32 0 data_b 0 0 32 0\r", "label": "   input  wire            a_wr,\r"}
+{"generated": "assign a[1] = num[1] & ~num[2] & ~num[3] & ~num[4] & ~num[5] & ~num[6] & ~num[7];    assign a[", "label": "    assign a[1] = num[1] & ~num[2] & ~num[3] & ~num[4] & ~num[5] & ~num[6] & ~num[7];"}
+{"generated": "//    wire c_in", "label": "    output [n - 1:0] s,"}
+{"generated": "\t.din (din),", "label": "\t\t.din (din),"}
+{"generated": "begin", "label": "        for (out = 0; out < IN_SIZE && in[out] !== 1; out = out + 1) begin"}
+{"generated": "always @ (posedge clk) begin  ", "label": "     always @ (posedge clk) "}
+{"generated": "module DCT_1D_D_Flip_Flop_2(\r", "label": "Data_1_Sub_6_G,\r"}
+{"generated": "`timescale 1ns / 1ps///////////////////////////////////////////////////////////// Onur Yavri - 150220760                                //// Erbl", "label": "    Memory _Memory("}
+{"generated": "\t.in3(z[3]),\t.s(s3),.c(c3));full_adder f4(.in1(s1),.in2(s2),\t.in3(s3),\t", "label": ".in3(z[3]),\t"}
+{"generated": " *                     and inverted select * * Verilog primitive definition. * * Warning: This file is autogenerated, do not modify directly! */module sky130_fd_sc_hd__udp_mux_2to1_N (Y", "label": " * Verilog primitive definition."}
+{"generated": " state <= AB;\r                        reg_counter <= reg_counter - 1'b1;\r                        reg_dir <= 1'b0;\r                    end\r                    else begin\r//                        next_state <= AA;\r                       ", "label": "                        state <= AB;\r"}
+{"generated": "input [5:0] FunctionCode,", "label": "input [5:0] Funct,"}
+{"generated": ".clk_out(clk_out)  );  // Clock generation  initial begin    clk1 = 1'b0;    clk2 = 1'b0;    forever #(CLK_PERIOD / 2) clk1", "label": "    .clk_out(clk_out)"}
+{"generated": ">>>>>>> 7ab1cd2eac5cb73e977a5e807d15ffd88a70e749", "label": ">>>>>>> 7ab1cd2eac5cb73e977a5e807d15ffd88a70e749"}
+{"generated": "reg \t[RAM_ADDR_BITS-1:0]\tdram_addr;", "label": "reg\t\t[4:0]\t\t\t\topcode;"}
+{"generated": "reg [7:0]InputNumber;", "label": "    reg [7:0] inp=10;"}
+{"generated": "$time,x,y,cin,s,cout,overflow);     endendmodule", "label": "            $time, x, y, cin, s, cout, overflow);"}
+{"generated": "\talways @(*) begin        ctrlFetch = 0;        if (ctrlJAL &&!halt) begin    // Se hace JAL(R)            newPC = nextPCJal;            ctrlFetch = reset_jal_", "label": "    always @(*) begin"}
+{"generated": " output [7:0] reg_c1, reg_alu;\r\r    reg [7:0] reg_c1, reg_alu;\r\r    always @ (posedge clk)\r        if (reset)\r            begin", "label": "    wire [7:0] w1, w2;\r"}
+{"generated": "( pixel_x>=119 && pixel_x<=130 && pixel_y>=150 && pixel_y<=250 )||", "label": "               ( pixel_x>=119 && pixel_x<=139 && pixel_y>=130 && pixel_y<=230 )||"}
+{"generated": " //    (* DONT_TOUCH = \"true\" *) nand nand_0 (nand_out, RO_enable, RO_out);\r     (* DONT_TOUCH = \"true\" *) not not_0 (", "label": "     (* DONT_TOUCH = \"true\" *) not not_0 (not_0_out, nand_out);\r"}
+{"generated": "\tassign out = (Ep)? value : 4'b0000;", "label": "\t\tassign\tout = value;"}
+{"generated": "end\t\tend\t\tRX_STATE_DATA: begin\t\t\t/*\t\t\t* Sample the middle of each bit, and shift the\t\t\t* data into the scratch register.\t\t\t*/\t\t\tif (sample == 7)", "label": "\t\t\t\tsample <= 0;"}
+{"generated": "//    end     else if(r_clk_cnt == (P_CLK_DIV_CNT >> 1) - 1) begin        ro_o_clk_div <= ~ro_o_clk_div;    end", "label": "    end else if(r_clk_cnt == (P_CLK_DIV_CNT >> 1) - 1) begin"}
+{"generated": " assign detect = btn_debounce & ~btn_shift;\r\r// Set interrupt_flag\ralways @(posedge clk_out or posedge rst) begin\r    if(rst)\r        interrupt_flag <= 0;", "label": "assign detect = ~btn_shift & btn_debounce;  \r"}
+{"generated": "\tLPM_MUX_component.lpm_widths = 1;\r\r\rendmodule\r\r// ============================================================\r// CNX file retrieval info\r// ============================================================\r// Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY", "label": "\t\tLPM_MUX_component.lpm_widths = 1;\r"}
+{"generated": "module case(", "label": "module verilogcase("}
+{"generated": "and and7(na0_b0, a0_inv, B[0]);and and8(a0_nb0, A[0], b0_inv);nor nor1(x3, na3_b", "label": "and and7(na0_b0 , a0_inv , B[0]);"}
+{"generated": "\tGSR_int = 1'b0;\tPRLD_int = 1'b0;", "label": "\tGSR_int = 1'b0;"}
+{"generated": "WriteAddr<=5'b00000;\r            EX_MEM_ALUOut<=32'h00000000;\r            EX_MEM_PC_4<=32'h0", "label": "            EX_MEM_MemRead<=ID_EX_MemRead;\r"}
+{"generated": "counter<=counter+1;        read_available<=0;        end        else begin        counter<=0;        read_available<=1;        end    end    generate    if (!CPHA) begin    always@(negedge rst", "label": "        counter<=counter+1;"}
+{"generated": "if(lwstall) begin", "label": "StallF  = lwstall || branchstall ;"}
+{"generated": "module rw_result_led(", "label": "module rw_result_led "}
+{"generated": "for(k=0;k<32;k=k+1)", "label": "    for(k=0;k<32;k=k+1)"}
+{"generated": "reg CMP_Flag_Comp;", "label": "reg CMP_Flag_Comp;"}
+{"generated": "\t.ALUop(ALUop), \r   .clk(clk), \r   .reset(reset), \r   .Result(Result)\r);\r\rinitial begin\r    // Initialize Inputs\r    A = 0;\r", "label": "    .ALUop(ALUop), \r"}
+{"generated": "else if(Temp_Mantissa[46])begin    Mantissa = Temp_Mantissa[45:23];     Exponent =  Temp_Exponent;   end  else if (!Temp_Mantissa", "label": "  else if(Temp_Mantissa[46])begin"}
+{"generated": "#1 q <= register;            end        join    endendmodule", "label": "                q <= register;"}
+{"generated": "00_AXI_ADDR_WIDTH-1 : 0] s00_axi_awaddr,\t\tinput wire [2 : 0] s00_axi_awprot,\t\tinput wire  s00", "label": "\t\tinput wire [2 : 0] s00_axi_arprot,"}
+{"generated": "jmp_pc <= i_if_pc + b_imm;                                end                    `F3_BGE:    begin                                jmp_stall <= ($signed(r1_reg) >= $signed(r2_reg));                                jmp", "label": "                                jmp_pc <= i_if_pc + b_imm;"}
+{"generated": "}} ;        data1_reg   = {((width + 1)/2) {2'b10}} ;        full_reg    = 1'b0 ;        empty_reg   = 1'b1 ;", "label": "             empty_reg <= `BSV_ASSIGNMENT_DELAY 1'b0;"}
+{"generated": "\tLED1_blinkblink_1 <= 1'b0;\r    end\rend\r\rendmodule", "label": "        LED1_blinkblink_1 <= 1'b0;\r"}
+{"generated": "// ---------------------------------------------------------------------------------------------------------// --  I_blc_r_value   //  -- I_blc_gr_", "label": "\t\t.O_video_dat \t\t\t\t\t\t(video_dpc_dat\t\t\t)"}
+{"generated": "\r    reg [7:0] reg_c1, reg_alu;\r    wire [7:0] c1, alu;\r    \r    hw2_nonpipe_syn n1 (a, b, c", "label": "    assign w2 = c;\r"}
+{"generated": "input                                   S_AXI_WVALID,      output                                                  S_AXI_WREADY,    input[3:0]                              S_AXI_WSTRB,    // \"Send Write Response\"                -- Master --    -- Slave --", "label": "    input                                   S_AXI_WVALID,"}
+{"generated": "        wire [ADDRSIZE-1:0] waddr, raddr;\r", "label": "        wire [ADDRSIZE-1:0] read_address,"}
+{"generated": "$display ( \"732 em binario = %8b\", b3 );$display ( \"321 em binario = %8b\", b4 );$display ( \"364 em binario = %8b", "label": "$display ( \"732 em binario = %8b\", b3 );"}
+{"generated": "default: out = 0;        endcase    endendmodule", "label": "            default: out = 32'b0;"}
+{"generated": "assign almost_empty_data = 0;    endgenerate    // --------------------------------------------------    // Avalon-MM Control Register    // --------------------------------------------------    always @(posedge clk or posedge reset) begin        if (reset) begin            almost", "label": "      assign almost_empty_data = 0;"}
+{"generated": "\tif (~freeze) begin\r        pipe_x_next = pipe_x - 1;  // Move the pipe to the left\r        gap_y_next = gap_y;  // Don't move the gap\r\t", "label": "        if (pipe_x == 0) begin\r"}
+{"generated": "\r//    wire [3:0] diceout1 ;\r//    wire [3:0] diceout2 ;\r\r    wire [3:0] sum_w ;\r    wire win_w, loose_w, press", "label": "    reg [3:0] sum;\r"}
+{"generated": "param load$A10\t= 1.0;\r\tspecparam load$A11\t= 1.0;\r\tspecparam load$A12\t= 1.0;\r\tspecparam load", "label": "\tspecparam fall$A13$Q\t= 0.000:0.000:0.000;\r"}
+{"generated": "    output reg busy,", "label": "    input finish,"}
+{"generated": "`timescale 1ns / 1ps", "label": "  reg [7:0] dat1, dat2, dat3, dat4, dat5, dat6, dat7, dat8;"}
+{"generated": "\tlocalparam RIGHT = 2'b11;", "label": "\tlocalparam RIGHT = 2'b11;"}
+{"generated": "//                $display(\"Input2:", "label": "                if($signed(input2) < $signed(input1)) begin"}
+{"generated": "input [3:0] ALU_CTRL,    output ZERO,    output [31:0] ALU_RESULT    );    reg [31:0] ALU_RESULT_REG;    reg ZERO_REG;", "label": "    input [3:0] ALU_CTRL,"}
+{"generated": "input tx_start;", "label": "input tx_start;"}
+{"generated": "module RAM_TB();", "label": "module RAM_TB;"}
+{"generated": "\r     {carry,o_ALU_Res_E}=i_SrcA_E*i_SrcB_E;\r   end\rMULU   : \r   begin\r     {carry,o_ALU_Res", "label": "     {carry,o_ALU_Res_E}= {1'b0,U_A%U_B};\r"}
+{"generated": "`define DATA_WIDTH 32`define BUS_WIDTH 32`define ADDR_WIDTH 32`define REG_NUM 32`", "label": "   output                      s0_ren,"}
+{"generated": "#10 rst = 0;    #200 $finish;  end    initial begin    $dumpfile(\"ring_counter_tb.vcd\");    $dumpvars(0, tb_ring_counter);    #", "label": "    #10 rst = 0;"}
+{"generated": "reg\t\t\t\t\t\t\t\trd_rst\t\t;reg\t\t\t\t\t\t\t\trd_en\t\t;wire\t\t[`DATA_WIDTH-1:0]\t\trd_data\t\t;wire\t\t\t\t\t\t\talmost_empty;wire\t\t\t\t\t\t\tempty\t", "label": "reg\t\t\t\t\t\t\t\trd_rst\t\t;"}
+{"generated": "\routput Coffee_LCD_RS;\routput [7:0] Coffee_LCD_DATA;\routput [6:0] Coffee_Data1;\r\rwire Coffee_Less_3;\rwire Coffee", "label": "output Coffee_LCD_RS;\r"}
+{"generated": "always @(posedge clk) begin    if(~reset_n || shake_delta_timer==1_000_000 || P == S_MAIN_WAIT) begin        shake_delta_timer <= ", "label": "  always @(posedge clk) begin"}
+{"generated": "\tif (i < 10) begin", "label": "\tout <= x_vals[i];"}
+{"generated": "end else begin            right_player_location_out = right_player_location;            right_player_health_out = right_player_health;        end    end    always @(posedge clk) begin        // apply movement", "label": "        end else begin"}
+{"generated": "\treg cpol_0,cpol_1;\r", "label": "\treg cpol_0;\r"}
+{"generated": "output [CLSIZE-1 : 0] M_DMEM_data_o,", "label": "    output [CLSIZE-1 : 0] M_DMEM_data_o,"}
+{"generated": "assign Cnotes[6]  = 454545;", "label": "    assign Cnotes[6]  = 454545;"}
+{"generated": "\t\t\t\t\t\tpc_en  <= 1'bx;\r\t\t\t\t\t\tmem_wr <= 1'bx;\r\t\t\t\t\tend\r\tendcase\rend\r\rendmodule ", "label": "\t\t\t\t\t\tpc_en  <= 1'bx;\r"}
+{"generated": "\t\t\tkey_2  <= 1'b0;\t\t\tkey_3  <= 1'b0;\t\t\tkey_4  <= 1'b0;\t\t\tkey_5  <= 1'b", "label": "\t\t\t\tif (last_change == KEY_CODES[8]) key_8  <= 1'b1;"}
+{"generated": "7'b0010011:                  control <= 8'b10100000;  // I type", "label": "            7'b0010011:"}
+{"generated": "reg A = 0; reg C = 0;always @(estado_actual) begin    case(estado_actual)        1:  {A,C}=0;        2:  {A,C}=0;        3", "label": "reg A=0; reg C=0;"}
+{"generated": "8'h1a : subByteReg = 8'ha2;\r        8'h1b : subByteReg = 8'haf;\r        8'h1c : subByteReg = 8'h", "label": "        8'h1a : subByteReg = 8'ha2;\r"}
+{"generated": "/Lab2_E24056512/LabinClass/FA.v", "label": "        $display(\"Error: Your answer is A+B = %d + %d = %d, overflow = %d,\",A_in, B_in, Sum_o, overflow);"}
+{"generated": "\t.start(start),\t.done(done),\t.x(x),\t.y(y)\t);    initial begin\t\t$sdf_annotate(\"./SA_syn.sdf\", u1);        $fsdbDump", "label": "\t.start(start),"}
+{"generated": "DataOut <= DataOut;endendmodule", "label": "        DataOut <= DataOut;"}
+{"generated": ".pc_prev_address(pc_prev_address)    );    fetch_pipe u_fetch_pipe(       .clk(clk),       .jal(jal),       .jalr(jalr),       .branch_out", "label": "        .pc_prev_address(pc_prev_address)"}
+{"generated": "\tassign counter = count;\r\rendmodule", "label": "    assign counter = count;\r"}
+{"generated": "data_reg[DATA_LENGTH-1:0]<=data_in;            end            else begin            data_reg[DATA_LENGTH-1:0]={data_reg[DATA_LENGTH],data_reg[DATA_", "label": "            data_reg[DATA_LENGTH-1:0]<=data_in;"}
+{"generated": "always @(posedge pulse2)  begin    if(!SNGL)      if(SP)        begin         cascReg=3'bzzz;vecFlag=1'b1;        end      else begin        cascReg", "label": "  always @(posedge pulse2 or negedge pulse1)"}
+{"generated": "d_ff u1 (.din(s[0]),.clk(clk),.rst(rst),.dout(s[1]));", "label": "d_ff u1 (.din(s[0]),.clk(clk),.rst(rst),.dout(s[1]));"}
+{"generated": " //           Flag          <= 0 ;\r", "label": "            current_state   <= IDLE ;\r"}
+{"generated": "//// Based on original", "label": "    if (reset | ctrl_rst) begin"}
+{"generated": "  ;        ri_icmp_last  <= i_icmp_last ;        ri_icmp_valid <= i_icmp_valid;    end else begin        ri_icmp_data  <= ri_icmp_data;        ri_", "label": "        ri_icmp_valid <= 'd0;"}
+{"generated": "if (~reset_n_i)            counter_data_for_max <= 0                                                                           ;        else            if(counter_data_for_max < number_of_data && start_i && max_done == 0", "label": "        if (~reset_n_i)"}
+{"generated": " << ADDR_WIDTH;    parameter DATA_WIDTH = 32;    input clk;    input we;    input re;    input [(ADDR_WIDTH-1):0] waddr;    input [(ADDR_WIDTH-1", "label": "    reg [BIT_WIDTH-1:0] RAM [SIZE-1:0];"}
+{"generated": "ALUControl = 3'b000;  3'b001: if (funct7b5 & opb5) ALUControl = 3'b010;  else", "label": " ALUControl = 3'b000; "}
+{"generated": "module uart(    input clk,    input reset,    input start,    input [7:0] data,    output reg tx_busy,    output reg tx_done", "label": "                    baud_count <= 13'd0;"}
+{"generated": " sky130_fd_sc_hd__conb_1 user_proj_example_6 (.VGND(vssd1),   .VNB(vssd1),   .VPB(vccd1),   .", "label": " sky130_fd_sc_hd__conb_1 user_proj_example_8 (.VGND(vssd1),"}
+{"generated": "/src/fighting_game.v", "label": "                left_player_health = left_player_health + 1;"}
+{"generated": " assign notes2 [3]=151515;     assign notes2 [4]=142857;     assign notes2 [5]=127551;     assign notes2 [6]=11", "label": "    assign notes2 [3]=151685; "}
+{"generated": "// If reset_pc is high, then we reset the PC to 0, otherwise we use the output of the incrementer    always @* begin        if (reset_pc == 1'b1)            next_pc = ", "label": "    always @* begin"}
+{"generated": "\t) sequencer_internal (\t\t.clk               (clock_clk),                                //         clock.clk\t\t.reset_n           (reset_sink_reset_n),                       //    reset_sink.reset_n\t", "label": "\t) sequencer_internal ("}
+{"generated": "3:\tcase ({S2,S1})\t\t\t\t0:estado_siguiente=1;\t\t\t\t2:estado_siguiente=4;\t\t\t\tdefault:estado_siguiente=3;\t\t\t  endcase", "label": "\t\t3:\tcase ({S2,S1})"}
+{"generated": "/* Generated by Yosys 0.33+65 (git sha1 934c82254, clang 14.0.0-1", "label": "      3'b010: Result = A & B;"}
+{"generated": "    assign sw = (Op===6'b101011);    assign sh = (Op==6'b101001);    assign sb = (Op", "label": "    assign sw = (Op===6'b101011);"}
+{"generated": "// Path: src/project_1_demo/project_1_demo.sim/sim_1/behav/xsim/xsim.dir/tb_simulation_behav/obj/xsim.dir/gl", "label": "    reg JTAG_RUNTEST_GLBL;"}
+{"generated": "//module declerationmodule ALU_block(  input wire [15:0] A,  input wire [15:0]", "label": "  assign high = (counter == 5'b11111);"}
+{"generated": "initial begin", "label": "initial begin "}
+{"generated": "//        maxPoolArray", "label": "        $readmemb(\"C:\\\\Vivaldo\\\\Project\\\\image3.txt\", imageArray, 0, 48);"}
+{"generated": "\tLCD_LINE2+9:\tLUT_DATA\t<=\thex2char(linha2[11: 8]); \r\tLCD_LINE2+10:\tLUT_DATA\t<=\thex2char(", "label": "\tLCD_LINE2+9:\tLUT_DATA\t<=\thex2char(linha2[11: 8]); \r"}
+{"generated": "module shift_reg (clk,rst,in,out);", "label": "    #25 in = 0;"}
+{"generated": "\talways @(posedge inclk0)\tclk <= clk + 1'b1;", "label": "\talways @(posedge inclk0)"}
+{"generated": "\tend\r\t\t\telse \r\t\t\tbegin\r\t\t\t\tgreen <= 8'h00;\r\t\t\t\tblue <= 8'hff; \r\t\t\t\tred <= 8'h00;\r\t\t\tend\r", "label": "\telse if((wrote_data3)/10 % 10 == 7 && ((vcount<182 && vcount>174 && hcount == 484)|| (vcount == 175 && hcount > 479 && hcount < 455)))begin\r"}
+{"generated": "\t.S_AXI_ARVALID(s_axi_arvalid),\r\t\t.S_AXI_ARREADY(s_axi_arready),\r\t\t.S_AXI_RDATA(s_axi_rdata", "label": "\t\t.S_AXI_ARVALID(s_axi_arvalid),\r"}
+{"generated": "\tend else begin", "label": "\t\tend else begin"}
+{"generated": "module KeyboardDecoder(\tinput wire clk,\tinput wire rst,\tinput wire PS2_DATA,\tinput", "label": "\t\t.PS2_CLK(PS2_CLK),"}
+{"generated": "  {c_out, sum} = a + b + c_in;  ", "label": "    {c_out, sum} = a + b + c_in;  "}
+{"generated": "3'b001:Data_out=8'b00000010;", "label": "          3'b001:Data_out=8'b00000010;"}
+{"generated": "(n616),.CK(clk),.RN(n1417),.Q(        encoding_reverse_flag[1]),.QN(n588) );  DFFRX1 \\state_reg", "label": "        .Y(n264) );"}
+{"generated": "assign nRD = (request == TRUE)? FALSE : TRUE;", "label": "   assign nBUSRQ = request;"}
+{"generated": "wire [31:0] ALUResult_temp;wire [3:0] ALUFlags;wire [3:0] ALUControl;wire [1:0] FlagW;wire [1:0] ImmSrc", "label": "always@(*)begin"}
+{"generated": "\treset <= 1; # 22; reset <= 0;\r    end\r\r    always begin\r        clk <= 1; # 5; clk <= 0; # 5;\r    end\r\r    always @(", "label": "        $readmemh(\"memfile.txt\", dut.block_3.Memory,0,71);\r"}
+{"generated": "out[3] <= 0;    else      out[3] <= out[2];endmodule", "label": "      out[3] <= 0;"}
+{"generated": "`define LB\t3'b000`define LH  3'b001`define LW  3'b010`define LBU 3'b1", "label": "\t\t\trunning = 1;"}
+{"generated": "1'b0)) ", "label": "    uart_tx_data = 8'b01000101;"}
+{"generated": "\t.c0        (vga_clk)", "label": "    .c0        (vga_clk)"}
+{"generated": "// input", "label": "\t\t\tdefault: begin zero<=0; ALU_result <= A; end"}
+{"generated": "wire [15:0] control_reg;  wire [Elements_Num-1:0] of_mat;  wire [BW*Elements_Num-1:0] result_mat;  wire [MAX_DIM-", "label": "  wire [(MAX_DIM*DW)-1:0] vec_a;"}
+{"generated": " for(i=0; i<Width; i=i+1) begin", "label": "   Shift_data = {1'bx, Data_in};"}
+{"generated": "\treg fpga_axi_wvalid;\treg [pDATA_WIDTH-1:0] fpga_axi_wdata;\treg [3:0] fpga_axi_wstrb;\twire fpga_", "label": "\treg \tfpga_axi_wvalid;"}
+{"generated": "TEST_GLBL;    reg JTAG_SEL1_GLBL = 0;    reg JTAG_SEL2_GLBL = 0 ;    reg JTAG_SEL3_GLBL = 0;    reg J", "label": "\t#(GRES_START);"}
+{"generated": "MakePositive #(8) mp_inst2 (     .num(num2),     .is_negative(is_negative2),     .num_positive(num_positive2)  );  assign bin = {num_positive1", "label": "  MakePositive #(8) mp_inst2 ("}
+{"generated": "/HLS/verilog/fir.v", "label": "        q1 <= ram[address1];"}
+{"generated": "    assign addr_invalid = (addr_true", "label": "    assign addr_invalid = addr_true[ADDR_W] || (addr >= i_ubound);"}
+{"generated": " always @(posedge clk or negedge i_reset) begin : main_pwm_behavior\r    if (~i_reset) begin\r        reg_counter <= {NB{1'b0}};\r        reg_out <= ", "label": "always @(posedge clk) begin : pwm_main\r"}
+{"generated": "endmodule", "label": "      else if(!branch) begin"}
+{"generated": "assign data_in_tmp = reset? 0 : data_in;genvar i;generate for (i = 0; i < ROW_NUM; i = i+1) begin: larray_inst", "label": "assign data_in_tmp = reset ? 0 : data_in;"}
+{"generated": " wire         r3_reset = (rclk & rclken) | (reset &!init_state);   ar_dff state_inst (.clk(wclk),.r(r3_reset),.clken(r3", "label": "       rdata <= wdata;"}
+{"generated": "o_immediate[31:12] = i_cur_instruction[31:12];                o_immediate[11:0]  = 12'b0;                 end              // J-immediate:", "label": "                o_immediate[31:12] = i_cur_instruction[31:12];"}
+{"generated": "end", "label": "      end else begin"}
+{"generated": "output reg match);  always @(input_value, loaded_value) begin    if (input_value == loaded_value) begin      match = 1;  // Output high if input matches loaded value    end else begin      match =", "label": "  output reg match"}
+{"generated": "end", "label": "                               case(in_out_cnt)"}
+{"generated": ".i_Clock(i_clk),", "label": "   .i_Clock (i_clk),"}
+{"generated": "] addrb_r;\r    reg [7:0] doutb_r;\r    always @(posedge CLK) begin\r        wea_r <= wea;\r        addrb_r <= addr;\r       ", "label": "    assign green = r_green;\r"}
+{"generated": "wire [16:0] tmp;", "label": "    wire [16:0] tmp;"}
+{"generated": "if(A_tb > B_tb)    begin      if(ALU_OUT_tb == 2)        $display(\"test case 12 is passed and the ALU output = %0d at time %0t", "label": "  if(A_tb > B_tb)"}
+{"generated": "/Introduction to VLSI Design - 16-bit RISC Processor.srcs/sources_1/new/ALU.v", "label": "   6'b001000: ALUControlSignal=3'b110;"}
+{"generated": "\toutput wire Jump);", "label": "\toutput wire Jump"}
+{"generated": "PUF_OUT_REG[31] = 1'b0;                            if (RO64_counter_out > RO65_counter_out) begin                PUF_OUT_REG[32] = ", "label": "                PUF_OUT_REG[31] = 1'b0;"}
+{"generated": "assign\tproduct53\t=\t{{(bw){a[bw*\t54\t-1]}},\ta[bw*\t54\t-1:bw*\t53\t]}\t*\t{{(bw", "label": "     or  G2  (out[i], w1[i], w2[i]);"}
+{"generated": "chosen_index = (3 * 2) + 1;            end          else if (rotatedIRR[4] == 1)            begin              chosen = 16;              chosen_index = (4 * 2", "label": "              chosen_index = (3 * 2) + 1;             "}
+{"generated": "j: rotor_1_output = k;", "label": "    j: rotor_1_output = k;"}
+{"generated": "output sum,  output carry);  assign sum = a ^ b;  assign carry = a & b;endmodulemodule full_adder (  input a,  input b,  input carry_in,  output sum,  output", "label": "  output sum,"}
+{"generated": "output hs,hc;", "label": "output hs,hc;\r"}
+{"generated": "o_tdata<=0;", "label": "        o_tdata<=0;"}
+{"generated": "\tout7 <= array[7];", "label": "\t\tout7 <= array[7];"}
+{"generated": "\t//\t\tWAIT_FOR_VSYNC = 4'd2,\r\t\t\tDRAW_PIXEL = 4'd3,\r\t\t\tDONE = 4'd4,\r\t\t\tERROR = 4'd5;\r\t\t\t", "label": "\t\t\tDRAW = 4'd2,\r"}
+{"generated": "module PWM_improved #(parameter n = 8)(", "label": "module PWM_improved #(parameter R = 8 , timer_bits = 15)("}
+{"generated": " o_RD1_D,\r    output      wire [Data_Width-1:0]          o_RD2_D,\r    output      wire [Address_Width-1:0]       o_RS1_D", "label": "    output      wire                           o_Branch_D,\r"}
+{"generated": "//                AXIS_TVALID", "label": "                delay     <= 200000000;"}
+{"generated": "input                                   S_AXI_RREADY,    //==========================================================================    //================== This is an AXI4-Lite master interface ==================            // \"Specify write address\"              -- Master --    -- Slave --    output[31:", "label": "    input                                   S_AXI_RREADY,"}
+{"generated": "//", "label": "    reg [7:0]buffer_r;"}
+{"generated": " demux_1x2 demux(.y(y),.sel(sel),.d0(d0),.d1(d1));", "label": "    demux_1x2 dem(.y(y), .sel(sel),.d0(d0),.d1(d1));"}
+{"generated": "\rpulseCircuit enter(Clock, Enter, enter_pulse);\rpulseCircuit change(Clock, Change, change_pulse);\r\rCombination_Lock lock(Clock, Resetn, enter_pulse, change_pulse, Alarm, New,", "label": "pulseCircuit ePulse(Clock, Enter, enter_pulse);\r"}
+{"generated": "fifo_wr_en_ff <= 0;    end    else begin      frame_out_ff <= frame_out_nxt;", "label": "      fifo_wr_en_ff <= 0;"}
+{"generated": "module Four_One_mux_new #(parameter N=32)(", "label": "module Four_One_mux_new #(parameter N= 32)(input [N-1:0] A, B, C, D, input [1:0] sel, output reg [N-1:0]  Y);"}
+{"generated": "if(rst_n == 0)", "label": "    if(rst_n == 0)"}
+{"generated": "\tendcase\r", "label": "\t\tattempt2: Y = attempt2;\r"}
+{"generated": "wire w1,w2,w3;", "label": "assign out = sel? in1: in0;"}
+{"generated": "module usb_uvc_top\r//-----------------------------------------------------------------\r// Ports\r//-----------------------------------------------------------------\r(\r    input           clk_i,\r    input           rst_i,\r\r   ", "label": "    ,.ulpi_nxt_i(ulpi_nxt_i)\r"}
+{"generated": "output gnt_0, gnt_1;", "label": "output gnt_0, gnt_1;"}
+{"generated": "end", "label": "   test_vals[23] = 12'h0_0_0;"}
+{"generated": "\t#10 LED1_on = 1'b0;\r", "label": "    #10 LED1_on = 1'b0;\r"}
+{"generated": "\t.HEX0(HEX0)\r    );\r\r    // Assign HEX1 to display '1' when z is 1 and '0' otherwise\r    assign HEX1 = z? 7'b111100", "label": "        .HEX0(HEX0)\r"}
+{"generated": "\tend\r", "label": "\t\tgaloisMultiplyBy3 gm3(colx3[(31-i)-:8],inVector[(31-i)-:8]);\r"}
+{"generated": ">>>>>>> 7ab1cd2eac5cb73e977a5e807d15ffd88a70e749", "label": "        .sobel_out(out_sobel),"}
+{"generated": "wire [XLEN-1 : 0] result_add;", "label": "wire [XLEN-1 : 0] result_add, result_sll, result_slt, result_sltu;"}
+{"generated": "\t.clock(clock), ", "label": "\t\t.clock(clock),"}
+{"generated": "wire [2:0] Carry;    assign CarryOut = Carry[2];    full_adder fa0(       .Sum(Sum[0]),       .Carryout(Carry[0]),       .input", "label": "    wire [3:1] c;"}
+{"generated": "param      tplh$A0$Y = 1.0,      tphl$A0$Y = 1.0,      tplh$A1$Y = 1.0,      tphl$A", "label": "buf I4(flgclk,dG);"}
+{"generated": "\toutput\t  c1;\r\r\twire [0:0] sub_wire2 = 1'h0;\r\twire [4:0] sub_wire3;\r\twire  sub_wire0 = inclk0", "label": "\toutput\t  c1;\r"}
+{"generated": "module LCD_Write (input clk, rst, next, previous, input [7:0] AsciiIn, output [255:0] Symbols);\r", "label": "\t\t\t\t\t\tmLCD_ST\t<=\t3;\r"}
+{"generated": "\tif(TAKEN_BRANCH == 0)\tbegin", "label": "\tif (((EX_MEM_IR [31:26]== beqz)&& ( EX_MEM_cond == 1))||"}
+{"generated": "32;\r", "label": "\tplugboard16: out = plugboard17;\r"}
+{"generated": "_spi_start,    output [DATA_WIDTH - 1 : 0] o_spi_data,    // ADC Setup    input [9:0] i_adc_freq,                             // 100 (1us", "label": "    wire adc_conv_flag;"}
+{"generated": "/README.md", "label": "        .S_AXI_AWPROT(s_axi_awprot),"}
+{"generated": "  = 0;  (* src = \"/home/ubuntu/Chipcron-core-generator/all_stages/id.py:11\" *)  wire [31:0] \\$1 ;  (* src = \"/home", "label": "    (* src = \"/home/ubuntu/Chipcron-core-generator/Wrapper_class.py:68\" *)"}
+{"generated": ".PC_out(instructionTop));", "label": ".PC_out(instructionTop));"}
+{"generated": " esti_bits_1[10:4] = temporarycode[14:8]; \r            esti_bits_1[3:1] = temporarycode[6:4];\r            esti_bits_1", "label": "            esti_bits_1[10:4] = temporarycode[14:8]; \r"}
+{"generated": "\to_TX_Active   <= 1'b0;\r            r_SM_Main     <= IDLE;\r          end\r        end // case: TX_STOP_BIT\r      \r      \r      default :\r       ", "label": "            r_SM_Main     <= IDLE;\r"}
+{"generated": "module hello(clk,RN,NPC,WB_OUT);input clk;input RN;//input EN;integer k;wire  EX_MEM_COND ;reg BR_EN;//I_FETCH STAGE", "label": "    ADD:EX_MEM_ALUOUT <= ID_EX_A + ID_EX_B;"}
+{"generated": "Interpolation_top Interpolation_top_inst(", "label": "Interpolation_top  Interpolation_top_inst"}
+{"generated": "businterface_read = cpu_read &&!businterface_error;        businterface_write = cpu_write &&!businterface_error;    endendmodule", "label": "        businterface_read = cpu_read;"}
+{"generated": "endmodule", "label": "endmodule"}
+{"generated": "endmodule", "label": "endmodule"}
+{"generated": "begin                temp_result = temp_reg2 >> 1;            end            OP_ARITH_LEFT:                temp_result = $signed(temp_reg2) << 1;            OP_ARITH_RIGHT:               ", "label": "                temp_result = { temp_reg2[0], 1'b0, temp_reg2[31:1] };"}
+{"generated": ";\telse\t\tif(cnt_K3 < 2'd3)\t\t\tcnt_K3 <= cnt_K3 + 2'd1;\t\telse\t\t\tcnt_K3 <= 2'd0;end", "label": "\t\t\tif(cnt_K3 == 2'd2 && cnt_K3_on ==1)"}
+{"generated": "ir_val <= 8'b0;\t\t\tend else if (Li) begin", "label": "\t\t\tir_val = 8'b0;\t"}
+{"generated": "module Control_Unit_tb;", "label": "            ICW3: begin"}
+{"generated": "\t\tbegin\t\t\tif(KEY[0] == 1)\t\t\tbegin\t\t\t\tregLED[0] <= 0;\t\t\tend\t\t\tif(KEY[1] == 1)\t\t\tbegin\t\t\t\treg", "label": "\t\t\t\t\t\t\t\t\tRec_cnt<= 27'd0;"}
+{"generated": "module demux_1x2(", "label": "module demux_1x2("}
+{"generated": "_SIZE `WORD_SIZE - `IOFFSET_SIZE - `INDEX_SIZE // bits needed to represent the tag.`define IINDEX_SIZE `INDEX_SIZE // bits needed to represent the index.`define ITAG_SIZE `WORD", "label": "`define IINDEX `INDEX_SIZE+`IOFFSET_SIZE-1:`IOFFSET_SIZE"}
+{"generated": "output [7:0] addr_data,", "label": "    output [7:0] addr_data,"}
+{"generated": ".i_addr             (w_alu_result),       .i_din              (w_rs2),       .o_dout             (w_d_mem_dout)    );    I_MEM I_MEM", "label": "        .i_addr             (w_alu_result),"}
+{"generated": "always @(posedge clk_50m) begin\tif (tx_acc == TX_ACC_MAX[TX_ACC_WIDTH - 1:0])\t\ttx_acc <= 0;\telse\t\ttx_", "label": "always @(posedge clk_50m) begin"}
+{"generated": "parameter CMD_NOP\t\t= 4'd0;", "label": "parameter WRITE\t\t\t= 4'b0000;"}
+{"generated": "2 FILLER_0_8_85 (); sky130_ef_sc_hd__decap_12 FILLER_0_8_97 (); sky130_ef_sc_hd__decap", "label": " sky130_ef_sc_hd__decap_12 FILLER_0_21_125 ();"}
+{"generated": "#1000 $finish;end endmodule", "label": "  #300 $finish;"}
+{"generated": "module pll (", "label": "\t\taltpll_component.port_extclk3 = \"PORT_UNUSED\","}
+{"generated": "// Test 1: continuous = A & ~D | ~(C & D) | (A ^ B)        A = 0; B = 0; C = 0; D = 0;        #10;", "label": "        {A, B, C, D} <= 0; "}
+{"generated": "\tstal_d = lw_stall;\r", "label": "    stal_f = lw_stall;\r"}
+{"generated": ".q\t\t\t\t(read_data),\r\t.usedw\t\t\t(words_used)\r);\rdefparam \r\tSync_FIFO.add_ram_output_register = \"ON\",\r\tSync_FIFO.int", "label": "\tSync_FIFO.overflow_checking\t\t\t= \"OFF\",\r"}
+{"generated": "output [4:0] SEG_SEL;", "label": "\t\toutput [4:0] SEG_SEL;"}
+{"generated": "if (we) RAM[waddr] <= wdi;        if (re) rdo <= RAM[raddr];    endendmodule", "label": "        if(re) rdo <= RAM[raddr];"}
+{"generated": ",", "label": "module authentication("}
+{"generated": "initial begin", "label": "initial h_count = 0;"}
+{"generated": "TR reg_out_reg_11_ (.D(mul[11]),.CK(clk),.R(n1),.Q(d[11])         );  DFFRPQ_X2M_", "label": "  DFFRPQ_X2M_A9TR reg_out_reg_9_ ( .D(mul[9]), .CK(clk), .R(n1), .Q(d[9]) );"}
+{"generated": "3'b000;\rlocalparam  bne  = 3'b001;\rlocalparam  blt  = 3'b100;\rlocalparam  bge  = 3'", "label": "        o_Branch_E=i_carry_E;\r"}
+{"generated": "module controller_fsm(mem_cmd, load_pc, load_ir, reset_pc, addr_sel, load_addr, clk, reset, opcode, op, nsel,", "label": "            Z[1] = 1'b1;"}
+{"generated": "\tend\rend\rendmodule\r", "label": "\t\tif (f2 & f1 & f3 & f0)\r"}
+{"generated": "\tz_tb = $random;\t#10;\t$display(\"x=%d,y=%d,z=%d,s=%d,c=%d\",x_tb,y_tb,z_tb,s", "label": "\tz_tb = $random;"}
+{"generated": "reg signed [31:0] coef_golden[0:10]; // fill in coef", "label": "initial begin"}
+{"generated": "\tinitial begin\r\t\tTw = 100;\r\t\tTr = 100;\r\t\trst = 1;\r\t\trclk = 0;\r\t\twclk = 0;\r", "label": "    integer i, j, k;\r"}
+{"generated": "\t.divideby16(divideby16),\r\t\t.rst(rst)\r\t);\r\talways #10 clk=~clk;\r\tinitial begin\r\t\t// Initialize Inputs\r\t\tclk = ", "label": "\t\t.divideby16(divideby16),\r"}
+{"generated": "// WC.v generated by WCSyn.py\t\td[9] <= 0;\t\td[8] <= (~D[39:30] + ", "label": "\t\td[9] <= (~D[29:20] + 1);"}
+{"generated": "falling_edge\r);\r\r/*****************************************************************************\r *                           Parameter Declarations                          *\r *****************************************************************************/\r\r/*****************************************************************************\r *                             Port Declarations                             *\r *****************************************************************************/\r// Inputs\rinput\t\t\t\tclk;\rinput\t\t\t\treset", "label": " *****************************************************************************/\r"}
+{"generated": "\tcase(control)\r", "label": "\t\tcase(control)\r"}
+{"generated": "\t$display(\"ADDIU\");", "label": "        $display(\"=========================================================================\","}
+{"generated": "//        lreg = continuous;    end    // numOut = (A)? (numIn) : 0    assign numOut = (A)? (numIn) : 0;    // lNumOut = (B", "label": "        lreg <= A & ~D | ~(C & D) | (A ^ B);"}
+{"generated": "begin", "label": "        for (out = 0; out < IN_SIZE && in[out] !== 1; out = out + 1) begin"}
+{"generated": " = 8'b00000110; //       **         11'h249: data = 8'b00000110; //       **         11'h2", "label": "endmodule  "}
+{"generated": "\tend\r", "label": "\t\ttip <=1'b1;\r"}
+{"generated": "\t\t\t\tif(laf_state &&!parity_done)\r\t\t\t\t\tlow_packet_valid<=1'b1;\r\t\t\t\telse if(parity_done)\r\t\t\t\t\tlow_packet_valid<=1'b", "label": "\t\t\t\tif(rst_int_reg)\r"}
+{"generated": "\tmem_se_reg = 1'b0;", "label": "\t\t\tmem_se_reg = 1'b0;"}
+{"generated": "4'd7 : {a, b, c, d, e, f, g} = ~7'b1110000;", "label": "\t\t4'd7 : {a, b, c, d, e, f, g} = ~7'b1110000;"}
+{"generated": "`timescale 1ns / 1nsmodule MP1(    input  clk,    input  rst_n,//RAM write    input  start_MP1,    input", "label": "              end_MP2 <= end_MP2;end"}
+{"generated": "module usb_wrapper(    input  wire       rst_n,    input  wire       clk,    output wire [7:0] data_o,    output wire       rdav,   ", "label": "    .ulpi_stp(ulpi_stp),"}
+{"generated": " code = 10'b001001_1101; next_rd = same; end\r", "label": "\tinitial begin\r"}
+{"generated": "end    endendtask//--- generate burst typetask bt_type_gen;reg [31:0] rand2;begin    rand2 = $random;    if (rand2[7:0] <= 'd12", "label": "        if ((inc_bt_addr[addr_wrap_bloc] != bt_addr[addr_wrap_bloc]) && bt_wrap) begin"}
+{"generated": "always begin", "label": "  initial begin"}
+{"generated": "//       .downscale_data_valid_o(sub_result", "label": "        .start_i(start_i)                                                                                       ,"}
+{"generated": "\twire acu_zero;\twire[1:0] stack_flags;\twire[1:0] stack_control;\twire[15:0] stack_out;\twire[15:0] stack", "label": "\twire acu_zero;"}
+{"generated": "Cout <= Cout + 1;endendmodule", "label": "Cout <= Cout+ 1;"}
+{"generated": " 7'b1101111) begin // jal\r", "label": "                addr <= i_addr;\r"}
+{"generated": " <= 10'b1111110000; dot_raw_reg <= ~{7'b1110111}; end", "label": "reg\t\t\tsw_on;"}
+{"generated": ".duty(duty),", "label": "    .duty(duty),"}
+{"generated": "//    wire JTAG_TRST_GLBL;    wire JTAG_CAPTURE_GLBL;    wire JTAG_RESET_GLBL;    wire JTAG_SHIFT_GLBL;    wire JTAG_UPDATE_GL", "label": "    wire JTAG_TRST_GLBL;"}
+{"generated": "/README.md", "label": "\t\t\t\t\tLui  \t\t= 1'b1;"}
+{"generated": ".CASCADE(CASCADE),", "label": "    .SLAVE_ADRESS(SLAVE_ADRESS),"}
+{"generated": "\toutput\t\t     [1:0]\t\tDRAM_BA,", "label": "\toutput\t\t     [1:0]\t\tDRAM_BA,"}
+{"generated": "\tdivide \tdivide_10hz(\t.clk(clk),\t.rst_n(rst),\t.clkout(clk10h));\t// \u6309\u952e\u6d88\u6296\t", "label": "\tdivide #(.WIDTH(32),.N(1200000)) U1 ( "}
+{"generated": " (mem_stall),\r           .i_DMEM_rdata   (DMEM_rdata[0+:32]),\r           .o_DMEM_cen     (DMEM_cen),\r           .o_", "label": "        .o_stall    (SMEM_stall),\r"}
+{"generated": "mux2X1  ins_25 (.in0(x[5]),.in1(x[7]),.sel(ctrl[1]),.out(y[5]));mux2X1  ins_24 (.in", "label": "mux2X1  ins_25 (.in0(x[5]),.in1(x[7]),.sel(ctrl[1]),.out(y[5]));"}
+{"generated": "\tr_cnt_val <= {P_COUNT_BIT{1'b0}};", "label": "\t\t\tr_cnt_val <= {P_COUNT_BIT{1'b0}};"}
+{"generated": "\tassign {neg, zero, carry, overflow} = Flags;\r", "label": "\tassign {neg, zero, carry, overflow} = Flags;\r"}
+{"generated": "//   timeStamp 2014 6 25 15", "label": "module AO222 ( A2 , C1 , A1 , C2 , B1 , B2 , O );"}
+{"generated": "endmodule", "label": "add3 C13(T[38:35], Y[8:5]);"}
+{"generated": "module exp_2_block ", "label": "        sub_data_valid = 0                                                                                      ;"}
+{"generated": "\t//\t\t\tbird_y <=", "label": "        end else if (skip == 0) begin\r"}
+{"generated": "\tinput [14:12] func3;", "label": "\tinput [14:12] func3;"}
+{"generated": "else i2c_ns=ADDR1_B;           end     RX_ACK_D: begin           if (scl_neg) i2c_ns=RX_DATA;           else i2c_ns=RX_ACK", "label": "           else i2c_ns=ADDR1_B;"}
+{"generated": " * udp_mux_4to2: Four to two multiplexer", "label": " * udp_mux_4to2: Four to one multiplexer with 2 select controls"}
+{"generated": "\treg [ADDR_SIZE-1:0] MEM_ADDR ;\r    reg [ADDR_SIZE-1:0] MEM_ADDR_READ ;\r    reg [ADDR_SIZE-1:0] MEM_ADDR_WRITE", "label": "    integer I ;\r"}
+{"generated": "pb_in_delay <= pb_in;\t\tif(pb_in == 1'b1 & pb_in_delay == 1'b0) pb_out <= 1'b1;\t\telse pb", "label": "\t\tif (pb_in == 1'b1 && pb_in_delay == 1'b0) begin"}
+{"generated": "h_sync_signal <= 1'b0;    endendmodule`endif", "label": "            h_sync_signal <= 1'b0;"}
+{"generated": "\t\t\t\tclk,\t\t\t\t\t\t//The clock come from \r\tinput\t\twire\t\t\t\treset_n,\t\t\t\t\t//hardware reset\r\tinput\t\twire\t[31:0]\t\tdata,\t\t\t\t\t\t//Origin KEY", "label": "\t\tif(datavalid)\r"}
+{"generated": "/lab0/part1/fullAdder.v", "label": "\t\t\tdata_memory[9] <= 8'b0;"}
+{"generated": "\rassign C[3] = G[2] | (P[2]&G[1]) | (P[2]&P[1]&G[0]) | (P[2]&P[1]&P[0]&C", "label": "assign C[3] = G[2] | (P[2]&G[1]) | (P[2]&P[1]&G[0]) | (P[2]&P[1]&P[0]&C[0]);\r"}
+{"generated": "wire [`Lbresp      -1 :0] cpu_bresp;   wire                      cpu_bvalid;   wire                      cpu_bready;   wire                      cpu_clk;   wire                      cpu_resetn;   wire                      cpu", "label": "   wire [`Lbresp      -1 :0] cpu_bresp;"}
+{"generated": "\tassign xten = (ct[3:0] == 4'b1001)? 1'b1 : 1'b0;\r\rendmodule\r", "label": "assign xten  = (ct[3:0] == 4'b1001) ? 1'b1 : 1'b0;\r"}
+{"generated": "\tif (clken) begin", "label": "\t\tif (clken) begin"}
+{"generated": "reg up, ctrl;", "label": "  wire [31:0] counter;"}
+{"generated": "\tinput\t[31:0]\twr_data);", "label": "\t\tinput\t[31:0]\twr_data"}
+{"generated": "reg [ DataMemory_WIDTH - 1 : 0 ] Data_mem [0 : DataMemory_DEPTH - 1  ] ;", "label": "reg [DataMemory_WIDTH - 1 : 0] Data_mem [DataMemory_DEPTH - 1  : 0] ;"}
+{"generated": " clk)din=j; endtask\rtask read(input k); @(negedge clk)re=k; endtask\rinitial\rbegin\rinitialize;\rreset;\r#10;\rfor(m=0;m", "label": "clk)din=j; endtask\r"}
+{"generated": "`timescale 1 ns/10 ps", "label": "        3'b100: data_out=8'b11101111;"}
+{"generated": "4'b0101:out=a+b;        4'b0000:out=a&b;        4'b0001:out=a|b;        4'b00", "label": "        4'b0101:out=a+b;"}
+{"generated": "st_write: begin  next = st_wenable;   endst_wenable: begin  if(valid == 0)next = st_idle;else if(valid==1 && hwrite == 0)next =", "label": "st_write: begin"}
+{"generated": "/project_1/project_1.srcs/sim_1/new/tb.v", "label": "    assign clk_out = sel ? clk2 : clk1;"}
+{"generated": "\rparity_done <= 1'b0;\r\relse if (full_state)\r\rparity_done <= 1'b0;\r\relse\r\rparity_done <= parity_done;\r\rend\r\r", "label": "parity_done <= 1'b0;\r"}
+{"generated": "\talways @(posedge clk) begin\r\t\tfor(i=1; i<`FILTER_SIZE; i+=1) begin\r\t\t\tif(reset)\r\t\t\t\tdelay_line[i] <= 16'd", "label": "\talways @(posedge clk) begin\r"}
+{"generated": "_4\r);\r\r// PORT MAP\rBx_B_single row1 (\r   .clk(clk),.rst(rst),\r   .in(in_1),\r   .out(out_1)\r);", "label": "Bx_B_single row_2 (\r"}
+{"generated": "8'h01 : subByteReg = 8'h7c;\r", "label": "        8'h01 : subByteReg = 8'h7c;\r"}
+{"generated": "parameter const0_00000 = 9'b0_00000000;", "label": "parameter const0_68889 = 9'b0_10110000;"}
+{"generated": "endalways @(posedge clk) begin    if (memwrite)        mem[addr] <= data_W;    data_R_reg <= mem[addr];endassign data_R = data_R_reg;endmodule", "label": "    mem[8] = 32'd8;"}
+{"generated": "module full_adder(", "label": "module full_adder("}
+{"generated": "clk_cnt<=3'd0;        end      else        clk_cnt<=clk_cnt+1'b1;    end  assign ask_code_out=data_in?clk_div:clk;endmodule", "label": "          clk_cnt<=3'd0;"}
+{"generated": " input [n-1:0] x,y,", "label": "       input [n-1:0] x,y,"}
+{"generated": "`timescale 1ns / 1ps//====================================================================================//                        ------->  Revision History  <------//====================================================================================////   Date     Who   Ver  Change", "label": "    assign AXI_BRESP = ASHI_WRESP;"}
+{"generated": "if(!rst_n) begin", "label": "    if(!rst_n) begin"}
+{"generated": " <= 1;\rend\r\rinitial begin\r\t#60;\r\tx1 <= 0;\r\tx2 <= 1;\r\tx3 <= 2;\r\tx4 <= 3;\r\r\t", "label": "        x3 <= x3 + 3;\r"}
+{"generated": "input [n-1:0] duty,", "label": "    input [n-1 :0 ] duty,"}
+{"generated": "SEND_ADDR2 = 5'h06,", "label": "\t\t\t\t\t SEND_ADDR2 = 5'h06,"}
+{"generated": "array[c] = array[position];", "label": "         array[c] = array[position];"}
+{"generated": "#5 clk = ~clk;    end    //instantiate the AND module    AND UUT(       .a(a),       .b(b),       .result(result)    );    initial begin        $dumpfile(\"and.", "label": "        #5 clk = ~clk;"}
+{"generated": "always@(posedge Trigger)        Temp<=Data_In;endmodulemodule Output_Address(input[15:0]LFSR_OUT,input Output_Trigger,output reg[15:0]Address);    always@(", "label": "    always@(posedge Trigger)"}
+{"generated": "output [1:0] ALUControl,    output PCSrc);    wire [1:0] FlagW;    wire PCS, RegW, MemW, NoWire;    Decoder decoder1(Instr, PCS,", "label": "    output [1:0] ALUControl,\t"}
+{"generated": "// This code snippet was auto generated by xls2vlog.py from source file:./user_project_wrapper.xlsx// User: josh// Date:", "label": "  output wire                        arready,"}
+{"generated": "wire [`NOTE_BITS-1:0] note;", "label": "wire [`NOTE_BITS-1:0] note;"}
+{"generated": "// Please do not spread", "label": "      rd_ptr <= rd_ptr + 1;"}
+{"generated": " always @( posedge r_clk,r_rst )\r    begin\r        if(r_rst) r_empty <= 1'b1;\r        else r_empty <= r_empty_w;\r    end", "label": "    always @( posedge r_clk,r_rst )\r"}
+{"generated": "endtask task read; begin we=1'b0;re=1'b1;endendtask task inputs; begin @(negedge clk)tempa=16'h1234;endendtask initial begin", "label": "endtask task read; begin re=1'b1; we=1'b0;"}
+{"generated": "reg [1:0] state;", "label": "    localparam N = 3;"}
+{"generated": "module led_top(", "label": "module led_top("}
+{"generated": "#10; a0 = 0; b0 = 0; ci0 = 1;", "label": "\t\t#10; a0 = 0; b0 = 0; ci0 = 1;"}
+{"generated": "player_x = 200;", "label": "    player_x = 200;"}
+{"generated": " else if (rlast&rvalid) begin\r                        icache_rdata_buffer[icache_offset*32+:32] <= rdata;\r                        icache_cacheline_new <= icache_rdata_", "label": "                        arlen <= 4'hf;\r"}
+{"generated": "\t.num1\t(a_cube),", "label": "\t.num1\t(a_cube),"}
+{"generated": "ge i_clk or negedge i_fRST) \r    begin\r        if (~i_fRST)\r            miso_reg <= 0;\r\r        else if ((state == run) && (spi_clk_", "label": "                            mosi_reg <= mosi_reg;\r"}
+{"generated": "end", "label": "     round_key[i]= key_register[0:63];"}
+{"generated": "input onceki_buyruk_atladi,", "label": "    output [31:0] program_sayaci,"}
+{"generated": " else`endif        begin             casez ({CLR, DEQ, ENQ, hasodata, ring_empty})               // DEQ && ENQ cases               5'b011?0: begin arr[head] <= `B", "label": "        reg deqerror, enqerror ;"}
+{"generated": ".cached     (cached          ),\r       .sram_en    (sram_en         ),\r       .sram_wen   (sram_wen        ),\r       .sram_addr  (sram_addr", "label": "        .hit        (hit             ),\r"}
+{"generated": "//-----------------------------------------------------------------------------// File          : SysCtrl_SS_wrapper_0.v// Creation date : 13.02.2024//", "label": "    assign SysCtrl_SS_Reset_SS_2_to_bus_1_reset = SysCtrl_SS_reset_ss_2;"}
+{"generated": "localparam G6_1 = 512'h660714D429361131272976142823321226283", "label": "localparam G6_1 = 512'h975CED50A31C625C28A5DCB0806EA8B42655F38F9F3CC859D83F0DB9670A51B20C3DBCAF1BD42C03D303B43FA30534AEAB5FB9A591B34E6C758D881429F63BD9;"}
+{"generated": "\treg [15:0] search_count = 16'b0;", "label": "\treg [15:0] search_count = 16'b0;"}
+{"generated": "if (!debounced_switch_song) begin                        switch_flag <= set0;                    end                end                PLAYING: begin                    if (time_counter < a_sec) begin                        time_counter <= time_counter +", "label": "                    if (!debounced_switch_song) begin"}
+{"generated": "//\u5f53\u8ba1\u6570\u5668\u8ba1\u6570\u523018'h3ffff\u65f6\uff0c\u8ba1\u6570\u5668\u6e05\u96f6\uff0c\u5ef6\u65f6\u7ed3\u675f             else if(cnt == 18'h3ffff)                cnt <= 18'h0;            ", "label": "                cnt <= cnt + 1'h1;"}
+{"generated": "always @(posedge bus_clk)     previous_pclk <= pclk;   assign sample_valid = pclk &&!previous_pclk;   // wait_for_frame's purpose is to start getting data from the camera  ", "label": "   always @(posedge bus_clk)"}
+{"generated": "//~ `New testbench`timescale  1ns / 1ps`include \"x74194.v", "label": "    En=0; S[2:0]=3'b101; D[7:0]=8'b00100000;"}
+{"generated": "\rassign\tLCD_DATA\t=\tiDATA; \rassign\tLCD_RW\t\t=\t1'b0;\rassign\tLCD_RS\t\t=\tiRS;\r/////////////////////////////////////////////\r\ralways@(posed", "label": "assign\tLCD_DATA\t=\tiDATA; \r"}
+{"generated": "assign memwrite = sw;\rassign branch = beq;\rassign branchNotEqual = bne;\rassign aluop1 = rformat;\rassign aluop2 = beq|bne;\rassign jump = j", "label": "assign memwrite = sw;\r"}
+{"generated": ".Load          (load),   .En            (shift),   .SerIn         (serIn),   .DataIn        (dataIn),   .Ser", "label": "    .Load          (load),"}
+{"generated": "always @(posedge wb_clk, posedge wb_rst) begin", "label": "        always@(posedge wb_clk, posedge wb_rst) begin"}
+{"generated": "reset_n,", "label": "    input reset_n,"}
+{"generated": "\tdefault: alu_out = 32'b0;\r\tendcase\r\t\r\tif(alu_out == 32'b0)\r\t\tzout = 1'b1;\r\t", "label": "\t3'b111: begin less = a+1+(~b);\r"}
+{"generated": "module exp_2_block ", "label": "        start_i = 1                                                                                             ;"}
+{"generated": "\tCRC4_code[2] = temp_data[2];\r", "label": "        CRC4_code[2] = temp_data[2];\r"}
+{"generated": "always #2 iscorrect = (out == r1+r2);", "label": "always @(opcode,r1,r2) begin"}
+{"generated": "\t.res\t(result2));initial begin\t$display(\"Test 1\");\t$display(\"Expected: %d\", check1);\t$display(\"Result: %d\", result1);\t$display(\"Test 2\");", "label": "\t.res\t(result2)"}
+{"generated": "flag[2] = 1;        end        else begin            flag[2] = 0;        end                if(result[32]==1)begin            flag[1] = 1;        end        else begin           ", "label": "            flag[2] = 1;"}
+{"generated": "input  [simd*bw-1:0] in11;  input  [simd*bw-1:0] in12;  input  [simd*bw-1:0] in13;  input ", "label": "  input  [simd*bw-1:0] in11;"}
+{"generated": "assign c[0] = g0 | (p0 & Cin);  assign c[1] = g1 | (p1 & g0) | (p1 & p0 & Cin);  assign c[2", "label": "  assign c[0] = g0 | (p0 & Cin);"}
+{"generated": "else if(read_available_M) begin    data_out_M<=data_tmp_M;    end    end", "label": "    else if(read_available_M==1) "}
+{"generated": "//        // Initialize signals", "label": "        forever #(CLK_PERIOD/2) clk = ~clk;"}
+{"generated": "\t.clk\t\t\t\t(clk\t\t\t),", "label": "\t.clk\t\t\t(clk\t\t),"}
+{"generated": "output wire visible,  output wire p_tick,  output wire [9:0] pixel_x,  output wire [9:0] pixel_y);", "label": "  output wire visible, "}
+{"generated": "1_y_d1(y_tf_out_1),.r2_y_d1(y_tf_out_2)\r);\rAy_A_optimized_error_correction_2 finalee_", "label": "    .in_2(y_tf_out_2),\r"}
+{"generated": "61;\r\t\t\t\trotorB_nxt2 =   rotorB25;\r\t\t\t\trotorB_nxt3 =   rotorB17;\r\t\t\t\trotorB_nxt4 =   rotor", "label": "        rotorB_nxt17 =  rotorB17;\r"}
+{"generated": "/******************************************************************************\r", "label": "reg [10:0] sofCounts;\r"}
+{"generated": "case(cur_state)", "label": "    case(cur_state)"}
+{"generated": " #(period/2) clk = ~clk;", "label": " #(period/2) clk = ~clk;"}
+{"generated": "\tassign out = 1'b0;\r\t\rendmodule\r/README.md", "label": "\tassign out = 1'b0;\r"}
+{"generated": "next_prbs31[ 1] = in[ 0] ^ (in[28] ^ in[25]);\t\tnext_prbs31[ 0] = (in[27] ^ in", "label": "\t\tnext_prbs31[ 1] = in[ 0] ^ (in[28] ^ in[25]);"}
+{"generated": "reg [2:0] state1 = player1S0;    always @ (posedge clk)        if (reset) begin            state1 = player1S0;            health = 2'b11;            wait_", "label": "    reg [2:0] state1 = player1S0;"}
+{"generated": "if(WE[2]) RAM[A>>2][23:16] <= Di[23:16];", "label": "            if(WE[2]) RAM[A>>2][23:16] <= Di[23:16];"}
+{"generated": "\tclk = 0;\r        reset = 1;\r        up_down = 1;\r        #10 reset = 0;\r        #1000 $finish;\r    end\r\r    always begin\r", "label": "        $monitor(\"M= %b Time=%0t, Counter=%b\", up_down, $time, counter);\r"}
+{"generated": "\tcounter <= 0;\r    \telse\r", "label": "        \tcounter <= 0;\r"}
+{"generated": "    input clk,    input [AWIDTH-1:0] addr0,    input ce0,    input we0,    input [DWIDTH-1:0] din0,    output [DWIDTH-1:0]", "label": "            ram[addr1] <= din1;"}
+{"generated": "for (i = 0; i < N; i = i + 1) begin", "label": "    for (i = 0 ; i < N ; i = i + 1) begin"}
+{"generated": "\t$display(\"*      *        * * * *       *       *          *\");\t                 $display(\"*      *       *       *     ***      * * *      *\");\t                 $display(\"*                                                *\");\t                 $display", "label": "\t                 $display(\"*      *        * * * *       *       *          *\");"}
+{"generated": "flow_cnt <= 2'b00;", "label": "        flow_cnt   <= 2'b0;"}
+{"generated": "\tinput wire clk_i,", "label": "    input wire clk_i, "}
+{"generated": "\t#2 X = 10000;\t #2 Y= 10000;\t #2 X= 10000;\t #2 Y = 10000;\t #", "label": "\t #20 X=70000;"}
+{"generated": ".B                       ( B   ),", "label": "    .B                       ( B   ),"}
+{"generated": "2'b10 : baud_rx_out = baud_tick_19200bps;", "label": "2'b10 : baud_rx_out = baud_tick_19200bps;"}
+{"generated": "SH_TYPE:begin    case(ID_EX_IR[14:12])    SLL:EX_MEM_ALUOUT <= ID_EX_A << ID_EX_IR[24:20];", "label": "SH_TYPE:begin"}
+{"generated": "rotorA1(rotorA[1]),\r   .rotorA2(rotorA[2]),\r   .rotorA3(rotorA[3]),\r   .rotorA4(rotorA", "label": "    .rotorB14(rotorB[14]),\r"}
+{"generated": "\tinput Select;\r\toutput Output;\r\t\r\tassign Output = (Select == 1'b0)? (Input1 & Input2) : (Input1 ^ Input2);\r\rendmodule\r", "label": "\tinput Select;\r"}
+{"generated": "input  [SIZE-1:0] state ;", "label": "  input  [SIZE-1:0] state;"}
+{"generated": "assign alu_op[0] = (btnl && btnr) || (btnl && btnc) || (btnr && btnc);", "label": "xnor(btnr_XNOR_btnc,btnr,btnc);"}
+{"generated": "_reg_n_0_[29] ),       .R(\\count[31]_i_1__0_n_0 ));  FDRE #(   .INIT(1'b0))     \\count_reg[2", "label": "       (.C(clk_IBUF_BUFG),"}
+{"generated": " assign cin = (select==1'b0)? 1'b0 : 1'b1;", "label": " assign cin  =(select==1'b0) ? 1'b0 : 1'b1;"}
+{"generated": "end else begin                    result_r = $signed(alu1_i) / $signed(alu2_i);                end                end                5'b10101:   //DIVU                begin                    if(alu", "label": "                    end else if(alu1_i[31] == 1'b1 && alu2_i == -32'h1) begin "}
+{"generated": "x = 1; y = 0; cin = 0;#10x = 1; y = 0; cin = 1;#10x = 1; y = 1; cin = 0;#1", "label": "x = 1; y = 0; cin = 0;"}
+{"generated": "// \ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd", "label": "                    serialSignalCount_ctr <= serialSignalCount_ctr + 1;"}
+{"generated": "localparam BGE  = 4'd7;localparam BLTU = 4'd8;localparam BGEU = 4'd9;localparam LB   = 4'd10;localparam LH   =", "label": "localparam LW   = 4'd7;"}
+{"generated": "@(posedge wb_clk_in)        cpol_0 = 1'b0;        repeat(divider_value)         @(posedge wb_clk_in);        cpol_0 = 1'b1;", "label": "        @(posedge wb_clk_in)"}
+{"generated": "B = 4'b0110;", "label": "        B = 4'b1111;"}
+{"generated": "if (le_pc) pc_reg <= npc_reg;            address <= pc_reg;            instruction_reg <= DataOut;            if (le_npc) npc_reg <= npc_reg + 4;        end   ", "label": "            if (le_pc && le_npc) pc_reg <= npc_reg;"}
+{"generated": "\t.num1(im1),\t.num2(re2),\t\t.res(sub_res_im_2));always @(posedge clk) begin\tre_res <= sub_res_re_1 - sub", "label": "\t.num1(re2),"}
+{"generated": "5'd10: ra0_value_r = reg_r10_q;\r", "label": "        5'd10: ra0_value_r = reg_r10_q;\r"}
+{"generated": "`ifdef\t\t//Willy debug - s\t\t\t$display(\"time=%t, gpio=%b, mprj_io=%b, mprj_io_0=%b, mprj_i=%b, mprj_o", "label": "\t\t\trepeat (1000) @(posedge clock);"}
+{"generated": " endmodule", "label": "endmodule"}
+{"generated": "input [`DATA_LEN-1:0] i_op1,", "label": "    input [`DATA_LEN-1:0] i_op1,"}
+{"generated": "\t\t\t\t\tset_valid <= 0;\r\t\t\t\t\ten_read_RAM <= 0;\r\t\t\t\t\ten_write <= 0;\r\t\t\t\tend\r\t\t\tend\r\tend\r\rendmodule", "label": "\t\t\t\t\tset_valid <= 0;\r"}
+{"generated": "\r\t\t\tPS2_STATE_1_DATA_IN\t\t\t= 3'h1,\r\t\t\tPS2_STATE_2_COMMAND_OUT\t\t= 3'h2,\r\t\t\tPS2_", "label": "reg\t\t\t[2:0]\ts_ps2_receiver;\r"}
+{"generated": "wire sum, carry;", "label": "    wire sum, carry;"}
+{"generated": " con_process  con_process_inst(   .clk     (clk  ),   .rst_n   (rst_n),   .addr_data (addr_data),   .addr_factor (addr_factor),   ", "label": " con_process con_process_inst("}
+{"generated": "assign tmp = {1'b0,A} + {1'b0,B};    assign CarryOut = tmp[16]; // Carryout flag    always @(*)    begin        case(ALU_Sel)", "label": "    assign tmp = {1'b0,A} + {1'b0,B};"}
+{"generated": "\tLCD_LINE1+4:\tLUT_DATA\t<=\t9'h172;", "label": "\tLCD_LINE1+4:\tLUT_DATA\t<=\t9'h172;"}
+{"generated": "\tassign fs = a^b^c;\r", "label": "wire y1,y2,G1,G2;\r"}
+{"generated": " initial #50 $finish;\rendmodule \r", "label": " initial #50 $finish;\r"}
+{"generated": " CPN, D, Q, QN, SC, SD);input  CDN, CPN, D, SC, SD;output Q, QN;wire  CDN, CPN, D, Q, QN, SC, SD", "label": "  and U$1(Z, A2, A1);"}
+{"generated": "`timescale 1 us/1 ns   ", "label": "    if (counter_tb == 5'b01110) "}
+{"generated": "case(digit)                0: begin                    led7_seg_o <= seg_char(dig1_i);                    led7_an_o <= 8'b11111110;                end                ", "label": "            led7_an_o <= ~(1 << digit);"}
+{"generated": "out = in1^in2;            end  CMD_ADD : begin              out = in1+in2;            end  CMD_LSL : begin              out = in1<<in2;            end  CMD_LSR", "label": "              out = in1^in2;"}
+{"generated": "\t.HRESETn\t            (HRESETn ),\r", "label": "    .HRESETn\t            (HRESETn ),\r"}
+{"generated": "endmodule", "label": "    #100 $finish;"}
+{"generated": "/src", "label": "        counterclkout <= 2'b00;"}
+{"generated": "output [DW-1:0] rdata);  // here goes the SRAM model  //...endmodule", "label": " output [DW-1:0] rdata"}
+{"generated": "2'b01 : SEG_DATA = 8'b00000110;\r", "label": "\t\t\t\t2'b01 : SEG_DATA = 8'b00000110;\r"}
+{"generated": "Comparator11 comparator800_inst (", "label": "  Comparator11 comparator800_inst ("}
+{"generated": "parameter PLAYING = `PLAYING;", "label": "    parameter PLAY = `PLAY;"}
+{"generated": "clk = 1'b0;", "label": "clk = 1'b1;"}
+{"generated": "assign oku_veri = oku_veri_cmb;endmodule", "label": "assign oku_veri = oku_veri_cmb;"}
+{"generated": "output [n-1:0] s,", "label": "   output [n-1:0] s,"}
+{"generated": "//\t\t.flash_csb (flash_csb),\t\t.flash_clk (flash_clk),\t\t.flash_io0 (flash_io0),\t\t.flash_io1 (flash_io1", "label": "\t\t.flash_csb(flash_csb),"}
+{"generated": "\tDUT.alu_result, DUT.imm_extended, DUT.write_data, DUT.PCSrc, DUT.setAddress, DUT.MemReadData);\r    \r    f = $fopen(\"", "label": "    DUT.alu_result, DUT.imm_extended,\r"}
+{"generated": "\tC_PC                  , ", "label": "        C_PC                   , "}
+{"generated": " code = 10'b001001_1101; next_rd = same; end\r", "label": "\tparameter state_rd_positive = 1'b1;\r"}
+{"generated": "#10 RN = 1'b0;", "label": "  #5 RN = 1'b0;"}
+{"generated": "//      r_x_t_2_temp <= r_", "label": "      r_x_t_2_temp  <= r_x_t_2;"}
+{"generated": " mem[i]<=16'b0;\r", "label": ") mem[i]=0;\r"}
+{"generated": "always #5 clk =!clk;", "label": "always #5 clk = ~clk;"}
+{"generated": ",\r    output wire lru\r);\r    wire [31:0] rdata_way0 [15:0];\r    wire [31:0] rdata_way1 [15:0];\r", "label": "    reg [`INDEX_WIDTH-1:0] lru_r;\r"}
+{"generated": "\tinput wire clk;\r", "label": "\tinput wire clk;\r"}
+{"generated": "and Gate1(F,A,B);", "label": "    assign F = A&B;"}
+{"generated": "] ^ c[15] ^ c[24] ^ c[25] ^ c[30];    assign newcrc[24] = d[7] ^ d[2] ^ d[1] ^ c", "label": "    assign newcrc[25] = d[3] ^ d[2] ^ c[17] ^ c[26] ^ c[27];"}
+{"generated": "\trv1 <= registers[rs1];\r\trv2 <= registers[rs2];\r\t\t\r\t\t// If Write to Register is true\r\t\tif(regWrite && rd!= 0) begin\r\t\t\t// rd", "label": "\t\trv1 <= registers[rs1];\r"}
+{"generated": "\twire [4:0] apple_y;\twire [6:0] len;\twire [5:0] head_x;\twire [5:0] head_y;\twire [1:0] game", "label": "\twire [4:0] apple_y;"}
+{"generated": "/palindrome_3bit/palindrome_3bit.srcs/sim_1/new/tb.v", "label": "    #2 x_i = 1;"}
+{"generated": "#10 A = 1; B = 0; Cin = 0;        #10 A = 1; B = 0; Cin = 1;        #10 A = 1; B =", "label": "        #10 A = 1; B = 0; Cin = 0;"}
+{"generated": "\twire [31:0] Imm_Ext_EX;", "label": "    wire RegWrite_EX, RegDst_EX, MemRead_EX, MemWrite_EX, MemtoReg_EX, ALUSrc1_EX, ALUSrc2_EX;"}
+{"generated": "2'b10 :   byte_accessL = {{16{data_inL[31]}},data_inL[31:16]};", "label": "                    default:  byte_accessL = {{16{data_inL[31]}},data_inL[31:16]};                                                                                                                                                                                                                                                                                                                                                         "}
+{"generated": "else if(((action2 == await || action2 == left1 || action2 == left2 || action2 == punch)&&                            action1 == kick && state1 == player1S1) ||                            ((action2 == await || action", "label": "                    else if(((action2 == await || action2 == left1 || action2 == left2 || action2 == punch)&&"}
+{"generated": "\tregB RB(.clr(clr),.clk(CLK_I),.D(bus),.Q(RB_out),.LB_n(LB_n));\t\ttribuf_8bit buf1(.in(alu", "label": "\ttribuf_8bit AluBuf(.in(alu_Out), .out(bus), .low_enable(aluOut_en));\r"}
+{"generated": "\t\t\twrite=0;\r\t\t\twrote_data2 = wrote_data2+1;\r\t\tend\r\t\tif(temp[0] == 1 && temp[1] ==0)begin\r\t\t\t", "label": "\t\t\t\tgreen <= 3'b000;\r"}
+{"generated": "\txor(t1,A,B);\txor(S,t1,C);\tand(t2,t1,C);\tand(t3,A,B);\tor(Cy,t2,t", "label": "\txor(t1,A,B);"}
+{"generated": "logic_flag = 1'b1;      end      4'b1001:begin        alu_out_comb = ~(A^B);        logic_flag = 1'b1;      end      4", "label": "        logic_flag = 1'b1;"}
+{"generated": "$readmemb(\"image.dat\", RAM);", "label": "    $readmemh(\"background.mem\", RAM);"}
+{"generated": "//                    rd_pos <= rd_pos +", "label": "                ram[rd_pos] <= 'b0;"}
+{"generated": "always @(*) begin", "label": "  always @(*)"}
+{"generated": "\tassign div_hsec = num[17];", "label": "    second_divider sd(.clk(clk), .div_hsec(div_hsec));"}
+{"generated": "\tinitial begin\t\ta = 4'b0000;\t\tb = 4'b0000;\t\tcin = 1'b0;\t\t#10;\t\ta = ", "label": "\tinitial begin"}
+{"generated": "\rassign RD = mem1[address];\rendmodule\r", "label": "assign RD = mem1[address];\r"}
+{"generated": "\t//\t\t\t\twait(!busy)\t\t\t\t\r\t\t\t\t\t@(negedge clk);\r\t\t\t\t\tpayload_data={$random}%256;\r\t\t\t\t\tdatain=payload_data;\r\t\t\t\t\tparity=parity^data", "label": "\t\t\t\t\tpayload_data={$random}%256;\r"}
+{"generated": "module io_ref(clk, en, r_or_w, io_addr, data_in, data_out, d0_io, d1_io", "label": "`define C_RESET         16'd20"}
+{"generated": "initial begin ", "label": "\tinitial begin "}
+{"generated": "if(!rstn) begin", "label": "    if(!rstn) begin "}
+{"generated": "\t.en(en),.reset(reset),\r\t\t.clk(clk)\r\t);\r\r\treduced_complexity_fir_full baseline_symmetric(\r\t\t.data_out(data_out_baseline_symmetric", "label": "\t\t.en(en), .reset(reset),\r"}
+{"generated": "//            if (out_rd==0 && rd==1)", "label": "        rd<=out_rd;"}
+{"generated": "\tend else if (x >= xmax) begin\r      f = xmax; // Pendenza costante dopo xmax, essendo lo slope = 1\r\tend else begin\r      f = x;  // Mantieni la", "label": "    end else if (x >= xmax) begin\r"}
+{"generated": "#! /c/Source/iverilog-install/bin/vvp:ivl_version \"12.0 (devel)\" \"(s20150", "label": "    .thread T_0;"}
+{"generated": "endmodule", "label": "endmodule "}
+{"generated": "wire [DATA_WIDTH-1:0] data;  single_port_sync_ram ram_inst(.clk(clk),.addr(addr),.data(data),.cs(cs),.we(we),.oe", "label": "  wire [DATA_WIDTH-1:0] data;"}
+{"generated": "sc_hd__nand2_2 U1086 (   .A(n505),   .B(n508),   .Y(n532)  );  sky130_fd", "label": "    .C(i_denominator[11]),"}
+{"generated": "\ty6i = (a*x0 -d*x1 +f*x2 +g*x3 -a*x4 +b*x5 -c*x6 +e*x7)/1024", "label": "\ty6i = (a*x0 -d*x1 +f*x2 +g*x3 -a*x4 +b*x5 -c*x6 +e*x7)/1024;\r"}
+{"generated": "m2reg = 1'b0;", "label": "                    m2reg = 1'b0;"}
+{"generated": "\t.ALUControl(ALUControlE),\r\t\t.PCPrediction(PCPrediction),\r\t\t.RegSrc(RegSrcD),\r\t\t.N(n),\r\t\t.Z(", "label": "\t\t.ALUControl(ALUControlE),\r"}
+{"generated": "\r\t\t\r\t\tSTA_ROUND_DONE   \t: begin\r\t\t\tout_snd_wr_en \t\t\t<= #TCQ 1'b0;\r\t\t\tout_snd_din     \t\t<= #TC", "label": "        STA_WRITING        \t: begin\r"}
+{"generated": ".radar_echo(radar_echo),", "label": "        .radar_echo(radar_echo),"}
+{"generated": "axi_bvalid <= 1'b0;                end            end        end    end     always @( posedge S_AXI_ACLK )    begin        if ( S_AXI_ARESETN == 1'b0", "label": "                    axi_bvalid <= 1'b0; "}
+{"generated": "#5 clk = ~clk;   endendmodule", "label": "   #5 clk = ~clk;"}
+{"generated": "\t#(CLK_CYCLE*10)   flick = 0;    \t#(CLK_CYCLE*10)   flick = 1;        //flick = 1 at lamp[1] when lamp turn", "label": "\t#CLK_CYCLE        flick = 0;"}
+{"generated": "//LAB3 BY:,, //PART 1/* Program for store */// Pre-indexed addressing mode.global _start_start", "label": "    STR R1, [R0, #4]!"}
+{"generated": "always @(posedge clk)", "label": "always @(posedge clk)"}
+{"generated": "input[3:0]                              AXI_WSTRB,", "label": "    input[3:0]                              AXI_WSTRB,"}
+{"generated": "else if (addr_cam_search_en)begin    cnt_cam_match_reg_1 <= cnt_cam_match_1;  end  else begin    cnt_cam_match_reg_1 <= cnt_cam", "label": "  else if (addr_cam_search_en)begin"}
+{"generated": "\rif( inp1[31] == inp2[31]) signbit = (inp2 < inp1)? 1 : 0;\r                else if(inp1[31] == 1) signbit", "label": "                if( inp1[31] == inp2[31]) signbit = (inp2 > inp1) ? 0 : 1;\r"}
+{"generated": "reg[31:0] scratch_pad;assign ashi_rindx = (ashi_raddr & ADDR_MASK) >> 2;assign ashi_windx = (ashi_waddr & ADDR_MASK", "label": "reg[31:0] scratch;"}
+{"generated": "if(count2<256)", "label": "if(count2<260)"}
+{"generated": "//\t\t\t\t\tcon_word =", "label": "\t\t\t\t\tcon_word = 12'h1A3;"}
+{"generated": "assign stageReg_12_stsum$D_IN =", "label": "  assign stageReg_12_stsum$D_IN ="}
+{"generated": "int_reset <= 1;    end else begin      count <= count + 1;  // Increment the counter by 1 on each positive edge of the clock    end  endendmodulemodule VCounter (  input wire clk, ", "label": "    end else begin"}
+{"generated": "\ty <= `BSV_ASSIGNMENT_DELAY 16'd1;", "label": "\ty <= `BSV_ASSIGNMENT_DELAY 16'd1;"}
+{"generated": "`default_nettype none", "label": "        right_shift = 8;"}
+{"generated": "1  ?   0  :  1   ;", "label": "         1   ?   0  :  1   ;"}
+{"generated": "endendmodule", "label": "    num = 5; #1 $display(\"Source number = %d; MSb = %d\", num, msb);"}
+{"generated": "\rBJN n10(G18,G19,Y16,Y10,Y14,1'b0);\rBJN n13(G20,G21,Y18", "label": "PG n10(G15,Y12,Y13,a,b,1'b0);\r"}
+{"generated": " Half_Adder ha1(a,b,s1,c1);    ", "label": "    Half_Adder HA1(a,b,s1,c1);"}
+{"generated": "\tcontrol <= 3'b101;\r        in <= 16'd0;\r        #10;\r        $display(\"out is (B - D): %b - %d\\nCarry: %", "label": "        control <= 3'b101;\r"}
+{"generated": "assign t=q;", "label": "assign t = q;"}
+{"generated": "\ta = 0;b = 0;cin = 1;\r        #100;\r        a = 0;b = 1;cin = 0;\r        #100;\r        a", "label": "\ta = 0;b = 0;cin = 1;\r"}
+{"generated": "  always@(*)\r  begin\r    case(alucont[3:0])\r      4'b0010: result <= sum;\r      4'b0110: result <= sum;\r      4'", "label": "  assign product = a * b;\r"}
+{"generated": "next_a = reg_a;        next_b = reg_b;      end    default: begin      next_a = reg_a;      next_b = reg_b;    end  endcaseendalways @(posed", "label": "        next_a = reg_a;"}
+{"generated": "Q(o[19]));", "label": "    uart_rxd = 1;"}
+{"generated": "Memory[k] = 32'h1;    end    endendmodule", "label": "    Memory[k] = 32'h00000000;"}
+{"generated": " end\r\t\t\t10'b110_01100_0_0: begin code = 10'b001101_0110; next_rd = same; end\r\t\t\t", "label": "\t\t\t10'b001_10110_0_0: begin code = 10'b011010_1001; next_rd = same; end\r"}
+{"generated": "         ADDRA;   input [DATA_WIDTH-1:0]         DIA;   output [DATA_WIDTH-1:0]        DOA;   input                          CLKB;   input                          ENB;   input                          WEB", "label": "   reg [DATA_WIDTH-1:0]           RAM[0:MEMSIZE-1] /* synthesis syn_ramstyle=\"no_rw_check\" */ ;"}
+{"generated": "output [3:0]read_write_sel_o,output [1:0]wb_sel_o,output reg_w_en_o,output is_memory_instruction_o,output is_load_instruction", "label": "output [3:0]read_write_o,"}
+{"generated": "2'd3: out <= pr1*pr2;\r\t\tdefault: out <= 32'bx;\r\tendcase\rend\r\rendmodule ", "label": "\t\t2'd3: out <= pr1*pr2;\r"}
+{"generated": "input [31:0] rd,", "label": "input [11:7] rd,"}
+{"generated": "payload_enable <= 0;", "label": "\t\t\t\t\t\tif (data_enable) begin"}
+{"generated": "\r//For detecting the falling edge of the rx signal\ralways @(posedge Clk) begin\r    if(Rst == 1'b1) begin\r        rx_data_bit <= #TCQ 1'b", "label": "always @(posedge Clk) begin\r"}
+{"generated": "//", "label": "        ashi_rresp <= OKAY;              "}
+{"generated": "\t// 5 0 8 4 1 3 8 9 2\r        3'b000: segmentos=7'b0000001;\r        3'b00", "label": "        3'b000: segmentos=7'b0000001;\r"}
+{"generated": "`timescale 1ns/1ps", "label": "    player_x = 80;"}
+{"generated": "module full_sub(", "label": "    or or_1(bor,w2,w3);"}
+{"generated": "ALUOut <= A | B;            default:                ALUOut <= 32'bx;        endcase    endendmodule", "label": "                ALUOut <= A | B;"}
+{"generated": "//                q <= (q_pos_acc - q_neg_", "label": "    reg [7:0] q_pos_temp, q_neg_temp, r_temp;"}
+{"generated": "\rblack_cell Arr3_black_cell2(in_Pk[6], in_Gk[6], in_Pk[10], in_Gk[10], out_Gk[10], out_Pk[1", "label": "black_cell Arr3_black_cell2(in_Pk[6], in_Gk[6], in_Pk[10], in_Gk[10], out_Gk[10], out_Pk[10]);\r"}
+{"generated": "# (`CYCLE);for (i = 0; i < 8; i=i+1) begin        for (j = 0; j < 8; j=j+1) begin            // feed input            A_", "label": "    # (`CYCLE);"}
+{"generated": "initial begin", "label": "reg [7:0] threshold;"}
+{"generated": "if(Cont<CLK_Divide)\t\t\t\t\tCont\t<=\tCont + 1'b1;\t\t\t\t\telse\t\t\t\t\tST\t\t<=\t3;\t\t\t\tend\t\t\t3:\tbegin\t\t\t\t\tLCD_EN\t<=\t", "label": "\t\t\t\t\tif(Cont<CLK_Divide)"}
+{"generated": "\tread_addr_gray_next = read_addr_gray;", "label": "\tread_addr_gray_next = read_addr_gray;"}
+{"generated": "reg [31:0] memory [1023:0];", "label": "    reg [31:0] Memory [63:0];"}
+{"generated": "\telse if (en_cnt)\r\t\tcnt <= cnt + 1;\rend\r\rassign addr = cnt;\r\rendmodule ", "label": "\telse if (en_cnt)\r"}
+{"generated": "initialbegin#100 load = 1;seed = 4'b1010;#100 load = 0;#100000$finish;endendmodule", "label": "initial begin"}
+{"generated": "\rinitial begin\r        // Test case 1\r        a = 1'b0; b = 1'b0;\r        #100 \r\t// Test case 2\r        a = 1'b0", "label": "    initial begin\r"}
+{"generated": "/README.md", "label": "  assign s = cin ^ a ^ b; \r"}
+{"generated": "\tinput\t[3:0]  data2x;\r", "label": "\tinput\t[3:0]  data2x;\r"}
+{"generated": "\treg_write=1;\r\t\t\t\t\t\t{alu_src,mem_write,res_src} = 5'b1_0_0;\r\t\t\t\t\tend\r\t\t\t\t\t3'b110:begin //ori", "label": "\t\t\t\t\t\talu_src = 1'd1;\r"}
+{"generated": "assign diff=a^b;", "label": "    assign diff=a^b;"}
+{"generated": " Control_unit ControlUnit(opcode, type, mem_read_en, mem_write_en, reg_write_en, alu_imm, display, data_to_reg);    datapath Datapath(clk,", "label": "    datapath DataPath(clk, clk_enable,"}
+{"generated": "\t.wr_en(wr_en),", "label": "\t.wr_en(wr_en),"}
+{"generated": "\rfifo_full = full_2;\r\rend\r\rend\r\r\r\r// to generate soft reset signals\r\ralways@(*) begin\r\rsoft_rst_0 = 1'b0;\r\rsoft_rst_", "label": "fifo_full = full_2;\r"}
+{"generated": "module add_sub(", "label": "module add_sub("}
+{"generated": "assign fsk_code_sin_out=(f2)? f1 :m_ser_code_in;", "label": "  assign fsk_code_sin_out=(m_ser_code_in)? f2:f1;"}
+{"generated": "//        clock_25 =!clock_25;    end    always @ (posedge clock_25) begin        if (hcount == 799) begin            hcount = 0;        end        else", "label": "        clock_25 = !clock_25;"}
+{"generated": "\r#550 wdata =  'd105;\r               waddr = 3'b101;\r               \r          #650 wdata =  'd106;\r               waddr", "label": "          #550 wdata =  'd105;\r"}
+{"generated": "hrestn = 1'b0;@(negedge hclk);", "label": "hrestn = 1'b0;"}
+{"generated": "assign x3 = (b & c);assign x4 = (a & b & c);assign f1 = (x1 | x2 | x3);assign f2 = (x4 | x3);endmodule", "label": "assign x3 = (b & c);"}
+{"generated": "\t\t\t\t\t\tRefund = 1'b0;\r\t\t\t\t\tend\r\t\t\t\telse if(Eql_3)\r\t\t\t\t\tbegin\r\t\t\t\t\t\tnext_state = Place;\r\t\t\t\t\t\tsel_en  = 1'b", "label": "\t\t\t\t\t\tRefund = 1'b0;\r"}
+{"generated": "\toutput\t[11:0]\tCH3;\toutput\t[11:0]\tCH4;\toutput\t[11:0]\tCH5;\toutput\t[11:0]\tCH", "label": "\toutput\t[11:0]\tCH3;"}
+{"generated": "#5  ps2_clk_i = 1;            ps2_data_i = 1;", "label": "        #5  ps2_clk_i = 0;"}
+{"generated": "\ralways @(posedge clk or negedge rst_n) begin\r    if(!rst_n)              data_reg <= 8'd0;\r    else if(rx_done)        data_reg <= rx_data", "label": "always @(posedge clk or negedge rst_n) begin\r"}
+{"generated": "0[18]),", "label": "    uart_tx_data = 0;"}
+{"generated": "\ts10 = 1'b0;\t\ts00 = 1'b0;\t\t#10;\t\ts10 = 1'b0;\t\ts00 = 1'", "label": "\t\ts10 = 1'b0; s00 = 1'b0;"}
+{"generated": "// version 0.9%2018-03-14// version 0.91% move the", "label": "  gray_data = pat_mem[i];"}
+{"generated": "module clkgen_200kHz(", "label": "module clkgen_200kHz("}
+{"generated": "\rassign win = win_w;\rassign loose = loose_W;\rassign press = press_again;\r\r\rendmodule", "label": " assign win = win_w;\r"}
+{"generated": "`timescale 1ns / 1ps", "label": "        if(count == dividerBy)"}
+{"generated": "integer i = 0;", "label": "always @(posedge clk) begin"}
+{"generated": "\rinitial\rbegin\r\t$dumpfile(\"aes_encrypt.vcd\");\r\t$dumpvars(0,aes_encrypter);\rend\r\rinitial\rbegin\r\t$monitor(\"dataIn: %h  keyIn", "label": "addRoundKey rk1(state,dataIn,keySet[1407:(1407-128+1)]);\r"}
+{"generated": "coun == 61)) || (vcoun == 329 && hcoun == 60))begin \r", "label": "      blue <= 2'b11; \r"}
+{"generated": "opsys translate_on\rmodule background (\r\taddress,\r\tclock,\r\tdata,\r\twren,\r\tq);\r\r\tinput\t[16:0]  address;\r\tinput\t  clock;\r", "label": "\t\t\t\t.data_a (data),\r"}
+{"generated": "mem[addr+2]<=data[15:8];        mem[addr+3]<=data[7:0];    endendendmodule", "label": "        mem[addr+2]<=data[15:8];"}
+{"generated": "module EX_MD(", "label": "                    ALUCtrl==ALU_Slt?($signed(SrcA)<$signed(SrcB)): "}
+{"generated": "df d4(.clk(out[3]),.rst(rst),.d(qb[4]),.q(out[4]),.qb(qb[4]));df d5(.clk(out[4]),.rst(rst", "label": "df d4(.clk(out[3]),.rst(rst),.d(qb[4]),.q(out[4]),.qb(qb[4]));"}
+{"generated": "SLTU: EX_MEM_ALUOut  <=#2 (ID_EX_A < ID_EX_B )? 1:0;              SLL : EX_MEM_ALUOut  <=#2 ID_", "label": "              SLTU : EX_MEM_ALUOut  <=#2 (ID_EX_A < ID_EX_B )? 1:0;"}
+{"generated": "assign CNT2 = gray_data_[2];", "label": "assign CNT2 = gray_data_[2];"}
+{"generated": "// Licensed under the", "label": "\t\t$display(\"LA Test seq_gcd(10312050, 29460792)=138 passed\");"}
+{"generated": "initial begin    rst = 1'b0;    #10 rst = 1'b1;  end", "label": "  initial begin"}
+{"generated": "\t//\t\t\t\t\t empty_buff = 1'b1;\t", "label": "   \t\t\t \tempty_buff = 1'b1;\r"}
+{"generated": "divider(clk1, clk, clk22);input clk;output clk1;output clk22;reg [21:0] num;wire [21:0] next_num;always @(posedge clk) begin", "label": "    parameter n = 27"}
+{"generated": "7'd27: mdio_out <= wr_data_t[4];", "label": "                    7'd27: mdio_out <= wr_data_t[4];"}
+{"generated": "reg [13:0] dataout_recoding;", "label": "reg clk_send;"}
+{"generated": "//--Lab1 4 bit wide 2 to 1 muxmodule introlab (\t\t// 4-bit MUX    input wire [", "label": "    wire [3:0] M;"}
+{"generated": "input [3:0] a, b, c,         // three 3-bit inputs  ", "label": "    input [3:1]  a,b,c,"}
+{"generated": "coun == 61)) || (vcoun == 329 && hcoun == 60))begin \r", "label": "\t\tif(temp[0] == 0 && temp[1] ==1)begin\r"}
+{"generated": "case (ashi_rindx)            // Allow a read from any valid register            REG_MODULE_REV:         ashi_rdata <= MODULE_VERSION;            REG_CLK_FREQ_0:         ashi_rdata <= 1", "label": "        case (ashi_rindx)"}
+{"generated": "\tinitial begin\t $monitor(\"X=%16b,Y=%16b,Z=%17b \\n\",X,Y,Z);\t end\t endmodule", "label": "\t initial begin"}
+{"generated": "A = 3'b010; B = 3'b010; #10;        A = 3'b010; B = 3'b011; #10;       ", "label": "        A = 3'b010; B = 3'b010; #10;"}
+{"generated": "end // main", "label": "integer x1 = 67;"}
+{"generated": "`ifdef GRESTORE_VALUE`ifdef GRESTORE_VALUE_VALUE        GRESTORE_int = GRESTORE_VALUE_VALUE;", "label": "\tGSR_int = 1'b1;"}
+{"generated": "assign normal_bit = mantissa_mult_result[47]; // rounding bitassign rounding_bit = mantissa_mult_result[23]; // assign the final exponent and mantissaassign final_exponent = a", "label": "assign normal_bit = mantissa_mult_result[47] ;"}
+{"generated": "output reg [31:0] PC_out", "label": "output reg [31:0] PC_out"}
+{"generated": "wire islemci_bellek_yaz;", "label": "wire islemci_bellek_yaz;"}
+{"generated": "\rand(e0, A, d1);\rxor(S, A, d1);\ror(Co, d0, e0);\r\r\rendmodule\r", "label": "and(e0, A, d1);\r"}
+{"generated": " * i_clk     - The input clock, 50MHz", "label": " * i_clk    - The clock of the local system, used for sampling the bits and FSM sync"}
+{"generated": "input s0,i0,i1;", "label": "  input s0,i0,i1;"}
+{"generated": "\tfor (x = 0; x < 6; x = x+1) begin : addertree_nodes1", "label": "\tfor (x = 0; x < 6; x = x+1) begin : addertree_nodes1"}
+{"generated": "/* * PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE * *//* * FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR      * *//* * OTHERWISE, ARISING FROM, OUT", "label": "/* * PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE * */"}
+{"generated": "output\twire\t[3:0]\t\tVGA_BUS_R;\t\t\t//Output Red", "label": "output\treg\t[3:0]\t\tVGA_BUS_R;"}
+{"generated": "\tinput [1:0] dirSelPC;\r\t\r\t// Inputs declarations\r\tinput [OPC_SIZE - 1 : 0] opCode;\r\t\r\t// Outputs declarations\r\toutput [BUS_SIZE -", "label": "\tinput [1:0] dirSelPC;\r"}
+{"generated": "//-------------------------------------------------------------------------------------\t\treg           wb_rst_reg;\t\treg           wb_clk_reg;\t\tinitial begin\t\t\twb_rst_reg = 1'b1;\t\t", "label": "\treg[31:0] i;"}
+{"generated": "\telse target_key <= target_key;", "label": "        else target_key <= target_key;"}
+{"generated": "module R8B(input clk,input sel,input rnw,inout [7:0]Dbus);\r\rreg [7:0]Data;\r\rassign Dbus", "label": "module R8B(input clk, input sel, input rnw, inout [7:0]Dio);\r"}
+{"generated": "initial begin", "label": "initial begin"}
+{"generated": "curr[set_in] <= way_in;            end        end    end        always @(set_in or way_in or enable) begin        if(enable) begin            prev <= curr[set_in];            curr[set", "label": "                curr[set_in] = (curr[set_in] + 1) % ASSOCIATIVITY;"}
+{"generated": "mux2 #(32) srcbmux(WriteData, ImmExt, ALUSrc, SrcB); alu alu(SrcA, SrcB, ALUControl, ALUResult, Zero); // result multiplexor logic", "label": " mux2 #(32) srcbmux(WriteData, ImmExt, ALUSrc, SrcB);"}
+{"generated": ".wrst_n(wrst_n));  always @(posedge rclk) if (!rrst_n) rdata <= 0; else rdata <= rdata_wire; endmodule", "label": " .wrst_n(wrst_n));"}
+{"generated": "output reg [3:0] Hundreds,", "label": "    output reg [3:0] Hundreds, "}
+{"generated": "//     #10 rst = 1'", "label": "        ro_led <= ro_led;"}
+{"generated": "\twire  c2 = sub_wire3;", "label": "\twire  c2 = sub_wire3;"}
+{"generated": "\treg [RAM_WIDTH-1:0] ram_name [(2**RAM_ADDR_BITS)-1:0];\r\r   \r   //  The forllowing code is only necessary if you wish to initialize the RAM \r", "label": "   reg [RAM_WIDTH-1:0] ram_name [(2**RAM_ADDR_BITS)-1:0];\r"}
+{"generated": "FIFO2 #(.width(32'd80),.guarded(32'd1)) f_7(.RST(RST_N),\t\t\t\t\t      .CLK(CLK),\t\t\t\t\t      .D_IN(f_7$D", "label": "  FIFO2 #(.width(32'd80), .guarded(32'd1)) f_7(.RST(RST_N),"}
+{"generated": "input clk,reset,d,", "label": "    input i,clk,rst,"}
+{"generated": "mon_out[31:0] <= 32'd0;            end            else if(move[0]) begin                mon_out[31:0] <= mon_out[31:0] - 3", "label": "                mon_out[31:0] <= 32'd0;"}
+{"generated": "`timescale 1ns / 1ps", "label": "endmodule"}
+{"generated": "endmodule", "label": "endmodule"}
+{"generated": " rst,\r    input wire mbt_response,\r    input wire [15:0] i_x,\r    input wire [15:0] i_y,\r\r    // DBG\r    output wire [1:", "label": "            FINISH: begin\r"}
+{"generated": "\ror(bout, and1, and2, and3);\r\rendmodule\r\rmodule MUX (in0, in1, sel, out); //2input mux\rinput in0, in1, sel;\r", "label": "or(bout, and1, and2, and3);\r"}
+{"generated": "\tRegfile[rd_offset] = rs >> shamt;end\telse if (op_code== 4'b0011 )begin\t//if sel =3  then A | B\t\tRegfile[rd", "label": "\t\tRegfile[rd_offset] = rs >> shamt;end"}
+{"generated": "reg[31:0] amci_read_data;    assign amci_read_data[ 7: 0] = amci_rdata[ 7: 0];    assign amci_read_data[", "label": "    reg[31:0] read_data;        "}
+{"generated": "initial begin\t//-- Fichero donde almacenar los resultados\t$dumpfile(\"fsm2_tb.vcd\");\t$dumpvars(0, fsm2_tb);\t# 5 S1 <= 1;", "label": "initial begin"}
+{"generated": "output\tLCD_RW,LCD_EN,LCD_RS;\r\r//\tInternal Registers and Wires\rreg\t[7:0]\tLUT_DATA;\rreg\t[5:0]\tLUT_INDEX;", "label": "output\treg\t\tLCD_EN;\r"}
+{"generated": "module mux_2x1_conditionaloper(", "label": "module mux_2x1_conditionaloper("}
+{"generated": "endmodule ", "label": "endmodule "}
+{"generated": "\twire  wire_pll7_clk_0;\r", "label": "`ifndef ALTERA_RESERVED_QIS\r"}
+{"generated": "/README.md", "label": "    wire [11:0] bram_read_data;"}
+{"generated": "\rassign word_addr = ADDR[11:2];\r   assign RD = mem_cell[word_addr];\r   assign ARR0 = ARR0_REG;\r   assign ARR1 = ARR1_REG;\r", "label": "   assign word_addr = ADDR[11:2];\r"}
+{"generated": "0] state;    reg been_extend;    reg been_break;    reg [3:0] count;    reg [21:0] filter;\t\t// filter the clock to protect against bouncing    wire [", "label": "    wire [7:0] key_in;"}
+{"generated": "// button is pressed                        \tif(q_zero) begin                            \tnext_state = one;                            \tq_load = 1'b1;                        \tend                        \telse begin                            \tnext_state = wait1;                            ", "label": "                        \tq_dec = 1'b1;"}
+{"generated": "\t.nMREQ(nMREQ),\r", "label": "\t.nMREQ(nMREQ),\r"}
+{"generated": "// `timescale 1ps/1psmodule controller_fsm_tb();    reg [2:0] sim_opcode;    reg [1:0] sim_op;", "label": "            $display(\"Error[AND]: out is %b, expected 0100\", sim_out);"}
+{"generated": "\rIDLE: begin\r                if (start) begin\r                    next_state = LOAD; // Go to LOAD state if start signal is asserted\r                end\r            end\r            LOAD: begin\r                load = 1;               //", "label": "            IDLE: begin\r"}
+{"generated": "/vhdl/vga_tb.v", "label": "    input_value = 11'b11011011011;"}
+{"generated": "if (counter == (CLK_FREQ / DESIRED_PERIOD) - 1) begin", "label": "    if (counter == DESIRED_PERIOD - 1) begin"}
+{"generated": "Four_bit_Down_counter Count2(cin[1],clk,led[7:4]);", "label": "    Four_bit_Down_counter Count2(cin[1],clk,led[7:4]);"}
+{"generated": "\rRegister_1bit cnt_m_reg3 (clk, rst, 1'b1, mem_write_e, mem_write_m);\rRegister_1bit cnt_w_reg1 (clk, rst,", "label": "Register_1bit cnt_m_reg3 (clk, rst, 1'b1, mem_write_e, mem_write_m);\r"}
+{"generated": "            state <= n_state;\r    end\r\r    // State Machine\r    always @(*)\r    begin\r        case (state)\r            idle :\r            begin\r                if (adc_conv_flag)\r                    n_", "label": "            adc_trg_flag <= adc_trg_flag;\r"}
+{"generated": "if (!pause) begin ", "label": "    if (!pause) begin "}
+{"generated": "forever #5 clk = ~clk;  end  initial begin    clk = 0;    Address = 6'h0;    WriteData = 32'h12345678;    Mem", "label": "    forever #5 clk = ~clk;"}
+{"generated": "\tassign ID_Enable_LO  = (instruction[31:26] == R_TYPE)? 1'b1 : 1'b0;", "label": "    assign ID_Enable_LO  = (instruction[31:26] == R_TYPE) ? 1'b1 : 1'b0;"}
+{"generated": " n1981, n1982, n1983, n1984, n1985, n1986, n1987, n1988,", "label": "\tinput in_emergency_elevator2,"}
+{"generated": "\tinout \t\t    [35:0]\t\tGPIO\r);\r\r//=======================================================\r//  REG/WIRE declarations\r//=======================================================\r\r//=======================================================\r//  Structural coding\r//=======================================================\r\rendmodule", "label": "\tinout \t\t    [35:0]\t\tGPIO\r"}
+{"generated": "\rblack_cell Arr1_black_cell2(in_Pk[3], in_Gk[3], in_Pk[4], in_Gk[4], out_Gk[4], out_Pk[4]);\rblack", "label": "black_cell Arr1_black_cell2(in_Pk[3], in_Gk[3], in_Pk[4], in_Gk[4], out_Gk[4], out_Pk[4]);\r"}
+{"generated": "\tendcase\rend\r\rendmodule", "label": "\t\tMove_Not:begin\r"}
+{"generated": "output s, c_out);", "label": "    output s, c_out"}
+{"generated": "{ALUSrcA, ALUSrcB, DataSrc, WrDataSrc, MemRd, ExtSel, RegDst, ALUCtrl} <= 12'b000101000110;", "label": "            {ALUSrcA, ALUSrcB, DataSrc, WrDataSrc, MemRd, ExtSel, RegDst, ALUCtrl} <= 12'b000101000110;"}
+{"generated": "if(mainState == 2'b10 && secondaryState == 2'b00 && B2 == 1'b1 && B3 == 1'b0 && B4 == 1'b1 &&", "label": "        if(mainState == 2'b10 && B2 == 1'b1 && B3 == 1'b0 && B4 == 1'b1 && reset == 1'b0 && globalReset == 1'b0 && en ==1'b0) "}
+{"generated": "input [Class_in_bit -1 : 0] B2_IN,input [Class_in_bit -1 : 0] B3_IN,input [Class_in_bit -1 : 0] B", "label": "input [Class_in_bit -1 : 0] B2_IN,"}
+{"generated": "\treg up_key_last;\treg down_key_last;\treg left_key_now;\treg right_key_now;\treg up_key_now;\treg down_key_now;\talways", "label": "\treg up_key_last;"}
+{"generated": ".ALU_FUN(ALU_FUN[1:0]),   .CLK(CLK),   .RST(RST),   .Logic_En(Logic_EN),   .Logic_Out(Logic_OUT),   .Logic", "label": "    .ALU_FUN(ALU_FUN[1:0]),"}
+{"generated": "MemtoReg_EX <= 0;            ALUSrc1_EX <= 0;            ALUSrc2_EX <= 0;            ALUCtrl_EX <= 0;            PC_EX <= 0;           ", "label": "            MemtoReg_EX <= 0;"}
+{"generated": "'b1;\r    o_immSrc_D          =3'b000;\r    o_Jal_R             =1'b0;\r    o_LUI_D             =1'b0", "label": "    ALUOP               =2'b01;\r"}
+{"generated": "module WriteFull #(parameter address=3)(write_clk,write_rst,write_inc,sync_read_ptr,write_ptr,write_addr,write_full);", "label": "module WriteFull #(parameter address=3)(write_clk,write_rst,write_inc,sync_read_ptr,write_ptr,write_addr,write_full);"}
+{"generated": "module and_gate(", "label": "module and_gate("}
+{"generated": "output wire        done", "label": "    output wire        done"}
+{"generated": "end    always @(posedge clock) begin        if(mwmem == 1'b1)            memory[mqb] = mr;    end    always @(*) begin        mdo = memory[mqb];    endendmodule", "label": "        memory[8] = {4'h8, 20'h0, 4'h8, 4'h8};"}
+{"generated": " always @(posedge clk_out or posedge rst) begin\r        if(rst)\r            btn_debounce <= 1'b0;\r        else if(count == 20'd0)\r            btn_", "label": "    always @(posedge clk_out or posedge rst) begin\r"}
+{"generated": "`timescale 1ns / 1ps", "label": "    initial begin"}
+{"generated": "input wire enable,", "label": "    input wire enable,"}
+{"generated": "\tnext_count_second1 <= 0;\r", "label": "\t\tclk_one_sec=~clk_one_sec;\r"}
+{"generated": "\tLVL4 : / 128    end    always @(posedge clk) begin        grid <= grid_ROM[zoom_level];    end    wire [N-1:0] real_coord_w;    wire", "label": "    always @(posedge clk) begin"}
+{"generated": "//  .AUDIO_L(AUDIO_L),  .AUDIO_R(AUDIO_R),  .I2S_BCK(I2SC),  .I2S_LRCK(I2SL),  .I", "label": "   .AUDIO_L(AUDIO_L),"}
+{"generated": "stage1 <= z_n1_img_r_stage1;\r\t\t\t\tz_n_real_sq_r <= z_n_real_sq_r;\r\t\t\t\tz_n_img_sq_r", "label": "        default: begin\r"}
+{"generated": "\tDUT.DstReg, DUT.ALUSrcB, DUT.RegWrite, DUT.MemtoReg, DUT.MemWrite, DUT.Jump, DUT.Branch, \r", "label": "    DUT.DstReg, DUT.ALUSrcB, DUT.RegWrite, DUT.MemtoReg, DUT.MemWrite, \r"}
+{"generated": "`timescale 1ns / 1ps", "label": "    output     [2:0]                    AXI_AWPROT,"}
+{"generated": "ALU U0(Din1,Din2,Sel,w1);", "label": "ALU ALU_inst(.Din1(Din1), .Din2(Din2), .Sel(Sel), .Tmp(w1));"}
+{"generated": "\rgray_cell Arr4_gray_cell4(in_Gk[4], in_Pk[12], in_Gk[12], out_Gk[12]);\rgray_cell Arr4_gray_cell5", "label": "gray_cell Arr4_gray_cell4(in_Gk[4], in_Pk[12], in_Gk[12], out_Gk[12]);\r"}
+{"generated": "\toutput reg [31:0] dataOut);", "label": "    output reg [31:0] readData"}
+{"generated": "always@(posedge clk or negedge rst_n)", "label": " always@(posedge clk or negedge rst_n)"}
+{"generated": "\twire [4:0] rd = instruction[15:11];", "label": "\twire [4:0] rd = instruction[15:11];"}
+{"generated": " #(period/2) clk = ~clk;", "label": " #(period/2) clk = ~clk;"}
+{"generated": "$display(\"\\033[1;31m-                              (1) Check your ALU module again                         -\\033[0m\");                $display(\"\\033[1;31m-                              (2", "label": "                $display(\"\\033[1;31m-----------------------------------------------------------------------------------------\\033[0m\\n\");"}
+{"generated": " //           out_BMP[WIDTH*3*(HEIGHT-l-1)+6*m+5] <= DATA_WRITE_R1;\r//            out_BMP[WIDTH*3*(HEIGHT-l-1)+6", "label": "            out_BMP[WIDTH*3*(HEIGHT-l-1)+6*m+5] <= DATA_WRITE_R1;\r"}
+{"generated": "\tendcase\rend\r\ralways@*\rbegin \r\tcase(Func3)\r\t\tSLL    : alu_out = oprend_1 << oprend_2;\r\t\tSLT    :", "label": "\t\tSLL\t   : alu_out = oprend_1 << oprend_2;\r"}
+{"generated": "output reg [1:0] mainState, ", "label": "    output reg [1:0] mainState,"}
+{"generated": "\t.loadbrREG(w_loadbr), ", "label": "\t\t\t\t\t\t .loadbrREG(w_loadbr), "}
+{"generated": "begin", "label": "{mem[wr_ptr[3:0]][8], mem[wr_ptr[3:0]][7:0]} <= {lfd,din};"}
+{"generated": "module MUX4to1(input in0, in1, in2, in3, sel0, sel1, output out);", "label": "module Mux4to1(input [0:3] in, input [1:0] s,output out);"}
+{"generated": "C_tb,            btnL => btnL_tb,            clk  => clk_tb,            sw   => sw_tb,            led  => led_tb        );    -- Clock process    CLK_PROCESS : process    begin", "label": "        wait for 50 ns;"}
+{"generated": "\ralways @(A or B) begin\r    if (B_is_0) begin\r        Q = 8'b11111111;\r    end\r    else begin\r        A_reg = {", "label": "always @(A or B) begin\r"}
+{"generated": "         a = data[i*4+0];\r         b = data[i*4+1];\r         c = data[i*4+2];\r         #10;\r\r         if(uut.s!==", "label": "         a = data[i*3+0];\r"}
+{"generated": "altpll_component.port_clk1 = \"PORT_UNUSED\",\t\taltpll_component.port_clk2 = \"PORT_UNUSED\",\t\taltpll_component.port_clk3 = \"PORT_", "label": "\t\taltpll_component.port_clk1 = \"PORT_UNUSED\","}
+{"generated": "module FC_2(input clk,input rst_n,input start_FC,output end_FC,//ROM read input imageoutput reg [11:0]rom_", "label": "                7'd6: outbuf[6] <= outbuf[6] + sum_aw;"}
+{"generated": ".sIgn   (sIgn),   .sAlr   (sAlr));endmodule", "label": "    .sIgn   (sIgn),"}
+{"generated": "\tif (reset) begin\r\t    lgt <= 1'b0;\r\tend\r\telse begin\r\t    lgt <= gt1;\r\tend\r    end\rendmodule", "label": "        if (reset) begin\r"}
+{"generated": "//        if(RWMode == 1'b0) begin //read            if(hit == 1'b1) begin                dataOut = cache[index][32*blockOffset+:32];            end            else", "label": "        if(RWMode == 0 && address !==32'bX) begin"}
+{"generated": "parameter offset1_ow = 9'd0, offset2_ow = 9'd24, offset3_ow = 9'd48;", "label": "parameter offset1_ow = 9'd0, offset2_ow = 9'd24, offset3_ow = 9'd60;"}
+{"generated": "//    assign (weak1, weak0) PRLD = PRLD_int;    assign (strong1, weak0) GRESTORE = GRESTORE_int;    initial begin        GSR_int = 1'b", "label": "    assign (weak1, weak0) PRLD = PRLD_int;"}
+{"generated": "31;\r", "label": "    plugboard2  <= plugboard_nxt[2];\r"}
+{"generated": "4'b1000: segmentos=7'b0000000;\r4'b1001: segmentos=7'b0000100;\r4'b1", "label": "        4'b1000: segmentos=7'b0000000;\r"}
+{"generated": "if(hp1<3) hp1 = hp1 + 1;\t\t\t\tend\t\t\tif(wait2 &&!rest2) rest2 = 1;\t\t\telse if(wait2)\t\t\t\tbegin\t\t\t\t\trest", "label": "\t\t\t\t\thp1 = hp1!=3 ? hp1+1 : hp1;"}
+{"generated": " mem1[address] <= WriteData;\rend\rendmodule\r", "label": "mem1[address] = WriteData;\r"}
+{"generated": "4'b0101: segmentos=7'b0100100;\r        4'b0110: segmentos=7'b0100000;\r        4'", "label": "        4'b0101: segmentos=7'b0100100;\r"}
+{"generated": "//\t\t\t\tout = 1'b1;\t\tendcase\tend\t// Determine the next state\talways @ (posedge clk) begin\t", "label": "\t\t\t\tout = 1'b1;"}
+{"generated": "```", "label": "        $display(\"----------------------------------------\\n\");"}
+{"generated": "\talways@(posedge clk or negedge reset)begin\t\tif(~reset)begin\t\t\tstate<=IDLE;\t\t\tcontrol<=8'd1;\t\t\tdone<=1'b0;\t\t\tx<=8'd", "label": "\talways@(posedge clk)begin"}
+{"generated": "sound <= 0;    end else begin      tick_counter <= tick_counter + 1;      if (tick_counter == ticks_per_second / freq) begin        tick_counter <= 0;        sound <= ~sound", "label": "      sound <= 0;"}
+{"generated": "// Two destination, one operand        run_test(OP_AND,            32'h00000001, 32'h00000002, 1'b0,", "label": "        run_test(OP_AND,            32'h80808080, 32'hff00ff00, 1'b0, 32'h80008000, 1'b0, 1'b0, 1'b1, 1'b0);"}
+{"generated": "amci_write <= 1;                csm_state <= csm_PUSH_WRESP_TO_FIFO;            end        // Start an AXI write to a 64-bit address        csm_START_WRITE", "label": "                amci_write <= 1;"}
+{"generated": "/Lab 1/Lab1_2.v", "label": "            s0: out =1'b0;"}
+{"generated": "@(posedge hclk)#1beginhtrans=2'd0; //ideal(no transction)endendendtaskendmodule", "label": "@(posedge hclk)"}
+{"generated": "pulse1=1'b0;        #WAIT_CYCLES;        pulse2=1'b1;        #WAIT_CYCLES;        pulse2=1'b0;        #WAIT_CYCLES;", "label": "        pulse2=1'b1;pulse1=1'b0;"}
+{"generated": "\rreg [23:0] memory [127:0];\r\rreg [7:0] reg_file [15:0];\r\rreg [7:0] reg_a;\rreg [7:", "label": "reg cmp_result = 0;\r"}
+{"generated": "_fd_sc_hd__tapvpwrvgnd_1 TAP_288 (.VGND(vssd1),   .VPWR(vccd1)); sky130_fd_sc_hd__tapv", "label": "    .VPWR(vccd1));"}
+{"generated": "// ==============================================================// spiflash.v - spiflash device design// - only support READ command ", "label": "\t\t\t\t\tspi_addr <= spi_addr + 1;"}
+{"generated": ".INTERNAL_INT(INTERNAL_INT_internal),       .INTA_(INTA__internal),       \t\t\t// ack from processor       .SP_(SP__internal),\t\t\t\t\t \t// 1 >> master, 0 >> slave       ", "label": "        .INTERNAL_INT(INTERNAL_INT_internal),  "}
+{"generated": "\t.P_COUNT_BIT(P_COUNT_BIT)", "label": "\t.P_COUNT_BIT\t(P_COUNT_BIT) "}
+{"generated": "`timescale 1us / 1ps", "label": "        HIGH_ALERT: begin"}
+{"generated": "\t.B(xor1[7:0]),\r", "label": "\t\t\t\t\t.B(xor1[7:0]),\r"}
+{"generated": "// |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |", "label": "--               |              |               |"}
+{"generated": "\tif (loadbr == 1'b1) begin", "label": "\t\tif (done == 0) begin"}
+{"generated": "`default_nettype none\r", "label": "`include  \"../tv80_lib/8085_instr_set.v\" "}
+{"generated": "1'b0: led[0] <= (count_ms <= count_s)? 1'b0 : 1'b1;\r                    endcase\r                end\r                4'b0010: begin", "label": "                        1'b0: led[0] <= (count_ms > count_s) ? 1'b1 : 1'b0;\r"}
+{"generated": "in1 = 8'b00000000;", "label": "        in1 = 8'b00000000;"}
+{"generated": "localparam [9:0] squareRowEnd = 300;", "label": "localparam [9:0] squareRowEnd = 250;"}
+{"generated": "A = 4'b0010;    B = 4'b0011;    Cin = 1'b0;    $display(\"A = %b, B = %b, Cin", "label": "    A = 4'b0001;"}
+{"generated": "\t$dumpfile(\"compuertas_tb.vcd\");", "label": "\t#1 \t\ta = 1'b0;b = 1'b0;"}
+{"generated": "\tinput[31:0] GPRRS,", "label": "\t\tfor(i=0;i<32;i=i+1)begin"}
+{"generated": "out,ram_out;\r\rwire [31:0] data_in;\r\rwire [31:0]data_out_demux;\r\rwire [31:0]data_out_mux;", "label": "RAM            ram1(clk,rst,wre,ram_in,ADD,data_out,done);\r"}
+{"generated": "always @( posedge mdc_i ) begin", "label": "always @( posedge mdc_i ) "}
+{"generated": "assign ose_teli = mA | mB;", "label": "   assign ose_teli = mA | mB;"}
+{"generated": "driver <= 100;    #10    addr <= 101;", "label": "    driver = 200;"}
+{"generated": "case(ALUControl)", "label": "    case (ALUControl)"}
+{"generated": "Arith_Comp = 'b0;", "label": "            {Carry_Out_Comp, Arith_Comp} = 'b0;"}
+{"generated": "//    end    reg [7:0] imageArray [0:48];    reg [7:0] kernelArray", "label": "        fd = $fopen(\"C:\\\\Vivaldo\\\\Project\\\\convolResult.txt\", \"w\");"}
+{"generated": "\t(current_insrt[6:0] == 7'b0010011 || current_insrt[6:0] == 7'b0000011 || current_insrt", "label": "\t\t\t\t   (current_insrt[6:0] == 7'b1101111) ? J_imm:\r"}
+{"generated": ".data        (data),\r               .data_flag   (data_flag),\r               .tx          (tx)\r);\r\rendmodule", "label": "                .data        (data),\r"}
+{"generated": "`ifdef BSV_ASSIGNMENT_DELAY", "label": "       WILL_FIRE_RL_rule_tb_2,"}
+{"generated": "in_solved = 1'b0;", "label": "in_solved = 1'b0;"}
+{"generated": "Clock_Divider MyClockDivider (\r", "label": "/*---------> Writing on LCD <---------*/\r"}
+{"generated": "genvar col;            for (col = 0; col < MAX_DIM; col = col + 1) begin: col_loop                assign mat_B_T[(row*MAX_DIM + col)*DW +: DW", "label": "            for (col = 0; col < MAX_DIM; col = col + 1) begin: col_loop"}
+{"generated": ".RDATA(RDATA),   .RRESP(RRESP),   .RVALID(RVALID),    //write address channal   .AWVALID(AWVALID),   .mwrite_address(mwrite_address),", "label": "    .RDATA(RDATA),"}
+{"generated": "\rShiftLeft2 shifter_2(\r                immediate_resultado,\r                Address\r        );\r        Un_16_to_32bits extender16_32(\r                Signedn,\r                immediate,", "label": "        Un_16_to_32bits un_16_32(\r"}
+{"generated": "\talways @(posedge clock)\r\t\tbegin\r\t\t\tif (SwO)\r\t\t\t\tct <= ct + 1'b1;\r\t\t\telse\r\t\t\t\tct <= 2'b0;\r\t\t", "label": "\talways @(posedge clock)\r"}
+{"generated": "\twire [PC_INPUT_LENGTH - 1 : 0] adder_out;\twire [PC_INPUT_LENGTH - 1 : 0] adder_in;\tassign adder_in = pc_out", "label": "\twire [PC_INPUT_LENGTH - 1 : 0] adder_in_2_mux_out;"}
+{"generated": "//\t// Atribui\u00e7\u00e3o ass\u00edncrona. Se reset == 1, pc recebe o valor", "label": "\t\t\tcurrent_pc = 32'b0;"}
+{"generated": "\tassign carry = (ALUControl[1]==1'b0) & sum[32];\r", "label": "    assign carry = (ALUControl[1] ==1'b0) & sum[32];\r"}
+{"generated": "s2: if(in==1)                    out=1'b1;            default: out=1'hz;        endcase    endendmodule", "label": "            s2: if(in==1)"}
+{"generated": "wire [31:0] WD;    wire [31:0] RD1;    wire [31:0] RD2;    wire [31:0]  REG_MUX_OUT;    wire [", "label": "    wire [31:0] WD;"}
+{"generated": "$dumpfile(\"fsm1_tb.vcd\");", "label": "  $dumpfile(\"fsm1_tb.vcd\");"}
+{"generated": "sm_tlast),    .tap_WE_merge(tap_WE_merge),    .tap_RE(tap_RE),    .tap_Di(tap_Di),    .tap_A_shifted(tap_", "label": "     .data_RE(data_RE),"}
+{"generated": "`timescale 1ns / 1ps`include \"define.v\"module Buzzer (    input play,   ", "label": "    always @(posedge clk) begin"}
+{"generated": "\rMFLO: begin \r                                        Bank_Write(BANK_RD, BANK_LO);\r                                        state = FETCH;\r                                end\r\r//----------------------------- Desvio condicional\r\r                                BEQ: Branch(zero);\r                               ", "label": "                                MFLO: begin\r"}
+{"generated": "\twire [7:0]x;", "label": "\twire [7:0]x;"}
+{"generated": "\t.waddr(\t\twp_bin[aw-1:0]\t),\t.di(\t\tdin\t\t)\t);*///////////////////////////////////////////////////////////////////////// Write Pointer//always @(posedge wr_clk or negedge wr_rst)", "label": "\t.waddr(\t\twp_bin[aw-1:0]\t),"}
+{"generated": "reg [ADDR_WIDTH-1:0] paddr;    wire [BUS_WIDTH-1:0] prdata;    wire pready;    wire pslverr;    wire [MAX_DIM*MAX_DIM-", "label": "    reg [ADDR_WIDTH-1:0] paddr;"}
+{"generated": "1            Branch      = 0;\r            Jump        = 0;\r            JumpAndLink = 0;\r            PCSrc       = 0;\r        end\r        7'b0100011", "label": "            Branch      = 0;\r"}
+{"generated": "`default_nettype wire", "label": "`default_nettype wire"}
+{"generated": "\ta = 1'b1; b = 1'b0;\r        #100\r        // Test case 4\r        a = 1'b1; b = 1'b1;\r   ", "label": "        a = 1'b1; b = 1'b0;\r"}
+{"generated": "\talways @(*)\r    begin\r    case ({sffd[2],sffd[1],sffd[0]})\r        3'b000: segmentos=7'b0000001;\r", "label": "    always @(*)\r"}
+{"generated": ".clock1 (1'b1),\t\t\t\t.clocken0 (1'b1),\t\t\t\t.clocken1 (1'b1),\t\t\t\t.clocken2 (1'b1),\t\t\t\t.clocken", "label": "\t\t\t\t.address_b (1'b1),"}
+{"generated": "wire [`NOTE_BITS-1:0] note;", "label": "wire [`NOTE_BITS-1:0] note;"}
+{"generated": "/README.md", "label": "assign R = A%B;\r"}
+{"generated": "\tinput\t[RAM_ADDR_BITS-1:0]\t\taddress,\tinput\t[RAM_WIDTH-1:0]\t\t\tinput_data,\toutput\t[RAM_WIDTH-1:0]\t\t\t", "label": "    input \t\t[RAM_ADDR_BITS-1:0]\taddress,"}
+{"generated": "4'd0;\r", "label": "  parameter   EXTRACT_NO_DELAHY     = 1"}
+{"generated": " sky130_ef_sc_hd__decap_12 FILLER_0_3_15 (); sky130_ef_sc_hd__decap_12 FILLER_0_3_2", "label": " sky130_ef_sc_hd__decap_12 FILLER_0_3_15 ();"}
+{"generated": "{instr_mem[10'd19], instr_mem[10'd18], instr_mem[10'd17], instr_mem[10'd16]} = 32'b", "label": "        {instr_mem[10'd19] , instr_mem[10'd18] , instr_mem[10'd17] , instr_mem[10'd16]} = 32'b00000010000001000000000100000000;"}
+{"generated": "001: ALUControl = `SLL_FUNCT3;\t\tdefault: ALUControl = `MUL_FUNCT3;\t       endcase        2'b11: ALUControl = `ADD_FUN", "label": "        default: ALUControl = `ADD_FUNCT3;"}
+{"generated": "//    reg [3:0] queue_head_next, queue_tail_next;    reg [3:0] queue_count_next;    reg [QUEUE_WIDTH-1:0] queue_next [QUEUE_", "label": "    reg [7:0] result;"}
+{"generated": "initial begin    #100;    // Initialize inputs    A_init = 4'b0000;    B_init = 4'b0000;    OP_init = 3'b0", "label": "  reg clk = 0;"}
+{"generated": "// instruction: 32-bit instruction// regA/B: 32-bit data in registerA(addr=00", "label": "            reg_result = temp_B - temp_A;"}
+{"generated": "packet_id <= 0;", "label": "        packet_id <= 0;"}
+{"generated": "module xillybus", "label": "   wire        M_AXI_ACP_RVALID;"}
+{"generated": "begin : main", "label": "begin : main"}
+{"generated": "\t#25 clk=~clk;\tendendmodule", "label": "\t\t#25 clk=~clk;"}
+{"generated": "\t\t\tif(byte_sel[3])\r\t\t\tbegin\r\t\t\t\tmaster_data[95:88] <= p_in[31:24];\r\t\t\tend\r\t\tend\r\r\t\telse", "label": "\t\t\tif(byte_sel[3])\r"}
+{"generated": "o_out = count;    endendmodule", "label": "        o_out = count;"}
+{"generated": "\toutput\t[11:0]\tCH7;", "label": "\toutput\t[11:0]\tCH7;"}
+{"generated": ");", "label": "   reg [11:0]      w_ptr; "}
+{"generated": "\tif (rst) rptr <= 0;\r", "label": "        if (rst) begin \r"}
+{"generated": "\t$fsdbDumpfile(\"Comparator.fsdb\");", "label": "    $monitor(\"A = %b , B = %b , A_lt_B=%b,A_gt_B=%b,A_eq_B=%b, success=%b\",A,B,A_lt_B, A_gt_B, A_eq_B, (((A>B&A_gt_B)|(A<=B&!A_gt_B))&((A<B&A_lt_B)|(A>=B&!A_lt_B))&((A==B&A_eq_B)|(A!=B&!A_eq_B))));"}
+{"generated": "//2'd1: out[1:0] <= 2'b01; 2'd3: out[1:0] <= 2'b10;            default: out[1:0] <= 2", "label": "            default: out[1:0] <= 2'b00;"}
+{"generated": "/**", "label": "                                    7'b0000010: menu_song <= `two_tigers;"}
+{"generated": "\tend", "label": "\t$display(\"---------------------------------------------\");"}
+{"generated": "\tdata_in_internal <= 4'b0000;", "label": "\t   data_in_internal <= 4'b0000;"}
+{"generated": "initial begin  #50 btn_state = 3'b000;endalways begin    #45 btn_state = btn_state + 1;    #3  btn_state = btn_state + 1", "label": "calc calc_uut(.led(led), .sw(sw), .clk(clk), .btnc(btn_state[1]), .btnl(btn_state[2]), .btnu(btnu), .btnr(btn_state[0]), .btnd(btnd));"}
+{"generated": "//sequential logicalways @(posedge write_clk or negedge write_rst_n)begin\tif(write_rst_n == 1'b0)begin\t\tfifo_data_current[0] <= ", "label": "reg [7:0]   \tfifo_data_next[0:7];"}
+{"generated": "\rassign w_addr = w_bin[ADDR_BITS-1:0];\r    assign w_bin_next = w_bin +( w_inc &!w_full);\r    assign w_gray_next =", "label": "    assign w_addr = w_bin[ADDR_BITS-1:0];\r"}
+{"generated": "\r\rinout   wire            i2c_scl,\rinout   wire            i2c_sda,\r\r///////////////////////////////////////////////////\r// RFU internal SPI bus (DNU)\r\rinout   wire            spi_mosi,\r", "label": "    .video_rgb              ( video_rgb ),\r"}
+{"generated": "$finish;  endendmodule", "label": "    #10 $finish;"}
+{"generated": "*", "label": "**********************************************************************/"}
+{"generated": "mux_block block (m[i],n[i],sel[i+1],m[i+1],n[i+1]);    end  endgenerate  assign out = m[N-1];endmodule", "label": "      mux_block block("}
+{"generated": "//\t\taltpll_component.inclk0_input_frequency = 20000,\t\taltpll_component.intended_device_family = \"Cyclone IV E\",\t\taltpll", "label": "\t\taltpll_component.inclk0_input_frequency = 20000,"}
+{"generated": "\toutput nQ; wire nQ;\r\t\r\tthreeNand nand0(nand0_out, D, nand1_out, nQ);\r\tthreeNand nand1(nand1_out,", "label": "\toutput nQ; wire nQ;\r"}
+{"generated": "module D_Flip_Flop_1(\rClock,\rReset_n,\rIn_Data_0,\rIn_Data_1,", "label": "Data_1_Add_6,\r"}
+{"generated": "\t\t\t\t\tincr_reg <= incr_next;\r\t\tend \r\t\r\talways @ (*)\r\t\tbegin\r\t\t\tincr_next <= incr_reg + 4'b0001;\r\t\t\tif", "label": "\t\t\t\t\tincr_reg <= incr_next;\r"}
+{"generated": ".addr (apb_addr),   .din (apb_wdata),   .dout (mem_dout));endmodule", "label": "    .addr (apb_addr),"}
+{"generated": "count\r);\r\rComputation InstComputation(\r\t.Clk\t\t\t\t\t\t\t\t(clk50m\t\t\t\t\t),\r\t.Rst\t\t\t\t\t\t\t\t(!locked\t\t\t\t),\r\t.In_enable\t\t\t\t\t\t\t(comp_enable\t\t\t),", "label": "Computation InstComputation(\r"}
+{"generated": "reg [7:0]data_reg;", "label": "reg [7:0]header,int_reg,int_parity,ext_parity;"}
+{"generated": "if (i_rst) begin", "label": "    if (i_rst) begin"}
+{"generated": "000;\r            DTMemory[20]<=32'h00000000;\r            DTMemory[21]<=32'h00000000;\r           ", "label": "            DTMemory[30]<=32'h00000000;\r"}
+{"generated": " <= TRANS_PKT_S;\r", "label": "  input       [width-1:0]   data;"}
+{"generated": "\rB=6'b000111;\rfxn = 3'b111;\r# 100;\r//test vector 7\rA=6'b000101", "label": "B=6'b000011;\r"}
+{"generated": "\tnot (B_complement[2], B[2]);", "label": "\t not (B_complement[2], B[2]);"}
+{"generated": "dout <= mem[addr];        end    end endendmodule", "label": "            dout <= mem[addr];"}
+{"generated": "always @(posedge clka)", "label": "always @(posedge clka)"}
+{"generated": "m_axis_tdata<=check[n-k-1:n-k-width];", "label": "                                m_axis_tdata<=check[n-k-1:n-k-width];"}
+{"generated": "000_0: begin code = 10'b110000_0111; next_rd = same; end\r\t\t\t9'b111_10000_1:", "label": "\t\t\t9'b111_11110_0: begin code = 10'b011110_1000; next_rd = same; end\r"}
+{"generated": "debouncer_delayed_fsm fsm(       .clk(clk),       .reset_n(reset_n),       .noisy(noisy),       .timer_done(timer_done),       .timer_reset", "label": "    debouncer_delayed_fsm FSM("}
+{"generated": "if (gout) begin                buswires = aluout;            end else begin                case (r_out)                    3'b000: buswires = r0;                    3'b001: bus", "label": "            if (gout) begin"}
+{"generated": "4'b0011: {Lm_n,EI_n} <= 2'b00;\r", "label": "\t\t\t\t\t\t\t\t\t\t\t\t\t\t4'b0011: {Lm_n,EI_n} <= 2'b00;\r"}
+{"generated": "parameter TAG_BITS      = ADDRESS_BITS - SET_BITS - BLOCK_BITS,    parameter DATA_BITS     = 32) (    input wire clk,    input wire rst,    input wire enable,    input wire [ADDRESS", "label": "    parameter TAG_BITS      = ADDRESS_BITS - BLOCK_BITS - SET_BITS,"}
+{"generated": "h0,\r\t\t\tPS2_STATE_1_INITIATE_COMMUNICATION\t= 3'h1,\r\t\t\tPS2_STATE_2_WAIT_FOR_CLOCK\t= 3'h2", "label": "reg\t\t\t\tps2_data_reg;\r"}
+{"generated": "7'd100:Dout=A[100];        7'd101:Dout=A[101];        7'd102:Dout=A[102];        7'd", "label": "        7'd100:Dout=A[100];"}
+{"generated": "else if(read_enb_0)  begin  count0<=count0+1;  soft_reset_0<=0;  end  else if(count0==1)  begin  soft_reset_0<=", "label": "  else if(vld_out_0)"}
+{"generated": "8: active = 1'b0;            16: active = 1'b0;            32: active = 1'b1;            default: active = 1'b0;        endcase    end", "label": "            8: active = 1'b0;"}
+{"generated": "\t.write_data_sel(write_data_sel),.dataOut(data_rd),.set_valid(set_valid),.valid(valid),.set_dirty(set_dirty),.dirty(dirty),", "label": "                 .write_data_sel(write_data_sel), .dataOut(data_rd), .set_valid(set_valid), .valid(valid), .set_dirty(set_dirty), .dirty(dirty), .set_tag(set_tag), .tag(tag));\r"}
+{"generated": "initial begin\t\t// Initialize Inputs\t\tclk = 0;\t\treset = 0;\t\t// Wait 100 ns for global reset to finish\t\t#100;\t\t// Add stimulus here\t", "label": "\tinitial begin"}
+{"generated": "endendmodule", "label": "    src_num = 128; #1 $display(\"Source number = %d; Result number = %d\", src_num, log_src_num);"}
+{"generated": "//            end", "label": "            for(SnakeBodyIndex = SNAKE_MAX_SIZE - 1 ; SnakeBodyIndex > 0; SnakeBodyIndex = SnakeBodyIndex - 1) begin"}
+{"generated": "module withdrawal(", "label": "module withdrawal("}
+{"generated": "//          by - Tal Shvartzberg.UNKNOWN (TAL", "label": "    #5 clk <= ~clk;"}
+{"generated": ".read_data1(),.read_data2());endmodule", "label": " .read_data1(),.read_data2()); "}
+{"generated": "module demux8 (input wire i, j2, j1, j0, output wire [0:7] o);  wire  t0, t1;  demux4 demux4_0 (i, j2", "label": "module demux8 (input wire i, j2, j1, j0, output wire [0:7] o);"}
+{"generated": "              EXTENDED = 8'he0, // extended code           RELEASE   = 8'hF0, // release code            CAPSLOCK = 8'h58, // caps lock code          SHIFT2   = 8", "label": "        state_next      = state_reg;"}
+{"generated": "// Function    :", "label": "              if (solved) begin"}
+{"generated": "assign ashi_ridle = (ashi_read  == 0) && (ashi_read_state  == 0);   // These are the valid values for ashi_rresp and ashi_wresplocalparam OK", "label": "assign ashi_ridle = (ashi_read  == 0) && (ashi_read_state  == 0);"}
+{"generated": "\t.cin(t_cin),\r\t\t.sum(t_sum[3:0]), \r\t\t.cout(t_sum[4])\r\t);\r\r\tinitial begin\r\t\tt_a = 4", "label": "                .cin(t_cin),\r"}
+{"generated": "Bit_Counter (\r\t// Inputs\r\tclk,\r\treset,\r\t\r\tbit_clk_rising_edge,\r\tbit_clk_falling_edge,\r\tleft_right_clk_rising", "label": " *                           Constant Declarations                           *\r"}
+{"generated": "`timescale 1ns / 10psmodule i2c_if  (bus_clk, quiesce, user_w_", "label": "\t    st_startstop:"}
+{"generated": "\t.clk_out(clk),\r", "label": "    .clk_out(clk),\r"}
+{"generated": "\t.FILENAME(\"counter_wb.hex\")", "label": "\t\t.FILENAME(\"counter_wb.hex\")"}
+{"generated": "\tlocalparam _add = 3'b000;\r", "label": "\tlocalparam _other_func = 3'b111;\r"}
+{"generated": "/README.md", "label": "          read_pointer <= 0;"}
+{"generated": "\treg [31:0] PredictionPC;\r\r    initial begin\r        for (i = 0; i < BTB_SIZE; i = i + 1) begin\r            BTB[i] = 32", "label": "    wire PredictTaken;\r"}
+{"generated": " output [15:0] data_out);", "label": "    output [15:0] data_out"}
+{"generated": ".mem_write(mem_write), .alu_src(alu_src), .reg_dst(reg_dst), .mem_to_reg(mem_to_reg), .reg_write(reg", "label": "  .mem_write(mem_write),"}
+{"generated": "input clk,reset,", "label": "input clk,reset,"}
+{"generated": "\tassign A_Pulse = (y == first_occur);\rendmodule", "label": "assign A_Pulse = (y == first_occur);\r"}
+{"generated": "always @ (posedge clk) begin", "label": "always @ (posedge clk) begin"}
+{"generated": "\taltpll_component.port_pllena = \"PORT_UNUSED\",\r\t\taltpll_component.port_scanaclr = \"PORT_UNUSED\",\r\t\taltpll_component.port_scan", "label": "\t\taltpll_component.port_pllena = \"PORT_UNUSED\",\r"}
+{"generated": "reg [2:0] ROM_addr;", "label": "reg [2:0] ROM_addr;"}
+{"generated": "{`LOAD, 2'bxx, 3'bxxx}: next <= {`IF1, 4'b0010, 3'b010, 1'b1, 1'b", "label": "            {`LOAD, 2'bxx, 3'bxxx}: next <= {`IF1, 4'b1000, 3'b010, 1'b1, 1'b0, 1'b0, 1'bx, 1'bx, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, `MREAD, 1'b0, 1'b0};"}
+{"generated": "\twire[1:0] health1;    wire[1:0] health2;    reg isGameOver = 1'b0;    reg firstWin = 1'b0, secondWin = 1'b", "label": "    wire[1:0] health1, health2;"}
+{"generated": "\talways @ ( posedge clk or negedge n_reset)\r\t\tbegin\r\t\t\tif (!n_reset)\r\t\t\t\tbegin\r\t\t\t\t\tq_reg <= { N {1'b0} };\r", "label": "\talways @ ( posedge clk )\r"}
+{"generated": "output reg [63:0] o_sub_MV,    output reg [63:0] o_sum_MV,    //Output_Mem    output reg finish);", "label": "    output reg [63:0] o_sub_MV,"}
+{"generated": "// Licensed under the", "label": "\t\t\t$sdf_annotate(\"../../../caravel/sdf/xres_buf.sdf\", uut.rstb_level) ;"}
+{"generated": "output[511:0] AXIS_FIFO_TDATA,", "label": "    output[511:0] AXIS_FIFO_TDATA,"}
+{"generated": "data_o <= Q_q[1];", "label": "                data_o <= Q_q[1];"}
+{"generated": "//    #(cyc) load; data_in(8'd1, 8'd1);    #(cyc) nop;    @(posedge done);    #(cyc) load; data_in(8'd1, 8'd2", "label": "    @(posedge done);"}
+{"generated": "4'd10: CondEx = N == V;", "label": "        4'd10: CondEx = ~(N ^ V);"}
+{"generated": "conv55 #(.BIT_WIDTH(BIT_WIDTH),.OUT_WIDTH(OUT_WIDTH)) CONV2 (", "label": "conv55 #(.BIT_WIDTH(BIT_WIDTH), .OUT_WIDTH(OUT_WIDTH)) CONV2 ("}
+{"generated": "else read_empty<=(gray_next==sync_write_ptr);", "label": "else read_empty<=(gray_next==sync_write_ptr);"}
+{"generated": "//LCD\routput LCD_ON, LCD_BLON, LCD_EN, LCD_RS, LCD_RW,\routput [7:0] LCD_DATA,\r//VGA\routput VGA_CLK, VGA", "label": "input UART_RXD,\r"}
+{"generated": "\tinput [31:0] b, \r", "label": "   input [31:0] b, \r"}
+{"generated": "//        pwrite = 1'", "label": "        psel = 1'b0;"}
+{"generated": "temp_2 = d2_in;   end else begin   temp_1 = temp_1;   temp_2 = temp_2;   endend// Qualify the control signal by clkb for the d_out registeralways", "label": "   temp_2 = d2_in;"}
+{"generated": "always @(posedge clk) begin", "label": "  always @ (posedge clk) begin"}
+{"generated": "_en),\r", "label": "            state <= init;\r"}
+{"generated": "4'd9 : seg = 7'b0010_000;\r    4'd10 : seg = 7'b0001_000;\r    4'd11 : seg =", "label": "    4'd9 : seg = 7'b0010_000;\r"}
+{"generated": "state <= stop;                        end                       end    else begin                          counter <= counter +1 ;                         state <= write;                       end                   end                   stop : begin                       if (counter == ((BAUDRATE/2)-1))  begin                         counter", "label": "                         state <= stop;"}
+{"generated": " dout<=8'b0;\rend\relse if(re==1'b1 && empty==1'b0)\rbegin\rdout<=mem[rd_ptr[3:0]];\rrd_ptr<=rd", "label": "dout<=8'b0; end\r"}
+{"generated": "reg [31:0] counter;", "label": "reg [7:0] counter;"}
+{"generated": "-- Date            :   2000/09/20", "label": "-- Date            :   20 September 2000"}
+{"generated": ".din(register[2]),   .dout(register[3]));assign d_out = register[3];always @(posedge clk or posedge rst) begin    if (rst) begin        dout <= 1'", "label": "    .din(register[2]),"}
+{"generated": "207] - 1 + (WIDTH * 2)) && (Y >= SnakeY[207] && Y <= SnakeY[207] - 1 + (WIDTH *2)) ||                            (X", "label": "                            (X >= SnakeX[901]  && X <= SnakeX[901] - 1 + (WIDTH * 2)) && (Y >= SnakeY[901] && Y <= SnakeY[901] - 1 + (WIDTH *2)) ||"}
+{"generated": "//                else if(A0 ==0) //case of icw4                  begin                    //ICW4_F =1;                    //RW=1;                    type=1;                    nr=2'b11;                   ", "label": "                if(ICW4_exists) count = 2'b11;"}
+{"generated": "; // ", "label": "            if (text_bit_on && (char_addr != 7'h0d))"}
+{"generated": "bar_R_USER;    wire       Ctrl_xbar_R_VALID;    wire [31:0] Ctrl_xbar_W_DATA;    wire       Ctrl_xbar_W_LAST;    wire      ", "label": "    assign axi_imem_bridge_r_ready_i = axi_imem_bridge_AXI4LITE_to_Ctrl_xbar_AXI4LITE_IMEM_R_READY;"}
+{"generated": "\tinput \t\t\tclk_200,\t\t// MIPI CSI-2 interface\tinput  wire \tclk_p,\tinput  wire \tclk_n,\tinput  wire \tdata_p,", "label": "\toutput  wire led6, "}
+{"generated": "if (done_i) begin\t\t\t\t\t\tresult_reg <= result_i;\t\t\t\t\t\tflags_reg <= of_i;\t\t\t\t\t\tcurrent_state <= STATE_IDLE;\t\t\t\t\t\tbusy_o <= 0;\t\t\t\t\tend\t\t\t\t", "label": "\t\t\t\t\toperand_C_o <= (control_reg[1] ? sp_op : {BW*Elements_Num{1'b0}}); "}
+{"generated": "assign sd_cas = sd_cmd[1];", "label": "assign sd_cas = sd_cmd[1];"}
+{"generated": "/SPI_Design/SPI_Design.srcs/sources_1/new/spi_top.v", "label": "        if (cnt == divider) cpol_1 <= 1;"}
+{"generated": "carry = 1'b0;", "label": "                         carry = 1'b0;"}
+{"generated": "//set_property -dict {PACKAGE_PIN V8 IOSTANDARD LVTTL} [get_ports mist_miso]//set_property -dict {PACKAGE_PIN V7 IOSTANDARD LVTTL} [get_ports mist_", "label": "  output wire SDRAM_nWE,"}
+{"generated": ".sel(1'b1),        .sum(beta)     );     complement2neg negA(        .p(A),        .t(Neg_A)     );     complement2neg negB(        .p(", "label": "        .sel(1'b0), "}
+{"generated": "#200 Cof_rdy=1;\r#200 Cof_rdy=0;\r\r#500\r\r#200 Coin_1=1;\r#200 Coin", "label": "#200 Cof_rdy=1;\r"}
+{"generated": "//-----------------------------------------------------------------//                       USB Serial Port//                            V0.1//                     Ultra-Embedded.com//                       Copyright 2020////                 Email: admin@ultra", "label": "             dmpulldown_q != utmi_dmpulldown_i)"}
+{"generated": "always @ (posedge clock) begin        if (reset) begin            register_file[0] <= 32'h0;            register_file[1] <= 32'h0;            register_file[", "label": "    always @ (posedge reset, posedge clock) begin"}
+{"generated": "CHECK_BY_PRIORITY:                begin                    if(empty[circ_buffer[idx_cnt_ff]] == 1'b0 && sw_busy[circ_buffer[idx_cnt_ff]] == 1'b", "label": "            CHECK_BY_PRIORITY:"}
+{"generated": "end else begin      q1 <= in;      q2 <= q1;      q3 <= q2;    end  end  assign out = q1 & q2 & q3;endmodule  // end Debouncer", "label": "    end else begin"}
+{"generated": "// state change will be detected by the next state                  r_SM_Main     <= s_IDLE;                  o_Rx_Active   <= 1'b0;                end              end            else              begin                r_Clock_Count", "label": "                  o_Rx_Active <= 1'b0;"}
+{"generated": "8'b00001111: huffman_code[x] <= (huffman_code[x] >> 4);", "label": "\t\t\t\t8'b00001111: huffman_code[x] <= (huffman_code[x] >> 4);"}
+{"generated": "\rCSM8_line D_line7(.A({Dout6, A[8]}),.B(B),.Bout(Bout[7]),.D(Dout7));\rCSM8_line D", "label": "CSM8_line D_line7(.A({Dout6, A[8]}), .B(B), .Bout(Bout[7]), .D(Dout7));\r"}
+{"generated": "\t#1000000 $finish;\rend\r\ralways begin\r    #5 clk = ~clk;\rend\r\rendmodule", "label": "    #100 $finish;\r"}
+{"generated": "module ROM(ROM_addr, ROM_data);", "label": "module ROM (ROM_data, ROM_addr);\r"}
+{"generated": "ControlUnit CU(opcode,RegDst, Jump, Branch, MemRead, MemWrite, RegWrite, MemToReg, ALUSrc,ALUOp);endmodule", "label": "CU ControlUnit(opcode,"}
+{"generated": "b10: begin                    Prediction[PC[`BINDEX]] <= (taken)? 2'b11 : 2'b01;                end                2'b11: begin                    Prediction[PC[`BINDEX]]", "label": "                    Prediction[PC[`BINDEX]] <= (taken) ? 2'b11 : 2'b10;"}
+{"generated": "\tbegin\r\t\tnxt_st=step1;\r\t\ta_sel=0;\r\t\tb_sel=0;\r\t\tpp1_ce=0;\r\t\tpp2_ce=0;", "label": "\t\tnxt_st=step1;\r"}
+{"generated": "And_gate uut(X, Y, Z);", "label": "And_gate uut(.A(X), .B(Y), .F(Z));"}
+{"generated": "endmodule", "label": " sky130_fd_sc_hd__tapvpwrvgnd_1 TAP_375 ();"}
+{"generated": "reg [WORD_SIZE-1:0] mem_copy[RAM_SIZE-1:0];", "label": "reg [WORD_SIZE-1:0] mem_copy[RAM_SIZE-1:0];"}
+{"generated": "\testi_bits = 12'b0000_0001_1111; \r\t#20\r\tinfo_bits = 12'b0000_000", "label": "\testi_bits = 12'b0010_0001_1010; \r"}
+{"generated": "module parse_v2(", "label": "    always@(posedge clk) begin"}
+{"generated": "$display(\"Output Values:\");            $display(\"Register File: AOut: %d, BOut: %d\", _ALUSystem.AOut, _ALUSystem.BOut);                        $display(\"ALUOut:", "label": "            $display(\"Output Values:\");"}
+{"generated": "\t.VPWR(VPWR)); sky130_ef_sc_hd__decap_12 FILLER_0_7_57 (.VGND(VGND),   .VPWR(VPWR),   .", "label": "    .VPWR(VPWR));"}
+{"generated": "2'b10 : SEG_DATA = 8'b01011011;\t\t\t\t2'b11 : SEG_DATA = 8'b01001111;\t\t\tend", "label": "\t\t\t\t2'b10 : SEG_DATA = 8'b01011011;"}
+{"generated": "Tff_B <= 0;        end\t\telse if(B1)\t// Toggle signal Tff_B whenever B1 is 1\t\t\tbegin\t\t\t\tTff_B <= ~Tff_B;\t\t\t", "label": "            Tff_B <= 0;"}
+{"generated": "input wire clk,", "label": "    input wire                   clk,"}
+{"generated": "\ralways @(posedge clk) begin\r    if (reset) begin\r        tx_busy <= 0;\r        tx_done <= 0;\r        tx <= 1;\r        tx_state <= 0;\r", "label": "reg [12:0] baud_count;\r"}
+{"generated": "2'b11: immext = {instr[31:12], 12'b0}; endcase", "label": " 2'b11: immext = {{12{instr[31]}}, instr[19:12],"}
+{"generated": "3/19/2014 // Design Name: // Module Name:    bin2seg // Project Name: // Target Devices: // Tool versions: // Description: // // Dependencies: // Revision: // Revision 0.01", "label": "\t\t\t\t\t\t(bin_data==2)?8'b00100101:"}
+{"generated": ".eccstatus (),\t\t\t\t.q_b (),\t\t\t\t.rden_b (1'b1),\t\t\t\t.wren_b (1'b0));\tdefparam\t\taltsyncram_component.address", "label": "\t\t\t\t.eccstatus (),"}
+{"generated": "\toutput\t\t          \t\tDRAM_RAS_N,\toutput\t\t          \t\tDRAM_UDQM,\toutput\t\t          \t\tDRAM_WE_N,`endif\t//////////// SEG7: 3.3-V", "label": "\toutput\t\t          \t\tDRAM_RAS_N,"}
+{"generated": "\ralessb lth3(.i0(a0[2]),.i1(b0[2]),.a_lth_b(out[2]));\r\ralessb lth4(.i0(a", "label": "alessb lth3(.i0(a0[2]),.i1(b0[2]),.a_lth_b(out[2]));\r"}
+{"generated": "\t\t\t\t\t\t.b3(b3[1:0]), \r", "label": "\t\t\t\t\t\t.b3(b3[1:0]), \r"}
+{"generated": "\tif(lamp[15:0] == 16'b0000000000111111 || lamp[15:0] == 16'b000", "label": "                  if(lamp[15:0] == 16'b0000000000111111|| lamp[15:0]== 16'b0000011111111111) next = 3'd4;"}
+{"generated": "end", "label": "  #300 $finish;"}
+{"generated": "\tcase(AluController)", "label": "\t\t\tcase(AluController)"}
+{"generated": "\r//                if (resto[31] == 1) begin\r//                    resto = resto + A;\r//                end\r\r                if (i == 32) begin\r                    if (quo == 4", "label": "                if (i == 33) begin\r"}
+{"generated": " ),   .X(n399)  );  sky130_fd_sc_hd__or4_2 U227 (   .A(\\bDescriptorType_w[7] ),   .B(\\", "label": "    .RESET_B(n117)"}
+{"generated": "next_tx_mask = 8'h00;   next_tx_wcnt = tx_wcnt;   case (tx_state)     IDLE: begin       if (we_1 && init_done)       ", "label": "   next_tx_wcnt = 8'h00;"}
+{"generated": "\tinput\t[3:0]  data0x;\r", "label": "\tinput\t[3:0]  data0x;\r"}
+{"generated": "always@(posedge clk or posedge reset) begin", "label": "always@(posedge clk or posedge reset) begin"}
+{"generated": "\tinitial begin", "label": "\treg [1:0] state;"}
+{"generated": "\t.clk_50m(clk),", "label": "\t       .clk_50m(clk),"}
+{"generated": ".data_out(glb_data_out)  );endmodulemodule memory_bank #(    parameter ADDR_BITS = 8,    parameter DATA_BITS = 6) (    input wire clk,    input wire reset", "label": "    .write_enable(glb_write_enable),"}
+{"generated": "assign w_c = p_d;", "label": "assign w_c = p_b;"}
+{"generated": "module register_file (", "label": "                default: d_out = 'b0;"}
+{"generated": "output wire [`SCRATCHPAD_SRAM_ADDRESS_UPPER_BOUND-1:0]     scratchpad_sram_read_address       ,   input  wire [`SCRATCHPAD_SRAM_DATA_UPPER_BOUND-1:", "label": "  output wire [`SCRATCHPAD_SRAM_ADDRESS_UPPER_BOUND-1:0]     scratchpad_sram_read_address        , "}
+{"generated": "output reg [15:0] Dfifo,output reg [15:0] ctrl);", "label": "output reg [15:0] Dfifo,"}
+{"generated": "\t\t\t\tcounter_reg <= counter_next;\r\tend \r\t\r\talways @(*)\r\tbegin\r\t\tif(counter_reg == 26'b1011111010111", "label": "\t\t\t\tcounter_reg <= counter_next;\r"}
+{"generated": "endmodule  // end ClockDivider", "label": "  initial clk_out = 0;"}
+{"generated": " = 1;                        tap_WE_reg = 4'b1111;                        tap_Di_reg = wdata;                        tap_A_reg = awaddr;                        next_ap_idle_done_start", "label": "                    rvalid_reg=last_rvalid;"}
+{"generated": "endcase    else      y_next = x;    always @(posedge clk, posedge rst)    if(rst) y <= 0;    else      if(y_en) y <= y_next;    assign", "label": "      default: y_next = 1'sbx;"}
+{"generated": "module program_counter(clk, rst, enable, dirInBranch, dirInJump, dirSel,", "label": "\t\t\t\t\tMemaReg_src = 1'bx;\r"}
+{"generated": "`timescale 1ns / 1ps", "label": "\t\t\t      .full(full_external_next),"}
+{"generated": ".debug_reg(debug_reg)    );    ROM rom(       .address(pc_out[12:2]),       .out(inst)    );    RAM ram(       .clk(mem_clk),       .", "label": "        .debug_reg(debug_reg)"}
+{"generated": "if((MemtoRegE && (WriteRegE==rsD || WriteRegE==rtD))||(MemtoRegM && (WriteRegM==rsD || WriteRegM==rtD)))   lwstall = 1'", "label": "lwstall = ((rsD == rtE) | (rtD == rtE)) & MemtoRegE;"}
+{"generated": "shamt = 5'd0;    funct = 6'b0;    RegDst = 1;    RegWrite = 1;    ALUSrc = 0;    ALUcontrol = 4'b01", "label": "    shamt = 5'd0;"}
+{"generated": "module aes_top(\r", "label": "input   wire\t\t\t\t\t\t\t\t\tIn_snd_empty\t\t\t;\r"}
+{"generated": ".box_height(line16_height),\t.box_x_location(line16_x_location),\t.box_y_location(line16_y_location),\t.pixel_clk(pixel", "label": "\t.box_height(line16_height),"}
+{"generated": ".set_in(set_idx),            .way_in(way),            .next_out(match)         );     end     else if (REPLACEMENT == \"LRU\") begin         lru_replacement # (            .", "label": "             .set_in(set_idx),"}
+{"generated": "$display(\"                           .:oxkkO00000000000000000000000000000000000000000", "label": "        $display(\"                            ,dxxxxkOOOOkkkxdooddooolllok0000Okdollllcokk,                                                                                       \");"}
+{"generated": "always @ (a or b or c or d or sel) begin", "label": "    always @ (a or b or c or d or sel)"}
+{"generated": "endmodule", "label": "wire [4:0] carry_wire;"}
+{"generated": "wire               o_tvalid;", "label": "  wire               o_tvalid;"}
+{"generated": "6'b101010: begin ALUcontrol=3'b001; ALUsrc=1'b0; end //slt", "label": "\t\t\t\tdefault ALUcontrol = 0;"}
+{"generated": ".we0(shift_reg_we0),   .d0(x),   .address1(shift_reg_address1),   .ce1(shift_reg_ce1),", "label": "    .we0(shift_reg_we0),"}
+{"generated": " - 1'd1);  last_cnt_ROW_RUN = cnt_ROW_RUN == ((3'd5*ifmap_w) - 1'd1);  last_m_out1 = m_out1 ==", "label": "  x_w_inc = (x_w=='d2)? 'd0 : x_w + 1'd1;"}
+{"generated": "if (btnu) begin    accumulator <= 0;endendendmodule", "label": "    if (btnu) begin"}
+{"generated": "if (!Rst_n)        Out <= 1'b0;    else        if (Start || ~|cnt) Out <= 1'b0; // Renici for\u00e7at o auto-reinici        else if", "label": "    if (!Rst_n)                 Out <= 1'b0;"}
+{"generated": "endmodule", "label": "endmodule"}
+{"generated": "fb = 1;            end            #10240;        end        $finish;    endendmodule", "label": "                #200; reset = 1; #10 reset = 0;"}
+{"generated": " ends\t\t// Do not modify the ports beyond this line\t\t// Global Clock Signal\t\tinput wire  S_AXI_ACLK,\t\t// Global Reset Signal. This Signal is Active LOW\t\tinput wire  S_AXI", "label": "\t\tinput wire  S_AXI_AWVALID,"}
+{"generated": "//    );", "label": "    PWM_Generator pwm_gen ("}
+{"generated": "_DATA_WIDTH-1:0]\tslv_reg4;\treg [C_S_AXI_DATA_WIDTH-1:0]\tslv_reg5;\treg [C_S_AXI_DATA_WIDTH", "label": "\treg [C_S_AXI_DATA_WIDTH-1:0]\tslv_reg13;"}
+{"generated": "\ralways @(*) begin\r    S = P[0] + P[1] + P[2] + P[3];\rend\r\rendmodule\r\r/*\rtest case:\rA B S\r0 1 ", "label": "wire [15:0] P_sum;\r"}
+{"generated": "endmodule", "label": "  assign is0 = (result == 32'b0) ? 1 : 0;"}
+{"generated": "module reg_9b (    input clk,    input enable,    input [8:0] data_in,    output [8:0] data_out);\treg [8:0] reg_data;\t\t", "label": "module AddSub(raout, buswires, sub, result);"}
+{"generated": "8'hFF;\r\telse if (left_channel_fifo_is_full == 1'b1)\r\t\tleft_channel_fifo_write_space <= 8'h00;\r\telse\r", "label": "\telse if (read_left_channel)\r"}
+{"generated": "module dff(clk,d,q);", "label": "    #50 data_in_tb=2;"}
+{"generated": "// prevent the bridge from stalling the cpu.//// the bridge is a slave on the PMP bus.//// the bridge is a master on the SPI bus.//// the bridge is a master on the 1wire bus.", "label": "            rx_byte_done <= 1;"}
+{"generated": "\rProgram_counter block_2(PC,PCF,reset,clk,~StallF);\r", "label": "data_memory block_2(ALUOutM,WriteDataM,MemwriteM,RD,clk);\r"}
+{"generated": "and_gate and0 (.a(a[0]),.b(b[0]),.x(results[0]));    and_gate and1 (.a(a[1]),.b(b[1]),.x(results", "label": "    and_gate and0 (.a(a[0]), .b(b[0]), .x(results[0]));"}
+{"generated": "\toutput reg [31:0] result,\r", "label": "\toutput reg [31:0] result,\r"}
+{"generated": "else if(count0==4'b0011)HEX0<=x3;else if(count0==4'b0100)HEX0<=x4;else if(count0==4'b0", "label": "else if(count0==4'b0011)"}
+{"generated": "// always@(*) begin    case(Sel)        2'b00: Tmp = Din1 + Din2;        2'b01: T", "label": "/*Write your design here*/"}
+{"generated": "oe_disable = \"OFF\",\r", "label": "    localparam  ST_RESET        = 'd0;"}
+{"generated": "wire p_1101_q_1 = (b_1101 & p_ge_3 & ~p_ge_11);    wire p_1101_q_2 = (b_", "label": "    wire p_1101_q_1 = (b_1101 & p_ge_3 & ~p_ge_10);"}
+{"generated": "assign inst23_0 = instruc[23:0];\r", "label": "assign inst23_0 = instruc[23:0];\r"}
+{"generated": "module tb_mod_counter;", "label": "    $dumpfile(\"mod_counter_tb.vcd\");"}
+{"generated": "module FA(NUM1,NUM2,CIN,SUM,COUT);  input NUM1,NUM2,CIN;  output SUM,COUT;  wire S1,S2,S3;    HA ha1", "label": "module FA(NUM1,NUM2,CIN,SUM,COUT);"}
+{"generated": "`ifdef BONUS            // TODO: BONUS            // cache memory            // address content which is sended from CPU            // state            // others            //...            //...            //...            //...            //...            //...", "label": "        end else begin"}
+{"generated": "\r//            if (alu_b_i[4] == 1'b1)\r//                result_r = {shift_right_fill_r[31:16], shift_right_8_r[", "label": "            if (alu_b_i[4] == 1'b1)\r"}
+{"generated": "// (C) 2001-2020 Intel Corporation", "label": "\t\t.CSD_SLOT_63      (5'b00000),"}
+{"generated": "reg [1:0] FunSel;", "label": "    reg [1:0] FunSel;"}
+{"generated": "end else begin          next_state <= UPDATE;        end      end    endcase  end  // \u0424\u0443\u043d\u043a\u0446\u0438\u044f \u0432\u044b\u0445\u043e\u0434\u043e\u0432  always @* begin    active <= 0;    y_en <= 0;    s_", "label": "        end else begin"}
+{"generated": "input clk1,", "label": "    input clk1,"}
+{"generated": "\twire [2:0] shamt;\r\twire [3:0] opcode;\r\twire [15:0] constant;\r\twire [2:0] rd_offset;\r\twire [2:0", "label": "\twire [3:0] opcode;\r"}
+{"generated": "assign nextIns0 = currentInsAddr+1;assign nextIns1 = nextIns0 + extendedImm;assign nextIns2 = {currentInsAddr[31:28], 2'b00, currentIns[2", "label": "assign Imm = currentIns[15:0];"}
+{"generated": " always #1 clk=~clk;    initial begin        $dumpfile(\"D_Flip_flop_tb.vcd\");        $dumpvars(0,D_Flip_flop_tb);    end    initial #1", "label": "    always #20 clk=~clk;"}
+{"generated": "//                mcand <= mcd;                state <= 2'b01;            end        end        2'b01 : begin            m = product[0];            if(m==1)begin                product[16", "label": "                state <= 2'b01;"}
+{"generated": "/*************************************************************///function: CCSDS-LDPC\u7f16\u7801\u5668//Author  : WangYuxiao//", "label": "                           .s_axis_tdata(s_axis_tdata),"}
+{"generated": "\tend", "label": "        last_data_A <= 0;"}
+{"generated": " MemWriteD=0;\rBranchD=1;\rALUSrcD=0;\rRegDstD=0;\rRegWriteD=0;\rALUOp=1;\rjump = 0;\rend ", "label": "MemWriteD=0;\r"}
+{"generated": "module hello(clk,RN,NPC,WB_OUT);input clk;input RN;//input EN;integer k;wire  EX_MEM_COND ;reg BR_EN;//I_FETCH ST", "label": "    REG[0] <= 32'h00000000;"}
+{"generated": "module top_module_lfsr(  input[7:0] Data_in,", "label": "module Compare_Found_Result(input Compare_Found, output Compare_Found_Out);"}
+{"generated": "$monitor($time,\":\\t En=%b, I=%b, O=%b\\n\", En, I, O);", "label": "    $monitor($time,\":\\t En=%b, I=%b, O=%b\\n\", En, I, O);"}
+{"generated": "@(posedge CLK_tb)begin    A_tb = 16'd10;    B_tb = 16'd20;    ALU_FUN_tb = 4'b0000;end", "label": "    A_tb = 'd4;"}
+{"generated": "   .in(in_2),\r   .out(out_2)\r);\rGw_G_single row3 (\r   .clk(clk),.rst(rst),\r   .in(in_3),\r", "label": "    .clk(clk), .rst(rst),\r"}
+{"generated": "assign OUT = IN_1 + IN_2 ;", "label": "assign OUT = IN_1 + IN_2 ;"}
+{"generated": "\tparameter [11:0] n2_xmin = -12'd127;\r\tparameter [11:0] n2_xmax = 12'd127;\r\r\r\t//parameters for N", "label": "\tparameter [11:0] n2_xmin = -12'd127;\r"}
+{"generated": "\toutput\t[9:0]\tred_leds_external_connection_export;\tinput\t\treset_reset_n;\toutput\t[6:0]\tsev_seg_0_external_connection_", "label": "\toutput\t[16:0]\tred_leds_external_connection_export;"}
+{"generated": "endtableendprimitive`endif // NO_PRIMITIVES`default_nettype wire`endif  // SKY130_FD_SC_HD__UDP_MUX_4TO2_V//--------EOF---------/** *", "label": "         0   0   ?   ?   ?   0  :  0   ;"}
+{"generated": "\trx_bit(8'd6);\r", "label": "    rx_bit(8'd6);\r"}
+{"generated": "         i_tsel = 1;        i_tvalid1 = 1;        i_tdata1 = $urandom;        #15 i_tdata1 = $urandom;       #15 i_tdata1", "label": "        i_tsel = 1;"}
+{"generated": "// wire GRESTORE_int;", "label": "    wire FCSBO_GLBL;"}
+{"generated": "\rreg signed [31:0] mem [255:0];\r\r\ralways @ (posedge clk) begin\r\tif (wr)\r\t\tmem[addr] <= data_in;\r\tdata_out", "label": "reg [31:0] mem [255:0];\r"}
+{"generated": "//                    if (!(&inputSw)) begin                        clockCount <= clockCount + 1;                    end                end else begin                    state <= RESET;                end            end            DATA_BITS: begin                if (&clockCount) begin                    clockCount", "label": "                    if (&inputSw) begin"}
+{"generated": "end else begin            equal_r = 1'b0;        end         if($unsigned(in1_i) < $unsigned(in2_i)) begin            less_t_r = 1'b1;       ", "label": "        end else begin"}
+{"generated": "reg t_voting_over;", "label": "reg t_vote_over;"}
+{"generated": "|jalr)? PC_plus4 : MtoR;\r    assign o_IMEM_addr = PC;\r    assign jump = (i_IMEM_data[14:12] == 3'b0", "label": "        .RegWrite(regwrite), \r"}
+{"generated": "//       .fifo_wr_en(wr_en_bus2fifo_w)    );    fifo_module # (       .FIFO_SIZE(64),       .W_WIDTH(FRAME_WIDTH)    ) DUT", "label": "        .fifo_wr_en(wr_en_bus2fifo_w)"}
+{"generated": "\t.dump_packet_node2(dump_packet_node2),\r", "label": "    .dump_packet_node2(dump_packet_node2),\r"}
+{"generated": "\r/*--- ID ---*/\rwire [31:0] regA_data_id;\rwire [31:0] regB_data_id;\r\rwire [31:0] imm_extended_id", "label": "/*--- ID ---*/\r"}
+{"generated": "`timescale 1ns / 1ps", "label": "            BrLT = (A[31] < B[31]) ? 1'b1 : (A[31] == B[31]) ? (A < B) : 1'b0;"}
+{"generated": "\tLCD_INTIAL+4:\tLUT_DATA\t<=\t9'h080;\r\t//\tLine 1\r\tLCD_LINE1+0:\tLUT_DATA\t<=\t{1'b1", "label": "\tLCD_INTIAL+4:\tLUT_DATA\t<=\t9'h080;\r"}
+{"generated": "\tend\r\rendmodule\r/lecture2/ex2_alu/riscv_alu.v", "label": "\t\t#(2*p) alu_op_i = `ALU_SRA;\t\r"}
+{"generated": "localparam  S0 = 2'b00, S1 = 2'b01, S2 = 2'b10, S3 = 2'b11;", "label": "    parameter s0 = 0, s1 = 1, s2 = 2, s3 = 3;"}
+{"generated": "assign we_array[i] = reset? 1 : write_en & (addr_in == i);", "label": "          assign we_array[i] = reset? 1 : write_en & (addr_in == i);"}
+{"generated": "reg [3:0] state;", "label": "        d_write <= 0;"}
+{"generated": "\telse if(Cp)\r\t\t\t\tbegin\r\t\t\t\t\tPC_Counter <= PC_Counter + 1;\r\t\t\t\tend\r\t\tend\r\t\rendmodule", "label": "\t\t\t else if(Cp)\r"}
+{"generated": "module Mux2(Out, I0, I1, Sel); // 2 X 1,32 Bit wide", "label": "     input  [31:0] I0,I1,I2,I3;"}
+{"generated": "\twire or1, and2;\r\t\r\tassign or1 = ~fa_df[7] | out_df[3] | out_df[2];\r\tassign and2 = out_df[1] &", "label": "\twire and2, and3, and4, or1;\r"}
+{"generated": ", n2266, n2267, n2268,         n2269, n2270, n2271, n2272, n2273,", "label": "        \\ne_42/GTV2 [7]) );"}
+{"generated": "//// Based on original", "label": "                cmd_oe <= 0;"}
+{"generated": "//Modules Instantiation  PRIORITY_BLOCK priority_block_inst(.IRs(IR),.CU_MODE(interrupt_block_mode),.CU_DATA(interrupt_block_data),.CU_WRITE(CU", "label": "  reg [2:0] SLAVE_ADRESS;"}
+{"generated": "14] ^ c[15] ^ c[17] ^ c[18] ^ c[19] ^ c[25] ^ c[27] ^ c[31];assign    newcrc[", "label": "assign    newcrc[4] = d[31] ^ d[30] ^ d[29] ^ d[25] ^ d[24] ^ d[20] ^ d[19] ^ d[18] ^ d[15] ^ d[12] ^ d[11] ^ d[8] ^ d[6] ^ d[4] ^ d[3] ^ d[2] ^ d[0] ^ c[0] ^ c[2] ^ c[3] ^ c[4] ^ c[6] ^ c[8] ^ c[11] ^ c[12] ^ c[15] ^ c[18] ^ c[19] ^ c[20] ^ c[24] ^ c[25] ^ c[29] ^ c[30] ^ c[31];"}
+{"generated": "FUNCT3)? a | b :\t\t(ALUControlE == `SLT_FUNCT3)? (a < b) :\t\t(ALUControlE == `SLL_FUNCT3)? a", "label": "\t\t(ALUControlE == `SGT_FUNCT3) ? a > b :"}
