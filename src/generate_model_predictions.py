@@ -5,6 +5,7 @@ import argparse
 
 from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM
+import torch
 
 from utils import construct_prompt, post_process
 
@@ -29,8 +30,6 @@ def main():
     predictions_list = []
 
     dataset = load_dataset("ahmedallam/RTL-Repo", split="test")
-    print(dataset)
-
     dataset = dataset.shuffle(seed=2003)
 
     tokenizer = AutoTokenizer.from_pretrained(args.model_name)
@@ -46,8 +45,6 @@ def main():
         prediction = tokenizer.decode(outputs, skip_special_tokens=True)
         prediction = post_process(prediction)
 
-        print(f"Generated: {prediction}")
-        print(f"Label: {data_item['next_line']}")
         predictions_list.append({
             'generated': prediction,
             'label': data_item['next_line']
