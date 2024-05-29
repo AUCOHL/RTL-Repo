@@ -57,6 +57,19 @@ Exact_match: 33.816
 ```
 
 
+## 🏆 Leaderboard
+
+
+| Model Name                                                       | Publisher    | Number of Parameters | Open-Source? | Verilog-Specific? | Edit Similarity | Exact Match |
+|------------------------------------------------------------------|--------------|----------------------|-------|-------------------|-----------------|-------------|
+| [GPT-4](https://arxiv.org/abs/2303.08774v3)                      | OpenAI       | N/A                  | ❌    | ❌                | 71.87           | 48.5        |
+| [GPT-3.5](https://platform.openai.com/docs/models/gpt-3-5-turbo) | OpenAI       | N/A                  | ❌    | ❌                | 61.4            | 33.8        |
+| [RTLCoder-DeepSeek](https://huggingface.co/ishorn5/RTLCoder-Deepseek-v1.1) | Liu et al.    | 6.7B                 | ✅    | ✅                | 48.1            | 16.2        |
+| [Starcoder2](https://huggingface.co/bigcode/starcoder2-15b)      | BigCode      | 15B                  | ✅    | ❌                | 48.0            | 17.0        |
+| [VeriGen](https://huggingface.co/shailja/fine-tuned-codegen-16B-Verilog)  | Thakur et al. | 16B                  | ✅    | ✅                | 43.9            | 9.5         |
+| [RTLCoder-Mistral](https://huggingface.co/ishorn5/RTLCoder-v1.1) | Liu et al.   | 7B                   | ✅    | ✅                | 37.9            | 8.3         |
+
+
 ## ✍️ Citation
 
 If you find our work helpful, please use the following citation.
