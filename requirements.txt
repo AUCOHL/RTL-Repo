@@ -1,6 +1,7 @@
 fuzzywuzzy
 python-Levenshtein
 transformers
+accelerate
 argparse
 tqdm
 datasets
