@@ -20,6 +20,8 @@ rtl_repo = load_dataset('ahmedallam/RTL-Repo', split='test')
 
 ## 💽 Installation
 
+Before proceeding with the installation, please ensure you have PyTorch installed. Refer to the [PyTorch installation page](https://pytorch.org/get-started/locally/#start-locally) for the specific installation command for your platform.
+
 You can install and run our benchmark easily by following these commands:
 
 ```bash
