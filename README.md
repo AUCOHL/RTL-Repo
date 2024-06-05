@@ -50,7 +50,7 @@ python src/evaluate.py --prediction_path <prediction_path>
 
 Example Output (GPT-3.5):
 
-``` bash
+```
 Statistics for the predictions are as follows:
 
 Total count: 1174
