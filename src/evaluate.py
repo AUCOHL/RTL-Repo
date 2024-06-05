@@ -24,10 +24,10 @@ def main():
 
     total_count = len(predictions_list)
 
-    print("Statistics for the predictions are as follows:")
+    print("Statistics for the predictions are as follows:\n")
     print(f"Total count: {total_count}")
-    print(f"edit_similarity: {mean_es}")
-    print(f"exact_match: {mean_em*100}")
+    print(f"Edit similarity: {mean_es}")
+    print(f"Exact match: {mean_em*100}")
 
 if __name__ == "__main__":
     main()

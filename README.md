@@ -48,14 +48,14 @@ After generating predictions from your model, execute this script to produce the
 python src/evaluate.py --prediction_path <prediction_path>
 ```
 
-Example Output
+Example Output (GPT-3.5):
 
 ``` bash
 Statistics for the predictions are as follows:
 
 Total count: 1174
-Edit_similarity: 61.37819
-Exact_match: 33.816
+Edit similarity: 61.37819
+Exact match: 33.816
 ```
 
 
